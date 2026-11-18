@@ -1,0 +1,108 @@
+{
+  "experiment": "E3",
+  "pairs": 9,
+  "device": "cuda:0",
+  "bitwise_equal_pairs": 9,
+  "max_absolute_difference": 0.0,
+  "checks": [
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "mnist",
+      "seed": 1234,
+      "left": "E2/results/single_gpu/mnist/ref128/seed1234/checkpoint.pt",
+      "right": "E3/results/single_gpu/mnist/ref128/seed1234/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "mnist",
+      "seed": 1235,
+      "left": "E2/results/single_gpu/mnist/ref128/seed1235/checkpoint.pt",
+      "right": "E3/results/single_gpu/mnist/ref128/seed1235/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "mnist",
+      "seed": 1236,
+      "left": "E2/results/single_gpu/mnist/ref128/seed1236/checkpoint.pt",
+      "right": "E3/results/single_gpu/mnist/ref128/seed1236/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "fashionmnist",
+      "seed": 1234,
+      "left": "E2/results/single_gpu/fashionmnist/ref128/seed1234/checkpoint.pt",
+      "right": "E3/results/single_gpu/fashionmnist/ref128/seed1234/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "fashionmnist",
+      "seed": 1235,
+      "left": "E2/results/single_gpu/fashionmnist/ref128/seed1235/checkpoint.pt",
+      "right": "E3/results/single_gpu/fashionmnist/ref128/seed1235/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "fashionmnist",
+      "seed": 1236,
+      "left": "E2/results/single_gpu/fashionmnist/ref128/seed1236/checkpoint.pt",
+      "right": "E3/results/single_gpu/fashionmnist/ref128/seed1236/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "cifar10",
+      "seed": 1234,
+      "left": "E2/results/single_gpu/cifar10/ref128/seed1234/checkpoint.pt",
+      "right": "E3/results/single_gpu/cifar10/ref128/seed1234/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "cifar10",
+      "seed": 1235,
+      "left": "E2/results/single_gpu/cifar10/ref128/seed1235/checkpoint.pt",
+      "right": "E3/results/single_gpu/cifar10/ref128/seed1235/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    },
+    {
+      "kind": "independent_E2_E3_single_batch256",
+      "dataset": "cifar10",
+      "seed": 1236,
+      "left": "E2/results/single_gpu/cifar10/ref128/seed1236/checkpoint.pt",
+      "right": "E3/results/single_gpu/cifar10/ref128/seed1236/checkpoint.pt",
+      "device": "cuda:0",
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,1127 @@
+E2/mnist: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b32_k1_g64_seed1234 1/20 train=0.25904 val=0.13923 acc=95.8833%
+[epoch] e2_mnist_b32_k1_g64_seed1234 2/20 train=0.09779 val=0.10466 acc=96.7500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 3/20 train=0.06598 val=0.09992 acc=97.3667%
+[epoch] e2_mnist_b32_k1_g64_seed1234 4/20 train=0.05025 val=0.09193 acc=97.1500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 5/20 train=0.03785 val=0.09104 acc=97.4500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 6/20 train=0.03318 val=0.08344 acc=97.5667%
+[epoch] e2_mnist_b32_k1_g64_seed1234 7/20 train=0.02511 val=0.08483 acc=97.8333%
+[epoch] e2_mnist_b32_k1_g64_seed1234 8/20 train=0.01807 val=0.07751 acc=98.0500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 9/20 train=0.02095 val=0.09259 acc=97.8500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 10/20 train=0.01441 val=0.09322 acc=97.6167%
+[epoch] e2_mnist_b32_k1_g64_seed1234 11/20 train=0.01464 val=0.10317 acc=97.5333%
+[epoch] e2_mnist_b32_k1_g64_seed1234 12/20 train=0.01372 val=0.12192 acc=97.5000%
+[epoch] e2_mnist_b32_k1_g64_seed1234 13/20 train=0.00627 val=0.09578 acc=98.1167%
+[epoch] e2_mnist_b32_k1_g64_seed1234 14/20 train=0.01241 val=0.11498 acc=97.8500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 15/20 train=0.01300 val=0.09391 acc=98.1000%
+[epoch] e2_mnist_b32_k1_g64_seed1234 16/20 train=0.01053 val=0.12348 acc=97.9667%
+[epoch] e2_mnist_b32_k1_g64_seed1234 17/20 train=0.00653 val=0.12131 acc=97.7833%
+[epoch] e2_mnist_b32_k1_g64_seed1234 18/20 train=0.01211 val=0.12818 acc=97.9000%
+[epoch] e2_mnist_b32_k1_g64_seed1234 19/20 train=0.00675 val=0.13948 acc=97.6500%
+[epoch] e2_mnist_b32_k1_g64_seed1234 20/20 train=0.00479 val=0.12757 acc=98.0500%
+[final] e2_mnist_b32_k1_g64_seed1234 update=5.555ms throughput=11520.3 sync=14.29% test=98.0900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b64_k1_g128_seed1234 1/20 train=0.30476 val=0.11915 acc=96.1333%
+[epoch] e2_mnist_b64_k1_g128_seed1234 2/20 train=0.09192 val=0.09688 acc=96.9500%
+[epoch] e2_mnist_b64_k1_g128_seed1234 3/20 train=0.05964 val=0.09381 acc=97.1167%
+[epoch] e2_mnist_b64_k1_g128_seed1234 4/20 train=0.04370 val=0.07564 acc=97.6333%
+[epoch] e2_mnist_b64_k1_g128_seed1234 5/20 train=0.02961 val=0.06764 acc=97.9000%
+[epoch] e2_mnist_b64_k1_g128_seed1234 6/20 train=0.01994 val=0.06525 acc=98.0667%
+[epoch] e2_mnist_b64_k1_g128_seed1234 7/20 train=0.01651 val=0.08162 acc=97.7833%
+[epoch] e2_mnist_b64_k1_g128_seed1234 8/20 train=0.01311 val=0.06370 acc=98.3333%
+[epoch] e2_mnist_b64_k1_g128_seed1234 9/20 train=0.00924 val=0.08072 acc=97.9167%
+[epoch] e2_mnist_b64_k1_g128_seed1234 10/20 train=0.00609 val=0.08247 acc=97.9667%
+[epoch] e2_mnist_b64_k1_g128_seed1234 11/20 train=0.00487 val=0.08541 acc=98.0833%
+[epoch] e2_mnist_b64_k1_g128_seed1234 12/20 train=0.00280 val=0.07759 acc=98.2833%
+[epoch] e2_mnist_b64_k1_g128_seed1234 13/20 train=0.00053 val=0.07077 acc=98.2833%
+[epoch] e2_mnist_b64_k1_g128_seed1234 14/20 train=0.00026 val=0.07028 acc=98.4333%
+[epoch] e2_mnist_b64_k1_g128_seed1234 15/20 train=0.00013 val=0.07066 acc=98.4167%
+[epoch] e2_mnist_b64_k1_g128_seed1234 16/20 train=0.00011 val=0.07148 acc=98.4500%
+[epoch] e2_mnist_b64_k1_g128_seed1234 17/20 train=0.00009 val=0.07146 acc=98.4667%
+[epoch] e2_mnist_b64_k1_g128_seed1234 18/20 train=0.00008 val=0.07243 acc=98.4333%
+[epoch] e2_mnist_b64_k1_g128_seed1234 19/20 train=0.00008 val=0.07342 acc=98.4500%
+[epoch] e2_mnist_b64_k1_g128_seed1234 20/20 train=0.00007 val=0.07360 acc=98.4500%
+[final] e2_mnist_b64_k1_g128_seed1234 update=6.178ms throughput=20718.7 sync=12.85% test=98.5100%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b128_k1_g256_seed1234 1/20 train=0.42507 val=0.14634 acc=95.1167%
+[epoch] e2_mnist_b128_k1_g256_seed1234 2/20 train=0.11239 val=0.09804 acc=96.9333%
+[epoch] e2_mnist_b128_k1_g256_seed1234 3/20 train=0.06948 val=0.09178 acc=96.9500%
+[epoch] e2_mnist_b128_k1_g256_seed1234 4/20 train=0.04940 val=0.07677 acc=97.4833%
+[epoch] e2_mnist_b128_k1_g256_seed1234 5/20 train=0.03438 val=0.07463 acc=97.5667%
+[epoch] e2_mnist_b128_k1_g256_seed1234 6/20 train=0.02498 val=0.06500 acc=97.9500%
+[epoch] e2_mnist_b128_k1_g256_seed1234 7/20 train=0.01722 val=0.07000 acc=97.8333%
+[epoch] e2_mnist_b128_k1_g256_seed1234 8/20 train=0.01190 val=0.06024 acc=98.1500%
+[epoch] e2_mnist_b128_k1_g256_seed1234 9/20 train=0.00705 val=0.07570 acc=97.9000%
+[epoch] e2_mnist_b128_k1_g256_seed1234 10/20 train=0.00522 val=0.07002 acc=98.1333%
+[epoch] e2_mnist_b128_k1_g256_seed1234 11/20 train=0.00269 val=0.06920 acc=98.1167%
+[epoch] e2_mnist_b128_k1_g256_seed1234 12/20 train=0.00148 val=0.06652 acc=98.2000%
+[epoch] e2_mnist_b128_k1_g256_seed1234 13/20 train=0.00086 val=0.06909 acc=98.2000%
+[epoch] e2_mnist_b128_k1_g256_seed1234 14/20 train=0.00061 val=0.06819 acc=98.2333%
+[epoch] e2_mnist_b128_k1_g256_seed1234 15/20 train=0.00051 val=0.06871 acc=98.2333%
+[epoch] e2_mnist_b128_k1_g256_seed1234 16/20 train=0.00045 val=0.06834 acc=98.2833%
+[epoch] e2_mnist_b128_k1_g256_seed1234 17/20 train=0.00040 val=0.06884 acc=98.2500%
+[epoch] e2_mnist_b128_k1_g256_seed1234 18/20 train=0.00036 val=0.06930 acc=98.2500%
+[epoch] e2_mnist_b128_k1_g256_seed1234 19/20 train=0.00033 val=0.07053 acc=98.2833%
+[epoch] e2_mnist_b128_k1_g256_seed1234 20/20 train=0.00031 val=0.07024 acc=98.2667%
+[final] e2_mnist_b128_k1_g256_seed1234 update=5.722ms throughput=44742.6 sync=13.09% test=98.3200%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b256_k1_g512_seed1234 1/20 train=0.63973 val=0.22833 acc=92.6500%
+[epoch] e2_mnist_b256_k1_g512_seed1234 2/20 train=0.17046 val=0.14953 acc=95.3667%
+[epoch] e2_mnist_b256_k1_g512_seed1234 3/20 train=0.10947 val=0.11941 acc=96.1833%
+[epoch] e2_mnist_b256_k1_g512_seed1234 4/20 train=0.07866 val=0.08368 acc=97.1167%
+[epoch] e2_mnist_b256_k1_g512_seed1234 5/20 train=0.05764 val=0.07595 acc=97.6167%
+[epoch] e2_mnist_b256_k1_g512_seed1234 6/20 train=0.04625 val=0.07185 acc=97.4833%
+[epoch] e2_mnist_b256_k1_g512_seed1234 7/20 train=0.03444 val=0.07065 acc=97.5833%
+[epoch] e2_mnist_b256_k1_g512_seed1234 8/20 train=0.02752 val=0.06466 acc=97.9000%
+[epoch] e2_mnist_b256_k1_g512_seed1234 9/20 train=0.02276 val=0.06273 acc=97.9667%
+[epoch] e2_mnist_b256_k1_g512_seed1234 10/20 train=0.01646 val=0.06403 acc=97.8500%
+[epoch] e2_mnist_b256_k1_g512_seed1234 11/20 train=0.01178 val=0.06825 acc=97.8833%
+[epoch] e2_mnist_b256_k1_g512_seed1234 12/20 train=0.00859 val=0.06126 acc=98.0667%
+[epoch] e2_mnist_b256_k1_g512_seed1234 13/20 train=0.00618 val=0.06909 acc=97.8667%
+[epoch] e2_mnist_b256_k1_g512_seed1234 14/20 train=0.00481 val=0.05934 acc=98.0833%
+[epoch] e2_mnist_b256_k1_g512_seed1234 15/20 train=0.00408 val=0.06303 acc=97.9500%
+[epoch] e2_mnist_b256_k1_g512_seed1234 16/20 train=0.00277 val=0.06279 acc=98.1500%
+[epoch] e2_mnist_b256_k1_g512_seed1234 17/20 train=0.00218 val=0.06169 acc=98.2000%
+[epoch] e2_mnist_b256_k1_g512_seed1234 18/20 train=0.00179 val=0.06408 acc=98.1167%
+[epoch] e2_mnist_b256_k1_g512_seed1234 19/20 train=0.00153 val=0.06352 acc=98.1333%
+[epoch] e2_mnist_b256_k1_g512_seed1234 20/20 train=0.00132 val=0.06245 acc=98.2167%
+[final] e2_mnist_b256_k1_g512_seed1234 update=3.852ms throughput=132933.7 sync=17.75% test=98.1500%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b512_k1_g1024_seed1234 1/20 train=0.98404 val=0.37970 acc=88.1167%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 2/20 train=0.27465 val=0.23033 acc=92.8000%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 3/20 train=0.18454 val=0.17078 acc=94.6000%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 4/20 train=0.13990 val=0.14350 acc=95.4833%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 5/20 train=0.11128 val=0.12223 acc=95.9500%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 6/20 train=0.09024 val=0.10559 acc=96.7167%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 7/20 train=0.07507 val=0.09851 acc=96.8833%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 8/20 train=0.06561 val=0.08621 acc=97.2667%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 9/20 train=0.05304 val=0.07884 acc=97.4167%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 10/20 train=0.04483 val=0.07545 acc=97.5500%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 11/20 train=0.03784 val=0.07415 acc=97.6167%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 12/20 train=0.03256 val=0.07346 acc=97.4167%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 13/20 train=0.02803 val=0.07179 acc=97.7833%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 14/20 train=0.02413 val=0.06615 acc=97.7667%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 15/20 train=0.01960 val=0.06943 acc=97.5333%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 16/20 train=0.01654 val=0.06463 acc=97.8000%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 17/20 train=0.01425 val=0.06450 acc=97.8500%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 18/20 train=0.01228 val=0.06544 acc=97.9000%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 19/20 train=0.01035 val=0.06419 acc=97.8667%
+[epoch] e2_mnist_b512_k1_g1024_seed1234 20/20 train=0.00865 val=0.06061 acc=98.0333%
+[final] e2_mnist_b512_k1_g1024_seed1234 update=5.797ms throughput=176633.1 sync=20.04% test=98.0300%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b64_k1_g128_seed1235 1/20 train=0.30396 val=0.12205 acc=96.0667%
+[epoch] e2_mnist_b64_k1_g128_seed1235 2/20 train=0.09331 val=0.09101 acc=97.0333%
+[epoch] e2_mnist_b64_k1_g128_seed1235 3/20 train=0.06111 val=0.09399 acc=96.8833%
+[epoch] e2_mnist_b64_k1_g128_seed1235 4/20 train=0.04335 val=0.06925 acc=97.7167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 5/20 train=0.02926 val=0.07175 acc=97.7667%
+[epoch] e2_mnist_b64_k1_g128_seed1235 6/20 train=0.02142 val=0.07393 acc=98.0167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 7/20 train=0.01360 val=0.07080 acc=98.2167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 8/20 train=0.01357 val=0.08555 acc=97.8167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 9/20 train=0.00914 val=0.07715 acc=98.1667%
+[epoch] e2_mnist_b64_k1_g128_seed1235 10/20 train=0.00770 val=0.08943 acc=97.9500%
+[epoch] e2_mnist_b64_k1_g128_seed1235 11/20 train=0.00521 val=0.06982 acc=98.1667%
+[epoch] e2_mnist_b64_k1_g128_seed1235 12/20 train=0.00152 val=0.06882 acc=98.3167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 13/20 train=0.00046 val=0.06656 acc=98.4833%
+[epoch] e2_mnist_b64_k1_g128_seed1235 14/20 train=0.00022 val=0.06433 acc=98.4833%
+[epoch] e2_mnist_b64_k1_g128_seed1235 15/20 train=0.00012 val=0.06506 acc=98.5167%
+[epoch] e2_mnist_b64_k1_g128_seed1235 16/20 train=0.00010 val=0.06632 acc=98.5000%
+[epoch] e2_mnist_b64_k1_g128_seed1235 17/20 train=0.00009 val=0.06708 acc=98.5000%
+[epoch] e2_mnist_b64_k1_g128_seed1235 18/20 train=0.00008 val=0.06796 acc=98.4667%
+[epoch] e2_mnist_b64_k1_g128_seed1235 19/20 train=0.00007 val=0.06844 acc=98.4833%
+[epoch] e2_mnist_b64_k1_g128_seed1235 20/20 train=0.00007 val=0.06891 acc=98.5000%
+[final] e2_mnist_b64_k1_g128_seed1235 update=5.548ms throughput=23070.1 sync=13.58% test=98.4900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b128_k1_g256_seed1235 1/20 train=0.42559 val=0.15480 acc=94.8500%
+[epoch] e2_mnist_b128_k1_g256_seed1235 2/20 train=0.11365 val=0.10692 acc=96.5833%
+[epoch] e2_mnist_b128_k1_g256_seed1235 3/20 train=0.07230 val=0.08705 acc=97.2500%
+[epoch] e2_mnist_b128_k1_g256_seed1235 4/20 train=0.05089 val=0.07813 acc=97.4000%
+[epoch] e2_mnist_b128_k1_g256_seed1235 5/20 train=0.03616 val=0.06539 acc=98.0000%
+[epoch] e2_mnist_b128_k1_g256_seed1235 6/20 train=0.02595 val=0.07431 acc=97.6500%
+[epoch] e2_mnist_b128_k1_g256_seed1235 7/20 train=0.01931 val=0.06778 acc=97.8167%
+[epoch] e2_mnist_b128_k1_g256_seed1235 8/20 train=0.01329 val=0.08180 acc=97.6667%
+[epoch] e2_mnist_b128_k1_g256_seed1235 9/20 train=0.01019 val=0.06994 acc=97.9833%
+[epoch] e2_mnist_b128_k1_g256_seed1235 10/20 train=0.00609 val=0.06748 acc=98.0167%
+[epoch] e2_mnist_b128_k1_g256_seed1235 11/20 train=0.00278 val=0.06614 acc=98.3000%
+[epoch] e2_mnist_b128_k1_g256_seed1235 12/20 train=0.00145 val=0.07095 acc=98.1000%
+[epoch] e2_mnist_b128_k1_g256_seed1235 13/20 train=0.00087 val=0.06454 acc=98.2667%
+[epoch] e2_mnist_b128_k1_g256_seed1235 14/20 train=0.00064 val=0.06733 acc=98.2167%
+[epoch] e2_mnist_b128_k1_g256_seed1235 15/20 train=0.00054 val=0.06606 acc=98.2500%
+[epoch] e2_mnist_b128_k1_g256_seed1235 16/20 train=0.00047 val=0.06657 acc=98.2333%
+[epoch] e2_mnist_b128_k1_g256_seed1235 17/20 train=0.00042 val=0.06736 acc=98.2000%
+[epoch] e2_mnist_b128_k1_g256_seed1235 18/20 train=0.00038 val=0.06946 acc=98.2667%
+[epoch] e2_mnist_b128_k1_g256_seed1235 19/20 train=0.00035 val=0.06899 acc=98.2500%
+[epoch] e2_mnist_b128_k1_g256_seed1235 20/20 train=0.00032 val=0.07009 acc=98.2667%
+[final] e2_mnist_b128_k1_g256_seed1235 update=6.403ms throughput=39980.3 sync=12.53% test=98.3200%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b256_k1_g512_seed1235 1/20 train=0.64003 val=0.23261 acc=92.6500%
+[epoch] e2_mnist_b256_k1_g512_seed1235 2/20 train=0.17226 val=0.15141 acc=95.1833%
+[epoch] e2_mnist_b256_k1_g512_seed1235 3/20 train=0.11287 val=0.10623 acc=96.5833%
+[epoch] e2_mnist_b256_k1_g512_seed1235 4/20 train=0.07861 val=0.08932 acc=97.0500%
+[epoch] e2_mnist_b256_k1_g512_seed1235 5/20 train=0.06112 val=0.08412 acc=97.1167%
+[epoch] e2_mnist_b256_k1_g512_seed1235 6/20 train=0.04622 val=0.07463 acc=97.5500%
+[epoch] e2_mnist_b256_k1_g512_seed1235 7/20 train=0.03594 val=0.06957 acc=97.5667%
+[epoch] e2_mnist_b256_k1_g512_seed1235 8/20 train=0.02886 val=0.06364 acc=97.8000%
+[epoch] e2_mnist_b256_k1_g512_seed1235 9/20 train=0.02260 val=0.06288 acc=97.9500%
+[epoch] e2_mnist_b256_k1_g512_seed1235 10/20 train=0.01655 val=0.07189 acc=97.7000%
+[epoch] e2_mnist_b256_k1_g512_seed1235 11/20 train=0.01237 val=0.06414 acc=98.1667%
+[epoch] e2_mnist_b256_k1_g512_seed1235 12/20 train=0.00924 val=0.06485 acc=97.9167%
+[epoch] e2_mnist_b256_k1_g512_seed1235 13/20 train=0.00718 val=0.06378 acc=98.0833%
+[epoch] e2_mnist_b256_k1_g512_seed1235 14/20 train=0.00608 val=0.06343 acc=97.9167%
+[epoch] e2_mnist_b256_k1_g512_seed1235 15/20 train=0.00388 val=0.06418 acc=98.0167%
+[epoch] e2_mnist_b256_k1_g512_seed1235 16/20 train=0.00298 val=0.06272 acc=98.0000%
+[epoch] e2_mnist_b256_k1_g512_seed1235 17/20 train=0.00233 val=0.06673 acc=97.9500%
+[epoch] e2_mnist_b256_k1_g512_seed1235 18/20 train=0.00198 val=0.06470 acc=98.1000%
+[epoch] e2_mnist_b256_k1_g512_seed1235 19/20 train=0.00161 val=0.06338 acc=98.1000%
+[epoch] e2_mnist_b256_k1_g512_seed1235 20/20 train=0.00145 val=0.06530 acc=98.0500%
+[final] e2_mnist_b256_k1_g512_seed1235 update=8.542ms throughput=59939.8 sync=16.61% test=98.1300%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b512_k1_g1024_seed1235 1/20 train=0.97879 val=0.34783 acc=89.1333%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 2/20 train=0.27196 val=0.22861 acc=93.2667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 3/20 train=0.19319 val=0.18375 acc=94.0667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 4/20 train=0.14669 val=0.14349 acc=95.5167%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 5/20 train=0.11290 val=0.12291 acc=96.1500%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 6/20 train=0.09263 val=0.11495 acc=96.3333%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 7/20 train=0.08149 val=0.09567 acc=97.0000%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 8/20 train=0.06453 val=0.08560 acc=97.3000%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 9/20 train=0.05393 val=0.07920 acc=97.5000%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 10/20 train=0.04563 val=0.08017 acc=97.4167%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 11/20 train=0.04043 val=0.07534 acc=97.5667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 12/20 train=0.03455 val=0.07552 acc=97.6000%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 13/20 train=0.02947 val=0.06689 acc=97.6833%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 14/20 train=0.02414 val=0.07310 acc=97.3667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 15/20 train=0.02061 val=0.06544 acc=97.7667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 16/20 train=0.01789 val=0.06586 acc=97.7667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 17/20 train=0.01508 val=0.06575 acc=97.8000%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 18/20 train=0.01322 val=0.06591 acc=97.7667%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 19/20 train=0.01086 val=0.06019 acc=98.0333%
+[epoch] e2_mnist_b512_k1_g1024_seed1235 20/20 train=0.00962 val=0.06351 acc=97.8500%
+[final] e2_mnist_b512_k1_g1024_seed1235 update=12.424ms throughput=82422.4 sync=21.91% test=98.0100%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b32_k1_g64_seed1235 1/20 train=0.25712 val=0.13941 acc=95.6333%
+[epoch] e2_mnist_b32_k1_g64_seed1235 2/20 train=0.09971 val=0.09633 acc=96.9000%
+[epoch] e2_mnist_b32_k1_g64_seed1235 3/20 train=0.06639 val=0.08997 acc=97.1667%
+[epoch] e2_mnist_b32_k1_g64_seed1235 4/20 train=0.04583 val=0.08636 acc=97.5167%
+[epoch] e2_mnist_b32_k1_g64_seed1235 5/20 train=0.03571 val=0.07775 acc=97.7000%
+[epoch] e2_mnist_b32_k1_g64_seed1235 6/20 train=0.02713 val=0.08702 acc=97.9000%
+[epoch] e2_mnist_b32_k1_g64_seed1235 7/20 train=0.02620 val=0.09253 acc=97.7000%
+[epoch] e2_mnist_b32_k1_g64_seed1235 8/20 train=0.02400 val=0.08522 acc=97.7833%
+[epoch] e2_mnist_b32_k1_g64_seed1235 9/20 train=0.02318 val=0.08578 acc=97.8333%
+[epoch] e2_mnist_b32_k1_g64_seed1235 10/20 train=0.02069 val=0.09100 acc=97.6167%
+[epoch] e2_mnist_b32_k1_g64_seed1235 11/20 train=0.01274 val=0.08645 acc=98.0000%
+[epoch] e2_mnist_b32_k1_g64_seed1235 12/20 train=0.01301 val=0.07576 acc=98.3500%
+[epoch] e2_mnist_b32_k1_g64_seed1235 13/20 train=0.00734 val=0.10428 acc=98.0333%
+[epoch] e2_mnist_b32_k1_g64_seed1235 14/20 train=0.01163 val=0.10468 acc=98.1167%
+[epoch] e2_mnist_b32_k1_g64_seed1235 15/20 train=0.00892 val=0.09172 acc=98.2167%
+[epoch] e2_mnist_b32_k1_g64_seed1235 16/20 train=0.00981 val=0.09879 acc=98.0667%
+[epoch] e2_mnist_b32_k1_g64_seed1235 17/20 train=0.01280 val=0.09886 acc=98.2667%
+[epoch] e2_mnist_b32_k1_g64_seed1235 18/20 train=0.00527 val=0.12617 acc=97.6667%
+[epoch] e2_mnist_b32_k1_g64_seed1235 19/20 train=0.00414 val=0.11365 acc=98.1167%
+[epoch] e2_mnist_b32_k1_g64_seed1235 20/20 train=0.00282 val=0.08519 acc=98.3833%
+[final] e2_mnist_b32_k1_g64_seed1235 update=3.896ms throughput=16427.5 sync=17.01% test=98.5200%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b128_k1_g256_seed1236 1/20 train=0.42300 val=0.14622 acc=95.3667%
+[epoch] e2_mnist_b128_k1_g256_seed1236 2/20 train=0.11315 val=0.10356 acc=96.6333%
+[epoch] e2_mnist_b128_k1_g256_seed1236 3/20 train=0.07116 val=0.07986 acc=97.5500%
+[epoch] e2_mnist_b128_k1_g256_seed1236 4/20 train=0.05066 val=0.06911 acc=97.7167%
+[epoch] e2_mnist_b128_k1_g256_seed1236 5/20 train=0.03622 val=0.08120 acc=97.5167%
+[epoch] e2_mnist_b128_k1_g256_seed1236 6/20 train=0.02523 val=0.06395 acc=98.1167%
+[epoch] e2_mnist_b128_k1_g256_seed1236 7/20 train=0.02015 val=0.07919 acc=97.6167%
+[epoch] e2_mnist_b128_k1_g256_seed1236 8/20 train=0.01476 val=0.07617 acc=97.7500%
+[epoch] e2_mnist_b128_k1_g256_seed1236 9/20 train=0.00946 val=0.07807 acc=97.7167%
+[epoch] e2_mnist_b128_k1_g256_seed1236 10/20 train=0.00611 val=0.06367 acc=98.2333%
+[epoch] e2_mnist_b128_k1_g256_seed1236 11/20 train=0.00385 val=0.06727 acc=98.1500%
+[epoch] e2_mnist_b128_k1_g256_seed1236 12/20 train=0.00223 val=0.06366 acc=98.3667%
+[epoch] e2_mnist_b128_k1_g256_seed1236 13/20 train=0.00089 val=0.06527 acc=98.3000%
+[epoch] e2_mnist_b128_k1_g256_seed1236 14/20 train=0.00066 val=0.06401 acc=98.2833%
+[epoch] e2_mnist_b128_k1_g256_seed1236 15/20 train=0.00054 val=0.06390 acc=98.3000%
+[epoch] e2_mnist_b128_k1_g256_seed1236 16/20 train=0.00046 val=0.06424 acc=98.3833%
+[epoch] e2_mnist_b128_k1_g256_seed1236 17/20 train=0.00041 val=0.06661 acc=98.3333%
+[epoch] e2_mnist_b128_k1_g256_seed1236 18/20 train=0.00037 val=0.06599 acc=98.3667%
+[epoch] e2_mnist_b128_k1_g256_seed1236 19/20 train=0.00034 val=0.06736 acc=98.3667%
+[epoch] e2_mnist_b128_k1_g256_seed1236 20/20 train=0.00031 val=0.06782 acc=98.3667%
+[final] e2_mnist_b128_k1_g256_seed1236 update=2.932ms throughput=87299.7 sync=18.39% test=98.2900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b256_k1_g512_seed1236 1/20 train=0.63769 val=0.24635 acc=92.3167%
+[epoch] e2_mnist_b256_k1_g512_seed1236 2/20 train=0.17607 val=0.14185 acc=95.4333%
+[epoch] e2_mnist_b256_k1_g512_seed1236 3/20 train=0.10886 val=0.10931 acc=96.5333%
+[epoch] e2_mnist_b256_k1_g512_seed1236 4/20 train=0.08127 val=0.09422 acc=96.8833%
+[epoch] e2_mnist_b256_k1_g512_seed1236 5/20 train=0.05941 val=0.08450 acc=97.2167%
+[epoch] e2_mnist_b256_k1_g512_seed1236 6/20 train=0.04657 val=0.07189 acc=97.5833%
+[epoch] e2_mnist_b256_k1_g512_seed1236 7/20 train=0.03712 val=0.06792 acc=97.6000%
+[epoch] e2_mnist_b256_k1_g512_seed1236 8/20 train=0.02919 val=0.06549 acc=97.8333%
+[epoch] e2_mnist_b256_k1_g512_seed1236 9/20 train=0.02156 val=0.09035 acc=96.9500%
+[epoch] e2_mnist_b256_k1_g512_seed1236 10/20 train=0.01862 val=0.06599 acc=97.9667%
+[epoch] e2_mnist_b256_k1_g512_seed1236 11/20 train=0.01316 val=0.06765 acc=97.9000%
+[epoch] e2_mnist_b256_k1_g512_seed1236 12/20 train=0.00976 val=0.06472 acc=97.8667%
+[epoch] e2_mnist_b256_k1_g512_seed1236 13/20 train=0.00797 val=0.06591 acc=98.1167%
+[epoch] e2_mnist_b256_k1_g512_seed1236 14/20 train=0.00488 val=0.06323 acc=98.0000%
+[epoch] e2_mnist_b256_k1_g512_seed1236 15/20 train=0.00392 val=0.06315 acc=98.1000%
+[epoch] e2_mnist_b256_k1_g512_seed1236 16/20 train=0.00296 val=0.06562 acc=98.1000%
+[epoch] e2_mnist_b256_k1_g512_seed1236 17/20 train=0.00222 val=0.06463 acc=98.1833%
+[epoch] e2_mnist_b256_k1_g512_seed1236 18/20 train=0.00180 val=0.06370 acc=98.2333%
+[epoch] e2_mnist_b256_k1_g512_seed1236 19/20 train=0.00157 val=0.06635 acc=98.1667%
+[epoch] e2_mnist_b256_k1_g512_seed1236 20/20 train=0.00136 val=0.06746 acc=98.1167%
+[final] e2_mnist_b256_k1_g512_seed1236 update=8.177ms throughput=62615.1 sync=11.35% test=98.0900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b512_k1_g1024_seed1236 1/20 train=0.98549 val=0.33455 acc=89.8000%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 2/20 train=0.26920 val=0.22298 acc=93.1000%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 3/20 train=0.18757 val=0.16924 acc=94.6833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 4/20 train=0.13913 val=0.13995 acc=95.5167%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 5/20 train=0.11073 val=0.12364 acc=96.0833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 6/20 train=0.09518 val=0.10156 acc=96.8167%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 7/20 train=0.07573 val=0.09095 acc=97.2667%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 8/20 train=0.06233 val=0.08435 acc=97.1167%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 9/20 train=0.05242 val=0.08541 acc=97.2333%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 10/20 train=0.04625 val=0.07777 acc=97.4833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 11/20 train=0.03875 val=0.08044 acc=97.5500%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 12/20 train=0.03395 val=0.06896 acc=97.7500%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 13/20 train=0.02805 val=0.07374 acc=97.6333%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 14/20 train=0.02403 val=0.06447 acc=97.8833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 15/20 train=0.02017 val=0.06756 acc=97.8667%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 16/20 train=0.01718 val=0.06487 acc=97.8833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 17/20 train=0.01470 val=0.06611 acc=97.9833%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 18/20 train=0.01268 val=0.06071 acc=97.9500%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 19/20 train=0.01073 val=0.06290 acc=98.1500%
+[epoch] e2_mnist_b512_k1_g1024_seed1236 20/20 train=0.00929 val=0.07203 acc=97.8167%
+[final] e2_mnist_b512_k1_g1024_seed1236 update=12.089ms throughput=84701.7 sync=6.97% test=97.9300%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b32_k1_g64_seed1236 1/20 train=0.26163 val=0.12487 acc=96.4667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 2/20 train=0.09998 val=0.09292 acc=97.3500%
+[epoch] e2_mnist_b32_k1_g64_seed1236 3/20 train=0.06527 val=0.08774 acc=97.3167%
+[epoch] e2_mnist_b32_k1_g64_seed1236 4/20 train=0.04985 val=0.07389 acc=97.8333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 5/20 train=0.03919 val=0.08744 acc=97.4000%
+[epoch] e2_mnist_b32_k1_g64_seed1236 6/20 train=0.02644 val=0.11194 acc=97.3667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 7/20 train=0.02852 val=0.07770 acc=97.8667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 8/20 train=0.01798 val=0.08637 acc=97.8167%
+[epoch] e2_mnist_b32_k1_g64_seed1236 9/20 train=0.01429 val=0.09269 acc=97.9667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 10/20 train=0.01336 val=0.08877 acc=98.0167%
+[epoch] e2_mnist_b32_k1_g64_seed1236 11/20 train=0.01450 val=0.07990 acc=98.2833%
+[epoch] e2_mnist_b32_k1_g64_seed1236 12/20 train=0.01201 val=0.15035 acc=97.3667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 13/20 train=0.01427 val=0.09202 acc=98.0000%
+[epoch] e2_mnist_b32_k1_g64_seed1236 14/20 train=0.01478 val=0.10999 acc=97.7333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 15/20 train=0.01300 val=0.11815 acc=97.9333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 16/20 train=0.00819 val=0.09934 acc=98.0333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 17/20 train=0.01234 val=0.12564 acc=97.8333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 18/20 train=0.01188 val=0.11248 acc=97.9667%
+[epoch] e2_mnist_b32_k1_g64_seed1236 19/20 train=0.00387 val=0.14194 acc=97.6333%
+[epoch] e2_mnist_b32_k1_g64_seed1236 20/20 train=0.00989 val=0.13512 acc=97.7833%
+[final] e2_mnist_b32_k1_g64_seed1236 update=5.166ms throughput=12387.7 sync=15.32% test=98.1600%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_mnist_b64_k1_g128_seed1236 1/20 train=0.30224 val=0.11738 acc=96.2667%
+[epoch] e2_mnist_b64_k1_g128_seed1236 2/20 train=0.09255 val=0.09697 acc=97.0167%
+[epoch] e2_mnist_b64_k1_g128_seed1236 3/20 train=0.06069 val=0.06912 acc=97.7667%
+[epoch] e2_mnist_b64_k1_g128_seed1236 4/20 train=0.04135 val=0.07438 acc=97.5833%
+[epoch] e2_mnist_b64_k1_g128_seed1236 5/20 train=0.03343 val=0.06775 acc=97.9667%
+[epoch] e2_mnist_b64_k1_g128_seed1236 6/20 train=0.02290 val=0.06736 acc=98.0333%
+[epoch] e2_mnist_b64_k1_g128_seed1236 7/20 train=0.01637 val=0.07117 acc=97.8500%
+[epoch] e2_mnist_b64_k1_g128_seed1236 8/20 train=0.01224 val=0.08668 acc=97.7000%
+[epoch] e2_mnist_b64_k1_g128_seed1236 9/20 train=0.00949 val=0.07564 acc=98.0000%
+[epoch] e2_mnist_b64_k1_g128_seed1236 10/20 train=0.00588 val=0.09112 acc=97.7500%
+[epoch] e2_mnist_b64_k1_g128_seed1236 11/20 train=0.00906 val=0.09046 acc=97.8167%
+[epoch] e2_mnist_b64_k1_g128_seed1236 12/20 train=0.00762 val=0.07833 acc=98.1000%
+[epoch] e2_mnist_b64_k1_g128_seed1236 13/20 train=0.00341 val=0.07375 acc=98.2500%
+[epoch] e2_mnist_b64_k1_g128_seed1236 14/20 train=0.00061 val=0.07066 acc=98.4833%
+[epoch] e2_mnist_b64_k1_g128_seed1236 15/20 train=0.00019 val=0.06771 acc=98.5333%
+[epoch] e2_mnist_b64_k1_g128_seed1236 16/20 train=0.00012 val=0.06805 acc=98.5833%
+[epoch] e2_mnist_b64_k1_g128_seed1236 17/20 train=0.00010 val=0.06935 acc=98.5833%
+[epoch] e2_mnist_b64_k1_g128_seed1236 18/20 train=0.00008 val=0.06986 acc=98.6000%
+[epoch] e2_mnist_b64_k1_g128_seed1236 19/20 train=0.00007 val=0.07075 acc=98.6167%
+[epoch] e2_mnist_b64_k1_g128_seed1236 20/20 train=0.00006 val=0.07106 acc=98.6000%
+[final] e2_mnist_b64_k1_g128_seed1236 update=5.351ms throughput=23922.9 sync=14.66% test=98.5700%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 1/20 train=0.59840 val=0.47626 acc=81.8500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 2/20 train=0.46503 val=0.54194 acc=81.3667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 3/20 train=0.41883 val=0.38266 acc=85.6500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 4/20 train=0.38930 val=0.36988 acc=87.0000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 5/20 train=0.37514 val=0.36928 acc=86.6833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 6/20 train=0.35744 val=0.38383 acc=86.6167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 7/20 train=0.34949 val=0.35283 acc=87.4667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 8/20 train=0.33769 val=0.36698 acc=86.2667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 9/20 train=0.32803 val=0.36838 acc=87.3000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 10/20 train=0.32959 val=0.36737 acc=87.2333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 11/20 train=0.31917 val=0.36039 acc=86.9167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 12/20 train=0.30486 val=0.36990 acc=87.1333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 13/20 train=0.30058 val=0.39914 acc=86.3167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 14/20 train=0.30012 val=0.35912 acc=87.2833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 15/20 train=0.28778 val=0.35403 acc=87.2833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 16/20 train=0.28936 val=0.33820 acc=88.3500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 17/20 train=0.27631 val=0.36922 acc=87.4667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 18/20 train=0.27402 val=0.33813 acc=88.4333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 19/20 train=0.27093 val=0.35427 acc=88.2500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1234 20/20 train=0.26388 val=0.35544 acc=88.4500%
+[final] e2_fashionmnist_b32_k1_g64_seed1234 update=2.737ms throughput=23382.0 sync=20.56% test=87.0200%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 1/20 train=0.57503 val=0.42223 acc=84.2667%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 2/20 train=0.40079 val=0.37285 acc=86.0333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 3/20 train=0.36894 val=0.32418 acc=88.0333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 4/20 train=0.33906 val=0.32237 acc=88.0500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 5/20 train=0.31725 val=0.31666 acc=88.2000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 6/20 train=0.29952 val=0.32399 acc=87.8667%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 7/20 train=0.29313 val=0.31588 acc=88.5000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 8/20 train=0.27996 val=0.32293 acc=88.5500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 9/20 train=0.27143 val=0.30484 acc=88.5833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 10/20 train=0.26001 val=0.31698 acc=88.9167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 11/20 train=0.25546 val=0.31189 acc=88.1833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 12/20 train=0.24192 val=0.32786 acc=88.3833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 13/20 train=0.23700 val=0.32608 acc=88.1500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 14/20 train=0.23180 val=0.29259 acc=89.9333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 15/20 train=0.21922 val=0.30643 acc=89.1500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 16/20 train=0.21648 val=0.29983 acc=89.5333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 17/20 train=0.21180 val=0.29338 acc=89.5667%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 18/20 train=0.20816 val=0.31963 acc=89.4333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 19/20 train=0.19714 val=0.29469 acc=89.8167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1234 20/20 train=0.19485 val=0.30433 acc=89.4500%
+[final] e2_fashionmnist_b64_k1_g128_seed1234 update=5.818ms throughput=21999.0 sync=13.88% test=88.0500%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 1/20 train=0.66847 val=0.39158 acc=85.5667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 2/20 train=0.39506 val=0.37786 acc=85.7833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 3/20 train=0.35846 val=0.33800 acc=86.9333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 4/20 train=0.32570 val=0.34751 acc=86.6833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 5/20 train=0.31190 val=0.33153 acc=87.1833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 6/20 train=0.29388 val=0.30379 acc=88.8667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 7/20 train=0.28527 val=0.33647 acc=87.3500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 8/20 train=0.27053 val=0.29096 acc=89.1500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 9/20 train=0.25651 val=0.30376 acc=89.2000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 10/20 train=0.24668 val=0.30359 acc=88.9833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 11/20 train=0.23671 val=0.29549 acc=89.2000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 12/20 train=0.22922 val=0.31740 acc=88.7167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 13/20 train=0.23205 val=0.29563 acc=89.2333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 14/20 train=0.22390 val=0.27568 acc=90.2333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 15/20 train=0.20935 val=0.30432 acc=88.7167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 16/20 train=0.20769 val=0.29194 acc=89.2833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 17/20 train=0.20164 val=0.28753 acc=89.5000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 18/20 train=0.19512 val=0.28639 acc=90.0167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 19/20 train=0.19068 val=0.28566 acc=89.6500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1234 20/20 train=0.18434 val=0.28349 acc=90.2667%
+[final] e2_fashionmnist_b128_k1_g256_seed1234 update=7.028ms throughput=36428.0 sync=12.24% test=89.1400%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 1/20 train=0.87036 val=0.43252 acc=84.5333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 2/20 train=0.42036 val=0.42813 acc=83.6333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 3/20 train=0.38051 val=0.38934 acc=85.3167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 4/20 train=0.34344 val=0.32331 acc=87.9167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 5/20 train=0.31851 val=0.31180 acc=88.5667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 6/20 train=0.30899 val=0.31479 acc=88.1833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 7/20 train=0.29324 val=0.28866 acc=89.3000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 8/20 train=0.28192 val=0.29347 acc=89.2000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 9/20 train=0.26944 val=0.28838 acc=89.4000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 10/20 train=0.26249 val=0.28754 acc=89.2000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 11/20 train=0.25860 val=0.28549 acc=89.6333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 12/20 train=0.24713 val=0.30292 acc=88.8500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 13/20 train=0.24194 val=0.29573 acc=89.0500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 14/20 train=0.22895 val=0.28267 acc=89.7000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 15/20 train=0.22107 val=0.27764 acc=89.7500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 16/20 train=0.21758 val=0.29235 acc=89.5333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 17/20 train=0.21273 val=0.28311 acc=89.7333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 18/20 train=0.20379 val=0.27701 acc=90.2167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 19/20 train=0.19448 val=0.27457 acc=90.1500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1234 20/20 train=0.19231 val=0.30072 acc=89.4833%
+[final] e2_fashionmnist_b256_k1_g512_seed1234 update=8.742ms throughput=58568.2 sync=9.71% test=88.1900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 1/20 train=1.15889 val=0.56364 acc=79.3333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 2/20 train=0.49093 val=0.43128 acc=84.0167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 3/20 train=0.40840 val=0.37008 acc=86.5833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 4/20 train=0.37748 val=0.34687 acc=87.1000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 5/20 train=0.35129 val=0.35244 acc=86.7333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 6/20 train=0.33255 val=0.33486 acc=87.7000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 7/20 train=0.31655 val=0.31068 acc=88.6333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 8/20 train=0.30577 val=0.31027 acc=88.4667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 9/20 train=0.29916 val=0.30544 acc=88.8667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 10/20 train=0.28840 val=0.29987 acc=88.6833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 11/20 train=0.27678 val=0.29653 acc=88.8833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 12/20 train=0.28391 val=0.28941 acc=89.5167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 13/20 train=0.26657 val=0.29726 acc=89.0333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 14/20 train=0.25201 val=0.28238 acc=89.6000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 15/20 train=0.24195 val=0.27949 acc=89.6833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 16/20 train=0.23755 val=0.28888 acc=89.4333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 17/20 train=0.23078 val=0.29149 acc=89.1500%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 18/20 train=0.23117 val=0.28558 acc=89.2167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 19/20 train=0.22736 val=0.29134 acc=88.9500%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1234 20/20 train=0.21969 val=0.28613 acc=89.8167%
+[final] e2_fashionmnist_b512_k1_g1024_seed1234 update=12.847ms throughput=79707.0 sync=16.44% test=88.2600%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 1/20 train=0.57360 val=0.50991 acc=81.0000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 2/20 train=0.40748 val=0.35214 acc=86.9333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 3/20 train=0.36527 val=0.33639 acc=87.8333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 4/20 train=0.34340 val=0.31985 acc=88.1000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 5/20 train=0.31706 val=0.33171 acc=88.0333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 6/20 train=0.31048 val=0.32943 acc=87.8333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 7/20 train=0.29358 val=0.32760 acc=88.0833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 8/20 train=0.27899 val=0.30086 acc=88.7667%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 9/20 train=0.27106 val=0.30402 acc=89.0833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 10/20 train=0.26520 val=0.32426 acc=88.0333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 11/20 train=0.25214 val=0.31135 acc=88.5167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 12/20 train=0.24866 val=0.30711 acc=88.9167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 13/20 train=0.24359 val=0.29824 acc=89.4833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 14/20 train=0.22939 val=0.29395 acc=89.5333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 15/20 train=0.22982 val=0.30812 acc=89.4000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 16/20 train=0.21982 val=0.31080 acc=89.0000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 17/20 train=0.21307 val=0.30822 acc=89.4167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 18/20 train=0.20853 val=0.29699 acc=89.6167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 19/20 train=0.20226 val=0.30827 acc=89.2500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1235 20/20 train=0.19930 val=0.31081 acc=89.7333%
+[final] e2_fashionmnist_b64_k1_g128_seed1235 update=3.579ms throughput=35762.4 sync=17.52% test=89.0300%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 1/20 train=0.64184 val=0.43401 acc=84.1000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 2/20 train=0.40188 val=0.39283 acc=84.5167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 3/20 train=0.35168 val=0.36474 acc=86.1500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 4/20 train=0.33287 val=0.32175 acc=88.0333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 5/20 train=0.31233 val=0.30596 acc=88.7500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 6/20 train=0.29514 val=0.32120 acc=87.9667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 7/20 train=0.28142 val=0.30833 acc=88.4667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 8/20 train=0.26725 val=0.30029 acc=88.9000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 9/20 train=0.25701 val=0.31267 acc=88.0833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 10/20 train=0.24577 val=0.28001 acc=89.6333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 11/20 train=0.24030 val=0.29907 acc=89.0167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 12/20 train=0.23529 val=0.29183 acc=89.3833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 13/20 train=0.22848 val=0.27407 acc=90.2333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 14/20 train=0.21757 val=0.28709 acc=89.2667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 15/20 train=0.20901 val=0.29610 acc=89.5833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 16/20 train=0.20517 val=0.29753 acc=88.7333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 17/20 train=0.20074 val=0.28953 acc=90.1167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 18/20 train=0.19111 val=0.29537 acc=89.7500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 19/20 train=0.18620 val=0.28408 acc=89.8833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1235 20/20 train=0.17832 val=0.30018 acc=89.1000%
+[final] e2_fashionmnist_b128_k1_g256_seed1235 update=2.884ms throughput=88769.2 sync=18.40% test=88.4500%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 1/20 train=0.86610 val=0.43831 acc=84.0833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 2/20 train=0.42494 val=0.39326 acc=85.3333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 3/20 train=0.37895 val=0.35540 acc=86.7833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 4/20 train=0.34206 val=0.32481 acc=87.8167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 5/20 train=0.32785 val=0.30590 acc=88.5667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 6/20 train=0.30861 val=0.30415 acc=88.7333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 7/20 train=0.29499 val=0.30438 acc=88.6000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 8/20 train=0.27785 val=0.29286 acc=89.4500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 9/20 train=0.26980 val=0.30003 acc=88.9167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 10/20 train=0.26433 val=0.29483 acc=89.2000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 11/20 train=0.25940 val=0.32876 acc=87.3500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 12/20 train=0.25565 val=0.31152 acc=88.2667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 13/20 train=0.24034 val=0.28582 acc=89.5333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 14/20 train=0.23140 val=0.28277 acc=89.5167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 15/20 train=0.22647 val=0.31661 acc=88.6667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 16/20 train=0.22265 val=0.28808 acc=89.5167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 17/20 train=0.21252 val=0.28079 acc=89.8333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 18/20 train=0.20583 val=0.27933 acc=90.1000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 19/20 train=0.20010 val=0.27886 acc=90.0333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1235 20/20 train=0.19046 val=0.29507 acc=89.3667%
+[final] e2_fashionmnist_b256_k1_g512_seed1235 update=7.679ms throughput=66671.5 sync=12.54% test=88.3800%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 1/20 train=1.07395 val=0.56825 acc=77.5833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 2/20 train=0.48731 val=0.44070 acc=84.0167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 3/20 train=0.41129 val=0.37554 acc=86.4500%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 4/20 train=0.37706 val=0.36601 acc=86.3000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 5/20 train=0.35057 val=0.35774 acc=86.7333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 6/20 train=0.32779 val=0.32903 acc=88.2167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 7/20 train=0.31439 val=0.33528 acc=87.6167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 8/20 train=0.31098 val=0.31629 acc=88.5833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 9/20 train=0.29491 val=0.29377 acc=88.9833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 10/20 train=0.28267 val=0.30831 acc=88.4000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 11/20 train=0.28676 val=0.28843 acc=89.3833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 12/20 train=0.27088 val=0.29986 acc=89.1000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 13/20 train=0.25811 val=0.29165 acc=88.9833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 14/20 train=0.24851 val=0.28771 acc=89.3333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 15/20 train=0.24262 val=0.28479 acc=89.5667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 16/20 train=0.23033 val=0.28640 acc=89.4333%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 17/20 train=0.23667 val=0.27892 acc=89.8000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 18/20 train=0.22668 val=0.29533 acc=88.9833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 19/20 train=0.22332 val=0.30551 acc=88.9000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1235 20/20 train=0.21152 val=0.27618 acc=90.0333%
+[final] e2_fashionmnist_b512_k1_g1024_seed1235 update=12.253ms throughput=83569.7 sync=14.14% test=88.8300%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 1/20 train=0.58227 val=0.46107 acc=82.1833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 2/20 train=0.45405 val=0.41343 acc=84.3667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 3/20 train=0.41179 val=0.39086 acc=86.1167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 4/20 train=0.38896 val=0.35848 acc=86.9833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 5/20 train=0.37329 val=0.41930 acc=83.8333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 6/20 train=0.36212 val=0.41200 acc=85.6833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 7/20 train=0.34740 val=0.38317 acc=86.1000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 8/20 train=0.34120 val=0.35604 acc=87.4500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 9/20 train=0.32972 val=0.34085 acc=88.0000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 10/20 train=0.31803 val=0.35939 acc=86.4000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 11/20 train=0.30916 val=0.36918 acc=87.2000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 12/20 train=0.31646 val=0.36389 acc=87.2833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 13/20 train=0.30252 val=0.38394 acc=86.5333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 14/20 train=0.29131 val=0.33107 acc=88.7000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 15/20 train=0.29179 val=0.36356 acc=88.0833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 16/20 train=0.28307 val=0.36982 acc=87.6833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 17/20 train=0.28118 val=0.32855 acc=88.6167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 18/20 train=0.27261 val=0.33388 acc=88.7667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 19/20 train=0.26523 val=0.34661 acc=88.3833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1235 20/20 train=0.26326 val=0.34686 acc=88.3000%
+[final] e2_fashionmnist_b32_k1_g64_seed1235 update=5.293ms throughput=12090.4 sync=14.84% test=87.6200%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 1/20 train=0.66475 val=0.46155 acc=81.9000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 2/20 train=0.39543 val=0.36978 acc=86.0167%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 3/20 train=0.35851 val=0.36469 acc=86.4667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 4/20 train=0.33057 val=0.31157 acc=88.6667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 5/20 train=0.31273 val=0.32710 acc=87.9333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 6/20 train=0.29732 val=0.29974 acc=89.1333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 7/20 train=0.27768 val=0.31125 acc=88.4667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 8/20 train=0.26917 val=0.32225 acc=88.9333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 9/20 train=0.25847 val=0.29639 acc=88.7333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 10/20 train=0.24872 val=0.30112 acc=89.0000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 11/20 train=0.24802 val=0.29257 acc=89.0667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 12/20 train=0.23978 val=0.28556 acc=89.7500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 13/20 train=0.22715 val=0.29880 acc=89.0500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 14/20 train=0.22043 val=0.28900 acc=89.7667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 15/20 train=0.21187 val=0.28712 acc=89.6333%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 16/20 train=0.20782 val=0.29585 acc=89.5000%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 17/20 train=0.20053 val=0.27917 acc=90.1833%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 18/20 train=0.19408 val=0.28242 acc=89.6500%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 19/20 train=0.18766 val=0.29908 acc=89.0667%
+[epoch] e2_fashionmnist_b128_k1_g256_seed1236 20/20 train=0.18771 val=0.29491 acc=90.2000%
+[final] e2_fashionmnist_b128_k1_g256_seed1236 update=6.949ms throughput=36839.0 sync=12.35% test=88.6800%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 1/20 train=0.80297 val=0.44399 acc=83.6833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 2/20 train=0.42303 val=0.38567 acc=85.6833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 3/20 train=0.36841 val=0.35003 acc=86.8167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 4/20 train=0.33993 val=0.32120 acc=88.1500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 5/20 train=0.32537 val=0.31593 acc=88.0500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 6/20 train=0.30921 val=0.30526 acc=88.6667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 7/20 train=0.29123 val=0.29409 acc=89.3833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 8/20 train=0.27857 val=0.30395 acc=88.8167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 9/20 train=0.26963 val=0.28497 acc=89.4333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 10/20 train=0.26416 val=0.29891 acc=88.9333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 11/20 train=0.25618 val=0.30247 acc=88.9667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 12/20 train=0.24680 val=0.28801 acc=89.7000%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 13/20 train=0.23432 val=0.29529 acc=88.8333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 14/20 train=0.22631 val=0.30554 acc=89.1500%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 15/20 train=0.22675 val=0.27810 acc=89.7667%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 16/20 train=0.21872 val=0.28039 acc=89.9167%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 17/20 train=0.20675 val=0.27824 acc=90.1833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 18/20 train=0.20003 val=0.28332 acc=89.8833%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 19/20 train=0.19382 val=0.28543 acc=89.7333%
+[epoch] e2_fashionmnist_b256_k1_g512_seed1236 20/20 train=0.19316 val=0.28560 acc=89.8167%
+[final] e2_fashionmnist_b256_k1_g512_seed1236 update=3.894ms throughput=131493.0 sync=18.35% test=88.7400%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 1/20 train=1.19828 val=0.57831 acc=79.1833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 2/20 train=0.49377 val=0.42316 acc=84.4167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 3/20 train=0.40905 val=0.39626 acc=85.5167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 4/20 train=0.38588 val=0.35921 acc=87.0500%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 5/20 train=0.35321 val=0.33747 acc=87.7833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 6/20 train=0.32934 val=0.34149 acc=87.7667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 7/20 train=0.32283 val=0.31754 acc=88.6000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 8/20 train=0.31194 val=0.30557 acc=88.4667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 9/20 train=0.29921 val=0.31346 acc=88.3000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 10/20 train=0.29712 val=0.29382 acc=89.1833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 11/20 train=0.28368 val=0.30838 acc=88.5833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 12/20 train=0.26966 val=0.29139 acc=89.0000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 13/20 train=0.25915 val=0.28774 acc=89.3167%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 14/20 train=0.25352 val=0.29464 acc=89.0667%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 15/20 train=0.24317 val=0.29278 acc=89.2000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 16/20 train=0.24076 val=0.28700 acc=89.7500%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 17/20 train=0.23656 val=0.30030 acc=88.9000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 18/20 train=0.23387 val=0.30390 acc=88.9833%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 19/20 train=0.23144 val=0.27453 acc=89.6000%
+[epoch] e2_fashionmnist_b512_k1_g1024_seed1236 20/20 train=0.22101 val=0.29256 acc=89.4000%
+[final] e2_fashionmnist_b512_k1_g1024_seed1236 update=5.753ms throughput=177986.2 sync=19.37% test=88.0100%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 1/20 train=0.58911 val=0.48088 acc=82.0333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 2/20 train=0.45351 val=0.40226 acc=85.0167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 3/20 train=0.42510 val=0.37188 acc=86.1500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 4/20 train=0.40091 val=0.38652 acc=85.5000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 5/20 train=0.37643 val=0.41228 acc=85.8667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 6/20 train=0.35541 val=0.39130 acc=85.5833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 7/20 train=0.34109 val=0.36354 acc=87.0667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 8/20 train=0.33204 val=0.35561 acc=87.4333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 9/20 train=0.32531 val=0.36202 acc=85.6833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 10/20 train=0.31443 val=0.37096 acc=87.0667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 11/20 train=0.31113 val=0.38858 acc=87.1333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 12/20 train=0.30459 val=0.36617 acc=87.3333%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 13/20 train=0.29959 val=0.33654 acc=87.9000%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 14/20 train=0.29026 val=0.36028 acc=87.8500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 15/20 train=0.28743 val=0.33952 acc=87.9667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 16/20 train=0.28231 val=0.34949 acc=88.0500%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 17/20 train=0.27637 val=0.34620 acc=88.2167%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 18/20 train=0.27012 val=0.35665 acc=87.9833%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 19/20 train=0.27072 val=0.35972 acc=87.6667%
+[epoch] e2_fashionmnist_b32_k1_g64_seed1236 20/20 train=0.26082 val=0.34340 acc=88.4833%
+[final] e2_fashionmnist_b32_k1_g64_seed1236 update=4.838ms throughput=13229.8 sync=15.42% test=87.7200%
+W1117 00:42:15.748000 846939 .venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py:174] Terminating process 853336 via signal SIGTERM
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E2/run.py", line 110, in <module>
+    main()
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E2/run.py", line 106, in main
+    run(configs,args.output_dir.resolve(),args.data_root,args.seed,args.batch,list_only=args.list)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E2/run.py", line 93, in run
+    mp.spawn(train_worker,args=(port,config,b,s,folder.resolve(),data_root.resolve()),nprocs=2,join=True)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 349, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 305, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 220, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 89, in _wrap
+    fn(i, *args)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E2/train.py", line 167, in train_worker
+    initialize(rank, config.world_size, port, config.host_threads)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E2/distributed.py", line 36, in initialize
+    dist.init_process_group("nccl", init_method=f"tcp://127.0.0.1:{port}", rank=rank,
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 97, in wrapper
+    func_return = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 2714, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/distributed/rendezvous.py", line 248, in _tcp_rendezvous_handler
+    store = _create_c10d_store(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/distributed/rendezvous.py", line 215, in _create_c10d_store
+    return TCPStore(
+           ^^^^^^^^^
+torch.distributed.DistNetworkError: The server socket has failed to listen on any local network address. port: 45227, useIpv6: false, code: -98, name: EADDRINUSE, message: address already in use
+
+
+[driver] /home/ycping/project/大数据/项目/d1-gradient-sync/.venv/bin/python -m E2.run --resume
+E2/mnist: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/mnist: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/fashionmnist: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1234, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1235, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=128, k=1, global_batch=256, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=256, k=1, global_batch=512, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=512, k=1, global_batch=1024, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=32, k=1, global_batch=64, epochs=20
+E2/cifar10: seed=1236, GPUs=2, micro_batch=64, k=1, global_batch=128, epochs=20
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 1/20 train=0.59235 val=0.41323 acc=84.6833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 2/20 train=0.40650 val=0.35320 acc=87.1000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 3/20 train=0.37038 val=0.34556 acc=87.2333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 4/20 train=0.33569 val=0.33885 acc=87.6500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 5/20 train=0.32670 val=0.36019 acc=86.0833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 6/20 train=0.31052 val=0.33033 acc=87.7167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 7/20 train=0.29329 val=0.31506 acc=88.3333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 8/20 train=0.27890 val=0.29528 acc=89.1333%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 9/20 train=0.27060 val=0.32372 acc=87.8667%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 10/20 train=0.26035 val=0.32041 acc=88.3500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 11/20 train=0.25309 val=0.30766 acc=88.6000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 12/20 train=0.24884 val=0.28669 acc=89.7500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 13/20 train=0.23432 val=0.28920 acc=89.5500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 14/20 train=0.23209 val=0.31991 acc=89.3167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 15/20 train=0.22375 val=0.28981 acc=89.4167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 16/20 train=0.21859 val=0.30937 acc=89.0833%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 17/20 train=0.21342 val=0.29957 acc=89.4500%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 18/20 train=0.20282 val=0.30099 acc=89.3000%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 19/20 train=0.20324 val=0.29769 acc=89.6167%
+[epoch] e2_fashionmnist_b64_k1_g128_seed1236 20/20 train=0.19549 val=0.33207 acc=89.1333%
+[final] e2_fashionmnist_b64_k1_g128_seed1236 update=5.131ms throughput=24946.5 sync=15.14% test=88.4000%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b32_k1_g64_seed1234 1/20 train=1.98647 val=1.95440 acc=28.5000%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 2/20 train=1.94357 val=1.98039 acc=27.2600%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 3/20 train=1.88673 val=1.88322 acc=29.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 4/20 train=1.86522 val=1.87073 acc=31.4200%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 5/20 train=1.82940 val=1.84460 acc=34.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 6/20 train=1.81711 val=1.84737 acc=33.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 7/20 train=1.84672 val=1.83125 acc=35.1200%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 8/20 train=1.84462 val=1.78005 acc=35.2400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 9/20 train=1.83283 val=1.88945 acc=32.1000%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 10/20 train=1.82112 val=1.86910 acc=31.7400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 11/20 train=1.78880 val=1.77009 acc=35.1000%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 12/20 train=1.77396 val=1.85921 acc=32.2600%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 13/20 train=1.76852 val=1.84778 acc=34.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 14/20 train=1.77296 val=1.84215 acc=35.1200%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 15/20 train=1.76282 val=1.83313 acc=34.9000%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 16/20 train=1.76834 val=1.77334 acc=37.2800%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 17/20 train=1.74357 val=1.79677 acc=36.7000%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 18/20 train=1.74601 val=1.79727 acc=34.5200%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 19/20 train=1.72692 val=1.76508 acc=38.0400%
+[epoch] e2_cifar10_b32_k1_g64_seed1234 20/20 train=1.77245 val=1.85646 acc=33.4600%
+[final] e2_cifar10_b32_k1_g64_seed1234 update=4.204ms throughput=15221.9 sync=32.70% test=34.1800%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b64_k1_g128_seed1234 1/20 train=1.90173 val=1.85945 acc=33.1400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 2/20 train=1.75959 val=1.77639 acc=36.1800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 3/20 train=1.70295 val=1.67513 acc=40.3400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 4/20 train=1.66273 val=1.65668 acc=40.9800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 5/20 train=1.61936 val=1.56215 acc=44.0400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 6/20 train=1.59216 val=1.56993 acc=43.9200%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 7/20 train=1.56401 val=1.60056 acc=43.3400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 8/20 train=1.54496 val=1.60723 acc=42.6800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 9/20 train=1.52894 val=1.55498 acc=44.2800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 10/20 train=1.50647 val=1.54788 acc=43.6600%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 11/20 train=1.48275 val=1.55954 acc=45.2600%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 12/20 train=1.47623 val=1.54878 acc=44.8800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 13/20 train=1.45688 val=1.60229 acc=43.7000%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 14/20 train=1.43432 val=1.52308 acc=47.3800%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 15/20 train=1.42254 val=1.56042 acc=45.2600%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 16/20 train=1.41791 val=1.51080 acc=45.9400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 17/20 train=1.40216 val=1.53547 acc=46.5000%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 18/20 train=1.37384 val=1.54110 acc=45.9200%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 19/20 train=1.34379 val=1.52080 acc=47.2400%
+[epoch] e2_cifar10_b64_k1_g128_seed1234 20/20 train=1.34154 val=1.51519 acc=46.7200%
+[final] e2_cifar10_b64_k1_g128_seed1234 update=7.787ms throughput=16437.2 sync=23.31% test=46.0600%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b128_k1_g256_seed1234 1/20 train=1.91048 val=1.73249 acc=38.4200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 2/20 train=1.72771 val=1.65874 acc=40.8400%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 3/20 train=1.64545 val=1.62301 acc=42.2200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 4/20 train=1.61139 val=1.61008 acc=43.0000%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 5/20 train=1.54606 val=1.58908 acc=43.6200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 6/20 train=1.51827 val=1.50039 acc=47.4800%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 7/20 train=1.47604 val=1.50222 acc=46.7200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 8/20 train=1.44337 val=1.56502 acc=44.9600%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 9/20 train=1.42939 val=1.49074 acc=46.5800%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 10/20 train=1.39423 val=1.45613 acc=48.5600%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 11/20 train=1.36215 val=1.44609 acc=48.2600%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 12/20 train=1.33480 val=1.42211 acc=49.8200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 13/20 train=1.31647 val=1.51894 acc=46.4200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 14/20 train=1.29968 val=1.44722 acc=48.9000%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 15/20 train=1.26846 val=1.45891 acc=49.6400%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 16/20 train=1.24859 val=1.40655 acc=50.5200%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 17/20 train=1.21997 val=1.39326 acc=51.1800%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 18/20 train=1.21614 val=1.41651 acc=50.8000%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 19/20 train=1.18487 val=1.44911 acc=49.9800%
+[epoch] e2_cifar10_b128_k1_g256_seed1234 20/20 train=1.16243 val=1.42450 acc=50.8200%
+[final] e2_cifar10_b128_k1_g256_seed1234 update=9.200ms throughput=27826.7 sync=19.75% test=50.3400%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b256_k1_g512_seed1234 1/20 train=1.97869 val=1.75355 acc=37.1600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 2/20 train=1.74499 val=1.67736 acc=40.4400%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 3/20 train=1.64981 val=1.60775 acc=42.4200%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 4/20 train=1.59502 val=1.60102 acc=43.8200%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 5/20 train=1.54877 val=1.53623 acc=45.6000%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 6/20 train=1.50946 val=1.51050 acc=45.9000%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 7/20 train=1.47203 val=1.52776 acc=46.0600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 8/20 train=1.46054 val=1.46565 acc=48.1600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 9/20 train=1.43349 val=1.47606 acc=48.2600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 10/20 train=1.38297 val=1.41340 acc=50.0000%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 11/20 train=1.36773 val=1.40329 acc=49.7600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 12/20 train=1.33822 val=1.43428 acc=48.5000%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 13/20 train=1.32008 val=1.44957 acc=48.6600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 14/20 train=1.30938 val=1.43752 acc=49.5600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 15/20 train=1.28014 val=1.42540 acc=49.8200%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 16/20 train=1.26946 val=1.36631 acc=51.7000%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 17/20 train=1.23429 val=1.38057 acc=52.2800%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 18/20 train=1.20876 val=1.41983 acc=50.4600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 19/20 train=1.19504 val=1.41706 acc=50.8600%
+[epoch] e2_cifar10_b256_k1_g512_seed1234 20/20 train=1.17864 val=1.38317 acc=52.0200%
+[final] e2_cifar10_b256_k1_g512_seed1234 update=12.634ms throughput=40525.9 sync=16.04% test=51.0900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 1/20 train=2.08412 val=1.90052 acc=32.0200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 2/20 train=1.83118 val=1.74999 acc=36.5000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 3/20 train=1.71863 val=1.68153 acc=40.3400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 4/20 train=1.66273 val=1.67092 acc=40.4200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 5/20 train=1.60343 val=1.61752 acc=43.0200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 6/20 train=1.56172 val=1.53903 acc=45.2400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 7/20 train=1.55438 val=1.59641 acc=42.4200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 8/20 train=1.51681 val=1.50243 acc=47.1200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 9/20 train=1.47961 val=1.48007 acc=48.4000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 10/20 train=1.47610 val=1.50142 acc=46.6400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 11/20 train=1.45171 val=1.48463 acc=46.1000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 12/20 train=1.42430 val=1.46691 acc=47.6200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 13/20 train=1.40327 val=1.58954 acc=43.7400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 14/20 train=1.38129 val=1.45445 acc=48.0600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 15/20 train=1.35174 val=1.46085 acc=48.3200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 16/20 train=1.33192 val=1.42377 acc=49.8600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 17/20 train=1.33078 val=1.40428 acc=50.3600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 18/20 train=1.31183 val=1.41624 acc=49.3200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 19/20 train=1.27511 val=1.38217 acc=51.7600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1234 20/20 train=1.27554 val=1.37409 acc=51.1000%
+[final] e2_cifar10_b512_k1_g1024_seed1234 update=7.993ms throughput=128108.9 sync=20.90% test=51.0000%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b64_k1_g128_seed1235 1/20 train=1.89968 val=1.81011 acc=33.1000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 2/20 train=1.76094 val=1.72259 acc=38.1000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 3/20 train=1.71062 val=1.69897 acc=38.9600%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 4/20 train=1.64947 val=1.66639 acc=40.0200%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 5/20 train=1.62350 val=1.58337 acc=42.2400%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 6/20 train=1.58817 val=1.60274 acc=43.3400%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 7/20 train=1.57782 val=1.58342 acc=43.0000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 8/20 train=1.54972 val=1.61983 acc=41.7000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 9/20 train=1.51491 val=1.53172 acc=44.6600%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 10/20 train=1.49746 val=1.57400 acc=43.1600%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 11/20 train=1.49204 val=1.54006 acc=44.6000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 12/20 train=1.46842 val=1.58627 acc=43.4800%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 13/20 train=1.46128 val=1.60998 acc=43.0400%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 14/20 train=1.45267 val=1.51160 acc=46.7600%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 15/20 train=1.42773 val=1.53952 acc=45.3400%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 16/20 train=1.42737 val=1.51400 acc=46.6200%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 17/20 train=1.41092 val=1.55711 acc=46.1200%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 18/20 train=1.38056 val=1.51040 acc=48.2000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 19/20 train=1.36708 val=1.51496 acc=47.0000%
+[epoch] e2_cifar10_b64_k1_g128_seed1235 20/20 train=1.35692 val=1.54199 acc=46.4000%
+[final] e2_cifar10_b64_k1_g128_seed1235 update=3.479ms throughput=36793.9 sync=34.72% test=45.7000%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b128_k1_g256_seed1235 1/20 train=1.91594 val=1.76535 acc=36.1200%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 2/20 train=1.70984 val=1.65661 acc=40.6200%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 3/20 train=1.64712 val=1.62155 acc=42.0400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 4/20 train=1.57536 val=1.59388 acc=43.1000%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 5/20 train=1.55651 val=1.53382 acc=45.8800%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 6/20 train=1.49997 val=1.47887 acc=48.0200%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 7/20 train=1.48930 val=1.57476 acc=44.1800%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 8/20 train=1.44570 val=1.49897 acc=46.9600%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 9/20 train=1.42138 val=1.50330 acc=46.9400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 10/20 train=1.40257 val=1.45690 acc=48.2400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 11/20 train=1.37704 val=1.46728 acc=47.5200%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 12/20 train=1.34357 val=1.46968 acc=47.7600%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 13/20 train=1.32326 val=1.43054 acc=49.7400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 14/20 train=1.30390 val=1.40206 acc=50.5200%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 15/20 train=1.28770 val=1.42873 acc=49.7400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 16/20 train=1.25894 val=1.42832 acc=50.1600%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 17/20 train=1.24590 val=1.47917 acc=47.8400%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 18/20 train=1.22652 val=1.42412 acc=50.1600%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 19/20 train=1.19199 val=1.38542 acc=51.4600%
+[epoch] e2_cifar10_b128_k1_g256_seed1235 20/20 train=1.16301 val=1.38276 acc=51.7400%
+[final] e2_cifar10_b128_k1_g256_seed1235 update=3.999ms throughput=64013.6 sync=31.80% test=51.1600%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b256_k1_g512_seed1235 1/20 train=1.98977 val=1.80246 acc=34.9400%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 2/20 train=1.75176 val=1.69155 acc=40.4800%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 3/20 train=1.66160 val=1.68328 acc=39.9400%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 4/20 train=1.59877 val=1.60224 acc=43.3000%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 5/20 train=1.55803 val=1.52637 acc=45.4800%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 6/20 train=1.50939 val=1.53137 acc=46.6800%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 7/20 train=1.48396 val=1.49477 acc=46.7600%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 8/20 train=1.44749 val=1.47182 acc=48.1600%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 9/20 train=1.40381 val=1.44737 acc=49.3800%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 10/20 train=1.38192 val=1.42335 acc=48.9600%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 11/20 train=1.36202 val=1.43354 acc=49.1400%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 12/20 train=1.34189 val=1.44935 acc=49.3400%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 13/20 train=1.30322 val=1.43054 acc=49.1000%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 14/20 train=1.30248 val=1.40964 acc=50.5600%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 15/20 train=1.28101 val=1.39463 acc=50.4600%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 16/20 train=1.26097 val=1.36633 acc=51.0200%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 17/20 train=1.22881 val=1.38476 acc=51.5000%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 18/20 train=1.20792 val=1.38270 acc=50.0800%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 19/20 train=1.18965 val=1.33777 acc=53.8000%
+[epoch] e2_cifar10_b256_k1_g512_seed1235 20/20 train=1.17145 val=1.35637 acc=52.9200%
+[final] e2_cifar10_b256_k1_g512_seed1235 update=5.476ms throughput=93499.6 sync=26.18% test=53.2100%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 1/20 train=2.08308 val=1.89033 acc=32.5400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 2/20 train=1.84099 val=1.75481 acc=37.4600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 3/20 train=1.72424 val=1.68000 acc=40.2200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 4/20 train=1.66140 val=1.61614 acc=43.2600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 5/20 train=1.61745 val=1.58594 acc=43.3800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 6/20 train=1.58665 val=1.56834 acc=44.1600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 7/20 train=1.53453 val=1.51663 acc=46.0600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 8/20 train=1.52323 val=1.50798 acc=47.0600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 9/20 train=1.51606 val=1.56634 acc=43.9800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 10/20 train=1.46363 val=1.47047 acc=47.9400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 11/20 train=1.46095 val=1.46589 acc=48.6800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 12/20 train=1.40043 val=1.48671 acc=46.9400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 13/20 train=1.37796 val=1.42827 acc=49.1800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 14/20 train=1.35997 val=1.40892 acc=50.4600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 15/20 train=1.34649 val=1.41816 acc=49.6800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 16/20 train=1.34961 val=1.47551 acc=48.5400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 17/20 train=1.33913 val=1.39696 acc=49.9400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 18/20 train=1.28476 val=1.39038 acc=51.0400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 19/20 train=1.30224 val=1.48392 acc=47.0200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1235 20/20 train=1.27930 val=1.37249 acc=51.1000%
+[final] e2_cifar10_b512_k1_g1024_seed1235 update=13.222ms throughput=77444.6 sync=16.18% test=50.2800%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b32_k1_g64_seed1235 1/20 train=1.95790 val=1.87759 acc=32.0600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 2/20 train=1.89339 val=1.89434 acc=28.4600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 3/20 train=1.85567 val=1.90745 acc=31.4600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 4/20 train=1.82631 val=1.85288 acc=33.3400%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 5/20 train=1.80162 val=1.85031 acc=32.6200%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 6/20 train=1.80261 val=1.83725 acc=33.5000%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 7/20 train=1.79414 val=1.84885 acc=34.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 8/20 train=1.79493 val=1.82381 acc=34.7800%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 9/20 train=1.81612 val=1.78370 acc=34.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 10/20 train=1.80653 val=1.76464 acc=37.1200%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 11/20 train=1.78500 val=1.92005 acc=30.5200%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 12/20 train=1.79052 val=1.80068 acc=34.9400%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 13/20 train=1.79313 val=1.86262 acc=32.9400%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 14/20 train=1.80097 val=1.80059 acc=35.9200%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 15/20 train=1.82216 val=1.79838 acc=36.1600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 16/20 train=1.76679 val=1.84190 acc=34.2600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 17/20 train=1.76377 val=1.76573 acc=35.9200%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 18/20 train=1.77765 val=1.73821 acc=37.3600%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 19/20 train=1.77640 val=1.78217 acc=36.6000%
+[epoch] e2_cifar10_b32_k1_g64_seed1235 20/20 train=1.75868 val=1.81197 acc=34.0400%
+[final] e2_cifar10_b32_k1_g64_seed1235 update=6.567ms throughput=9746.1 sync=27.13% test=33.1800%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b128_k1_g256_seed1236 1/20 train=1.90677 val=1.75778 acc=35.9800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 2/20 train=1.72950 val=1.69182 acc=40.5800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 3/20 train=1.63452 val=1.65923 acc=41.6200%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 4/20 train=1.60275 val=1.56427 acc=44.1800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 5/20 train=1.54395 val=1.51656 acc=45.7400%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 6/20 train=1.51262 val=1.59898 acc=42.6400%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 7/20 train=1.48740 val=1.55101 acc=45.0600%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 8/20 train=1.45135 val=1.47096 acc=47.6200%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 9/20 train=1.43167 val=1.45904 acc=48.3200%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 10/20 train=1.40506 val=1.46636 acc=47.2600%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 11/20 train=1.38219 val=1.54036 acc=45.6400%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 12/20 train=1.34268 val=1.43931 acc=49.2800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 13/20 train=1.31916 val=1.45031 acc=48.4000%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 14/20 train=1.30871 val=1.41540 acc=50.8200%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 15/20 train=1.26825 val=1.40534 acc=50.8600%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 16/20 train=1.25407 val=1.43902 acc=49.1800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 17/20 train=1.23475 val=1.39809 acc=50.4400%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 18/20 train=1.21153 val=1.43058 acc=49.8800%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 19/20 train=1.17671 val=1.40480 acc=51.1200%
+[epoch] e2_cifar10_b128_k1_g256_seed1236 20/20 train=1.15485 val=1.38520 acc=51.7600%
+[final] e2_cifar10_b128_k1_g256_seed1236 update=8.826ms throughput=29006.8 sync=20.67% test=51.4500%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b256_k1_g512_seed1236 1/20 train=1.97672 val=1.81579 acc=35.2400%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 2/20 train=1.73521 val=1.73328 acc=38.9800%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 3/20 train=1.65942 val=1.60369 acc=42.9200%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 4/20 train=1.59036 val=1.55399 acc=44.4600%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 5/20 train=1.54289 val=1.54058 acc=45.1600%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 6/20 train=1.51708 val=1.57212 acc=43.4000%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 7/20 train=1.47685 val=1.50061 acc=46.4200%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 8/20 train=1.42338 val=1.43657 acc=49.1400%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 9/20 train=1.41034 val=1.41733 acc=48.4000%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 10/20 train=1.37765 val=1.42522 acc=49.3600%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 11/20 train=1.37372 val=1.52548 acc=45.1600%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 12/20 train=1.34644 val=1.37845 acc=51.3000%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 13/20 train=1.31855 val=1.45440 acc=48.5400%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 14/20 train=1.31377 val=1.39822 acc=50.6200%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 15/20 train=1.28925 val=1.38754 acc=51.2000%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 16/20 train=1.25621 val=1.40069 acc=50.9200%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 17/20 train=1.23991 val=1.37245 acc=50.8400%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 18/20 train=1.20214 val=1.35121 acc=53.3000%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 19/20 train=1.19892 val=1.35994 acc=52.3400%
+[epoch] e2_cifar10_b256_k1_g512_seed1236 20/20 train=1.16361 val=1.41181 acc=51.0000%
+[final] e2_cifar10_b256_k1_g512_seed1236 update=9.074ms throughput=56425.6 sync=23.85% test=51.4600%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 1/20 train=2.08448 val=1.89811 acc=31.9000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 2/20 train=1.82831 val=1.74734 acc=37.5200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 3/20 train=1.70934 val=1.69301 acc=40.1200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 4/20 train=1.64924 val=1.64249 acc=41.5800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 5/20 train=1.61504 val=1.59325 acc=43.4000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 6/20 train=1.58338 val=1.54532 acc=45.2600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 7/20 train=1.54336 val=1.57493 acc=45.7200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 8/20 train=1.51692 val=1.48165 acc=47.5200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 9/20 train=1.46991 val=1.48155 acc=48.0200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 10/20 train=1.48199 val=1.45919 acc=48.7800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 11/20 train=1.41523 val=1.44702 acc=48.8000%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 12/20 train=1.40791 val=1.46384 acc=47.7200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 13/20 train=1.41199 val=1.44775 acc=47.9200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 14/20 train=1.37015 val=1.44272 acc=48.2600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 15/20 train=1.37762 val=1.44827 acc=48.7800%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 16/20 train=1.32745 val=1.43923 acc=48.9400%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 17/20 train=1.30971 val=1.43114 acc=49.1200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 18/20 train=1.30859 val=1.44564 acc=47.7600%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 19/20 train=1.28489 val=1.40342 acc=50.6200%
+[epoch] e2_cifar10_b512_k1_g1024_seed1236 20/20 train=1.27696 val=1.44569 acc=48.4600%
+[final] e2_cifar10_b512_k1_g1024_seed1236 update=7.817ms throughput=130992.1 sync=20.89% test=48.3500%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b32_k1_g64_seed1236 1/20 train=1.98261 val=1.88082 acc=28.3400%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 2/20 train=1.93181 val=1.99255 acc=26.5200%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 3/20 train=1.91599 val=1.90600 acc=29.4800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 4/20 train=1.91294 val=1.85695 acc=28.5400%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 5/20 train=1.90639 val=1.96863 acc=28.1800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 6/20 train=1.84850 val=1.88952 acc=32.7000%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 7/20 train=1.82868 val=1.97843 acc=28.2400%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 8/20 train=1.80691 val=1.87479 acc=32.7600%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 9/20 train=1.83485 val=1.78202 acc=35.4800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 10/20 train=1.82184 val=1.88460 acc=31.3000%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 11/20 train=1.80840 val=1.82980 acc=32.5600%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 12/20 train=1.82686 val=1.84333 acc=33.2000%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 13/20 train=1.79784 val=1.84415 acc=33.7800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 14/20 train=1.78492 val=1.92829 acc=32.2800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 15/20 train=1.80036 val=1.82623 acc=33.8200%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 16/20 train=1.78965 val=1.73069 acc=36.5000%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 17/20 train=1.76984 val=1.80157 acc=36.5800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 18/20 train=1.75520 val=1.88613 acc=31.8400%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 19/20 train=1.73076 val=1.75061 acc=38.4800%
+[epoch] e2_cifar10_b32_k1_g64_seed1236 20/20 train=1.76337 val=1.74809 acc=36.7600%
+[final] e2_cifar10_b32_k1_g64_seed1236 update=5.716ms throughput=11195.9 sync=29.07% test=37.2900%
+NCCL version 2.30.7+cuda13.3
+[epoch] e2_cifar10_b64_k1_g128_seed1236 1/20 train=1.90500 val=1.82118 acc=32.6800%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 2/20 train=1.77114 val=1.75262 acc=35.8000%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 3/20 train=1.70419 val=1.64550 acc=40.1800%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 4/20 train=1.65981 val=1.65905 acc=40.7800%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 5/20 train=1.61955 val=1.60257 acc=43.0600%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 6/20 train=1.61409 val=1.64752 acc=41.1800%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 7/20 train=1.58795 val=1.59719 acc=43.0000%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 8/20 train=1.54785 val=1.59143 acc=43.3400%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 9/20 train=1.53194 val=1.55645 acc=44.6400%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 10/20 train=1.51325 val=1.57298 acc=43.5600%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 11/20 train=1.48596 val=1.56154 acc=43.5800%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 12/20 train=1.47370 val=1.52529 acc=45.7000%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 13/20 train=1.45555 val=1.51791 acc=47.2200%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 14/20 train=1.44016 val=1.57482 acc=44.0400%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 15/20 train=1.42435 val=1.52549 acc=46.3600%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 16/20 train=1.41887 val=1.51474 acc=47.7000%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 17/20 train=1.37700 val=1.48604 acc=48.6200%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 18/20 train=1.37479 val=1.55860 acc=44.9400%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 19/20 train=1.38691 val=1.56872 acc=45.9200%
+[epoch] e2_cifar10_b64_k1_g128_seed1236 20/20 train=1.38119 val=1.55216 acc=44.9000%
+[final] e2_cifar10_b64_k1_g128_seed1236 update=7.920ms throughput=16161.4 sync=24.66% test=44.9600%

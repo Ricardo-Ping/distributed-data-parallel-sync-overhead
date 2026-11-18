@@ -1,0 +1,10 @@
+dataset: fashionmnist
+learning_rate: 0.1
+epochs: 20
+local_batch: 128
+models: [S, M, L]
+seeds: [1234, 1235, 1236]
+world_sizes: [1, 2]
+warmup_steps: 10
+bucket_cap_mb: 128
+host_threads: 4

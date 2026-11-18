@@ -1,0 +1,828 @@
+{
+  "runs": 18,
+  "gpu_reevaluated": true,
+  "evaluations": [
+    {
+      "run_id": "e0_baseline_k1_ws1_mM_b256_r0",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws1_mM_b256_r0_epoch20.pt",
+      "sha256": "37b22f830408130399c46d64c0f6097d325bc01914ecf8feedd7cfa686b4b1fb",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06899463691711426,
+        "accuracy": 0.9833,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_k1_ws2_mM_b128_r0",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws2_mM_b128_r0_epoch20.pt",
+      "sha256": "b9d5122470b8c75cad522a2e74390df455bd966788bb865a518f3180a8ff5e3f",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06901921463012696,
+        "accuracy": 0.9832,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_k1_ws2_mM_b128_r1",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws2_mM_b128_r1_epoch20.pt",
+      "sha256": "d160ef4204b2eef8c97e1b8e9989c3f1ab5b8de44f83ab40314417b56950b593",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06888049774169921,
+        "accuracy": 0.9832,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_k1_ws1_mM_b256_r1",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws1_mM_b256_r1_epoch20.pt",
+      "sha256": "03154baecf799167d929c67f88148552c5ff0dc0fc96fac3e0110fe5050d06e6",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06805204925537109,
+        "accuracy": 0.9836,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_k1_ws1_mM_b256_r2",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws1_mM_b256_r2_epoch20.pt",
+      "sha256": "eeeba8b5e4389ff68f3372f1e59f184e4870aa2fae212657bc150c1145c89545",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06777287330627442,
+        "accuracy": 0.9823,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_k1_ws2_mM_b128_r2",
+      "checkpoint": "E0/results/mnist/checkpoints/e0_baseline_k1_ws2_mM_b128_r2_epoch20.pt",
+      "sha256": "ecad24836547a44469d4884f575563b7c73c5d6a9e4a6d23376c02773cfc2198",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.06760192260742187,
+        "accuracy": 0.9829,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws1_mM_b256_r0",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws1_mM_b256_r0_epoch20.pt",
+      "sha256": "dd45d1436126ede822281c813edcdd24bbdaa38ec2baa0bf2e006f59ad9f8f73",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.33154344482421877,
+        "accuracy": 0.8916,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws2_mM_b128_r0",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws2_mM_b128_r0_epoch20.pt",
+      "sha256": "08c1b3edde2c98640e6d7f972ac21e4e59c1f622048e93a5475e3cdb27c3bf8a",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.3315876708984375,
+        "accuracy": 0.8914,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws2_mM_b128_r1",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws2_mM_b128_r1_epoch20.pt",
+      "sha256": "5e0502d91a1698bee9d5544030c615d05f7e5c4cf2e8e62e162572ff04d78ab0",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.3410200866699219,
+        "accuracy": 0.8845,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws1_mM_b256_r1",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws1_mM_b256_r1_epoch20.pt",
+      "sha256": "214c8efbc94a408917bfb8ed12034595676e1ce7ad2dc22a940fd0bb75c6d098",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.3553863464355469,
+        "accuracy": 0.881,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws1_mM_b256_r2",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws1_mM_b256_r2_epoch20.pt",
+      "sha256": "629e5955ec1ea0bf2972f90996d03273baea872e0eccb11600f9d190e3fb412f",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.3536213134765625,
+        "accuracy": 0.8816,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_fashion_k1_ws2_mM_b128_r2",
+      "checkpoint": "E0/results/fashionmnist/checkpoints/e0_baseline_fashion_k1_ws2_mM_b128_r2_epoch20.pt",
+      "sha256": "64a684f5d3cb5b532188f84d33245500c6a2eab5aca305333e6bda19b18f66a2",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 0.3401016357421875,
+        "accuracy": 0.8868,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws1_mM_b256_r0",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws1_mM_b256_r0_epoch20.pt",
+      "sha256": "8da06089940402910d901f4a351bf428476701a47ecef2092314d147f9649468",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.413312451171875,
+        "accuracy": 0.5075,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws2_mM_b128_r0",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws2_mM_b128_r0_epoch20.pt",
+      "sha256": "b512ff6b0ddafd8c4d92197910eaefac106b49d7ac503374dbedea2bb701a6e3",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.4324184326171876,
+        "accuracy": 0.5034,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws2_mM_b128_r1",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws2_mM_b128_r1_epoch20.pt",
+      "sha256": "cdd9ef090df960969a05fb9af8459d21407f8ca9ead194175101df2c509cc746",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.38945732421875,
+        "accuracy": 0.5116,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws1_mM_b256_r1",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws1_mM_b256_r1_epoch20.pt",
+      "sha256": "b2deaa03511074db510d56164083eedd47514c7a6f905777140aedf37728f06b",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.415557177734375,
+        "accuracy": 0.5061,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws1_mM_b256_r2",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws1_mM_b256_r2_epoch20.pt",
+      "sha256": "840998196f2eec891d9c85f69d90d2a886d5a796fa6e7b0b0467c0f6a14de22e",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.41634013671875,
+        "accuracy": 0.5084,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e0_baseline_cifar_k1_ws2_mM_b128_r2",
+      "checkpoint": "E0/results/cifar10/checkpoints/e0_baseline_cifar_k1_ws2_mM_b128_r2_epoch20.pt",
+      "sha256": "b1c53cbcd1b5560b4f3dd72c9546cf32254c07f0a3be4a0eecc802a9fe6a2582",
+      "gpu_test": {
+        "samples": 10000,
+        "loss": 1.3916704833984375,
+        "accuracy": 0.5145,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    }
+  ],
+  "aggregation": "arithmetic mean across seeds 1234, 1235, 1236",
+  "dispersion": "sample standard deviation (ddof=1) and observed min-max; not confidence intervals",
+  "seed_statistics": [
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 87041.21705449239,
+      "std": 649.502178074139,
+      "min": 86291.67978020554,
+      "max": 87438.3124729539
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 2.9403737756714037,
+      "std": 0.02203552510911499,
+      "min": 2.926911137440756,
+      "max": 2.9658035545023687
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 0.00031169751700858963,
+      "std": 4.326773519904688e-06,
+      "min": 0.00030753053330678353,
+      "max": 0.00031616808954816036
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 0.0688932613796658,
+      "std": 0.0016546008870694606,
+      "min": 0.06713213094075521,
+      "max": 0.07041532389322917
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.9828888888888888,
+      "std": 0.00038490017945970814,
+      "min": 0.9826666666666667,
+      "max": 0.9833333333333333
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 0.06827318649291993,
+      "std": 0.0006401974996562752,
+      "min": 0.06777287330627442,
+      "max": 0.06899463691711426
+    },
+    {
+      "dataset": "mnist",
+      "ws": 1,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.9830666666666666,
+      "std": 0.0006806859285554357,
+      "min": 0.9823,
+      "max": 0.9836
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 79354.12447833772,
+      "std": 689.586158385481,
+      "min": 78622.81367608899,
+      "max": 79992.57550391853
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 3.2252523696682367,
+      "std": 0.0280767165034304,
+      "min": 3.1993490521326824,
+      "max": 3.255087914691944
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 0.6170947077409176,
+      "std": 0.007283017835892512,
+      "min": 0.6091938388625621,
+      "max": 0.6235400473933657
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.1913293401207022,
+      "std": 0.0008270891145923522,
+      "min": 0.19041180844474417,
+      "max": 0.19201762310659704
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 0.0003126264178261655,
+      "std": 7.145268249930618e-06,
+      "min": 0.000307794795009411,
+      "max": 0.0003208341567272631
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 0.0693838768005371,
+      "std": 0.0013553687328478818,
+      "min": 0.06782145563761394,
+      "max": 0.07024353790283203
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.983,
+      "std": 0.0005773502691896262,
+      "min": 0.9826666666666667,
+      "max": 0.9836666666666667
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 0.06850054499308268,
+      "std": 0.0007813144295300156,
+      "min": 0.06760192260742187,
+      "max": 0.06901921463012696
+    },
+    {
+      "dataset": "mnist",
+      "ws": 2,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.9831,
+      "std": 0.00017320508075686865,
+      "min": 0.9829,
+      "max": 0.9832
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 87361.20323053315,
+      "std": 248.489359635312,
+      "min": 87193.93918158145,
+      "max": 87646.7362587167
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 2.9295103475513398,
+      "std": 0.008319606297421931,
+      "min": 2.9199509478672847,
+      "max": 2.935114218009482
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 0.18471436453895804,
+      "std": 0.0033002934022276016,
+      "min": 0.18145565363212868,
+      "max": 0.18805472524077804
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 0.30269301011827254,
+      "std": 0.01625156767513771,
+      "min": 0.2841448059082031,
+      "max": 0.3144342041015625
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.8947222222222222,
+      "std": 0.0033096380019125428,
+      "min": 0.891,
+      "max": 0.8973333333333333
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 0.34685036824544274,
+      "std": 0.013285528359985768,
+      "min": 0.33154344482421877,
+      "max": 0.3553863464355469
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 1,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.8847333333333333,
+      "std": 0.005954270176380377,
+      "min": 0.881,
+      "max": 0.8916
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 79545.74827021791,
+      "std": 242.24099423528025,
+      "min": 79303.13690166634,
+      "max": 79787.61718344534
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 3.2173404423380703,
+      "std": 0.009797962680115358,
+      "min": 3.207567535545026,
+      "max": 3.22716327014217
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 0.6138289889415492,
+      "std": 0.005630621693018156,
+      "min": 0.6080177725118492,
+      "max": 0.6192597156398124
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.19079046637334826,
+      "std": 0.002078327259993968,
+      "min": 0.18898441669515878,
+      "max": 0.19306209729878332
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 0.18345860880613327,
+      "std": 0.004754058946135126,
+      "min": 0.17832419336725164,
+      "max": 0.18770790155287143
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 0.29285911729600694,
+      "std": 0.008533767540848327,
+      "min": 0.28348595174153646,
+      "max": 0.3001787618001302
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.8985555555555557,
+      "std": 0.006551787994580235,
+      "min": 0.891,
+      "max": 0.9026666666666666
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 0.3375697977701823,
+      "std": 0.005200987354234047,
+      "min": 0.3315876708984375,
+      "max": 0.3410200866699219
+    },
+    {
+      "dataset": "fashionmnist",
+      "ws": 2,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.8875666666666667,
+      "std": 0.003513308032799478,
+      "min": 0.8845,
+      "max": 0.8914
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 74245.45409415045,
+      "std": 1388.5713215302067,
+      "min": 73054.00566071141,
+      "max": 75770.4082543274
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 3.444535227272721,
+      "std": 0.06402213417411236,
+      "min": 3.374428409090902,
+      "max": 3.499901420454544
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 1.1543348730157923,
+      "std": 0.005021766623073315,
+      "min": 1.1487564851548937,
+      "max": 1.1584949541303846
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 1.4029235107421876,
+      "std": 0.013629475616759456,
+      "min": 1.3902998046875,
+      "max": 1.4173744140625
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.5146000000000001,
+      "std": 0.004190465367951392,
+      "min": 0.511,
+      "max": 0.5192
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 1.415069921875,
+      "std": 0.0015715545320033417,
+      "min": 1.413312451171875,
+      "max": 1.41634013671875
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 1,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.5073333333333333,
+      "std": 0.0011590225767142298,
+      "min": 0.5061,
+      "max": 0.5084
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "train_throughput",
+      "n": 3,
+      "mean": 59691.76315123523,
+      "std": 306.7356316474959,
+      "min": 59338.28320105498,
+      "max": 59887.88588509743
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "avg_update_ms",
+      "n": 3,
+      "mean": 4.283444128787884,
+      "std": 0.02207548899029465,
+      "min": 4.269341193181814,
+      "max": 4.308884659090919
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "avg_sync_ms",
+      "n": 3,
+      "mean": 1.2814732954545447,
+      "std": 0.007861920346335564,
+      "min": 1.2727619318181838,
+      "max": 1.2880411931818174
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "sync_share",
+      "n": 3,
+      "mean": 0.2991699226130002,
+      "std": 0.0013838476051660192,
+      "min": 0.29792373426591545,
+      "max": 0.30065921257677497
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "train_loss",
+      "n": 3,
+      "mean": 1.1600970278845892,
+      "std": 0.004555428635965539,
+      "min": 1.154847422112359,
+      "max": 1.163010204633077
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "last_val_loss",
+      "n": 3,
+      "mean": 1.3974849446614581,
+      "std": 0.02342570907097368,
+      "min": 1.382755859375,
+      "max": 1.42449775390625
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "last_val_acc",
+      "n": 3,
+      "mean": 0.5144,
+      "std": 0.005370288632839006,
+      "min": 0.5082,
+      "max": 0.5176
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "test_loss",
+      "n": 3,
+      "mean": 1.4045154134114586,
+      "std": 0.024190047105889022,
+      "min": 1.38945732421875,
+      "max": 1.4324184326171876
+    },
+    {
+      "dataset": "cifar10",
+      "ws": 2,
+      "metric": "test_acc",
+      "n": 3,
+      "mean": 0.5098333333333334,
+      "std": 0.005757024694521771,
+      "min": 0.5034,
+      "max": 0.5145
+    }
+  ],
+  "summary": [
+    {
+      "dataset": "mnist",
+      "single_gpu_samples_s": 87041.21705449239,
+      "dual_gpu_samples_s": 79354.12447833772,
+      "dual_single_ratio": 0.9116844543735855,
+      "single_test_acc": 0.9830666666666666,
+      "dual_test_acc": 0.9831
+    },
+    {
+      "dataset": "fashionmnist",
+      "single_gpu_samples_s": 87361.20323053315,
+      "dual_gpu_samples_s": 79545.74827021791,
+      "dual_single_ratio": 0.9105386067120501,
+      "single_test_acc": 0.8847333333333333,
+      "dual_test_acc": 0.8875666666666667
+    },
+    {
+      "dataset": "cifar10",
+      "single_gpu_samples_s": 74245.45409415045,
+      "dual_gpu_samples_s": 59691.76315123523,
+      "dual_single_ratio": 0.8039786931000553,
+      "single_test_acc": 0.5073333333333333,
+      "dual_test_acc": 0.5098333333333334
+    }
+  ]
+}

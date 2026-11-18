@@ -1,0 +1,79 @@
+[
+  {
+    "figure": "F1_calls_payload.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "2c87eab591a86069ff8e696d44d151b869e6dc1258c464f5272a491929fdb384",
+    "sha256": "c6c8d66637174e897ae22545ca90cab977957d32b17e68497ea8287ae5487328",
+    "curves": 48,
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F2_throughput_update.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "2c87eab591a86069ff8e696d44d151b869e6dc1258c464f5272a491929fdb384",
+    "sha256": "606768517a5a61a93549a64b26fe3adf282ca2fead8a7b289f80040d90abc3c6",
+    "curves": 48,
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F3_sync_wait.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "2c87eab591a86069ff8e696d44d151b869e6dc1258c464f5272a491929fdb384",
+    "sha256": "aa10f0c9cf21849a668abc076a6f9df63967c4fc49fc957f4b86918c681ea168",
+    "curves": 60,
+    "points": 300,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F4_drift_quality.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "2c87eab591a86069ff8e696d44d151b869e6dc1258c464f5272a491929fdb384",
+    "sha256": "89b779a8e3e49eb2956bd1d3e4699430f03a4d3243c99184f5054fdc14cf1803",
+    "curves": 72,
+    "points": 360,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F5_validation.png",
+    "source": "convergence_plot.csv",
+    "source_sha256": "0b32eba7f9b1a9b878e23f7427e05c48654ca19e00071c8faf9f95dd405b032b",
+    "sha256": "512dac697043b0bac5e3859a6f2133aa77554709ef67d44b4e447a0e46bcc824",
+    "curves": 240,
+    "points": 4800,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F6_time_to_target.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "2c87eab591a86069ff8e696d44d151b869e6dc1258c464f5272a491929fdb384",
+    "sha256": "b3a6e751bdec90cd5dd3abfd36eabbfc3d6b36ee04237773eb8eb4759d4338d7",
+    "curves": 24,
+    "points": 120,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F7_gpu_activity.png",
+    "source": "profile_plot.csv",
+    "source_sha256": "36552316980fa1eea7294be04748a1a16353a62172532c4dd4ae4ff4e7ab900d",
+    "sha256": "8eac720d5418a133c794d3660bd077c18bd3141f86dc105e945860e025c3f836",
+    "curves": 24,
+    "points": 120,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  }
+]

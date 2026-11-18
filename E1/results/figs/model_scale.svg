@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="285" viewBox="0 0 1120 285" role="img" aria-labelledby="title desc">
+  <title id="title">E1：相同 MLP 架构，三档隐藏层宽度</title>
+  <desc id="desc">所有模型使用两个带ReLU的隐藏层。S为256和128维，M为1024和512维，L为4096和2048维。每卡batch128，输入维数、深度和激活函数固定。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#475569"/></marker>
+    <style>
+      text { font-family: 'Noto Sans CJK SC', 'Noto Sans CJK JP', sans-serif; fill: #16253a; text-anchor: middle; }
+      .layer { fill: #e9f1fa; stroke: #2563a6; stroke-width: 1.6; rx: 9; }
+      .activation { fill: #eef7f1; stroke: #268467; stroke-width: 1.6; rx: 9; }
+      .arrow { stroke: #475569; stroke-width: 1.8; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1120" height="285" fill="white"/>
+  <text x="560" y="28" font-size="20" font-weight="bold">E1：固定架构，仅改变隐藏层宽度</text>
+  <rect class="layer" x="25" y="60" width="160" height="70"/>
+  <text x="105" y="87" font-size="18">Flatten</text><text x="105" y="113" font-size="14">d = 784 / 3072</text>
+  <line class="arrow" x1="190" y1="95" x2="218" y2="95"/>
+  <rect class="layer" x="225" y="60" width="155" height="70"/>
+  <text x="302" y="87" font-size="18">Linear</text><text x="302" y="113" font-size="14">d → h1</text>
+  <line class="arrow" x1="385" y1="95" x2="413" y2="95"/>
+  <rect class="activation" x="420" y="60" width="125" height="70"/><text x="482" y="102" font-size="18">ReLU</text>
+  <line class="arrow" x1="550" y1="95" x2="578" y2="95"/>
+  <rect class="layer" x="585" y="60" width="155" height="70"/>
+  <text x="662" y="87" font-size="18">Linear</text><text x="662" y="113" font-size="14">h1 → h2</text>
+  <line class="arrow" x1="745" y1="95" x2="773" y2="95"/>
+  <rect class="activation" x="780" y="60" width="125" height="70"/><text x="842" y="102" font-size="18">ReLU</text>
+  <line class="arrow" x1="910" y1="95" x2="938" y2="95"/>
+  <rect class="layer" x="945" y="60" width="150" height="70"/>
+  <text x="1020" y="87" font-size="18">Linear</text><text x="1020" y="113" font-size="14">h2 → 10（Logits）</text>
+  <rect class="layer" x="65" y="157" width="290" height="56"/><text x="210" y="191" font-size="18">S：h1 = 256，h2 = 128</text>
+  <rect class="layer" x="415" y="157" width="290" height="56"/><text x="560" y="191" font-size="18">M：h1 = 1024，h2 = 512</text>
+  <rect class="layer" x="765" y="157" width="290" height="56"/><text x="910" y="191" font-size="18">L：h1 = 4096，h2 = 2048</text>
+  <text x="560" y="245" font-size="16">每卡 batch = 128；隐藏宽度比例始终为2:1，每档宽度均乘4。</text>
+  <text x="560" y="270" font-size="14">同一数据集内固定输入维数、SGD设置、FP32、20轮训练与梯度同步方式。</text>
+</svg>

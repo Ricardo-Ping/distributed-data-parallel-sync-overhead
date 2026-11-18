@@ -1,0 +1,14 @@
+{
+  "run_id": "e1_mnist_M_ws2_seed1235",
+  "rank": 0,
+  "world_size": 2,
+  "device": "cuda:0",
+  "backend": "nccl",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "host_threads": 4,
+  "timing_mode": "cuda_synchronized_wall",
+  "bucket_cap_mb": 128,
+  "seed": 1235,
+  "dtype": "float32",
+  "allow_tf32": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "E3",
+  "run_id": "e3_fashionmnist_single_ref16_b32_k8_seed1236",
+  "device": "cuda:0",
+  "physical_gpus": 1,
+  "training_processes": 1,
+  "logical_replicas": 1,
+  "world_size": 1,
+  "backend": null,
+  "cross_gpu_communication": false,
+  "dtype": "float32",
+  "allow_tf32": false,
+  "host_threads": 4,
+  "micro_batch": 32,
+  "accumulation": 8,
+  "global_batch": 256,
+  "timing_mode": "cuda_synchronized_global_window"
+}

@@ -1,0 +1,12 @@
+{
+  "tests_passed": 19,
+  "seconds": 116.42,
+  "coverage": [
+    "actual_every_local_update",
+    "last_step_sync_event",
+    "step_times_sum_to_actual_round",
+    "serial_two_replica_step_times",
+    "real_two_gpu_nccl_reference",
+    "last_epoch_only_test"
+  ]
+}

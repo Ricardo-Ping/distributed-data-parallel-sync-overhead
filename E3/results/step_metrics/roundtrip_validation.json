@@ -1,0 +1,20 @@
+{
+  "experiment": "E3",
+  "runs_checked": 72,
+  "csv_roundtrip_checked": true,
+  "throughput_formula_checked": true,
+  "synchronization_fields_checked": true,
+  "all_sources_present": true,
+  "files": {
+    "rank_steps.csv.gz": {
+      "rows_checked": 430560,
+      "source_files": 108,
+      "sha256": "abfd3fc13bfa3dee5321babb0be2de5b65a67c5ac1f46da22443f842aa6dfa4e"
+    },
+    "global_units.csv.gz": {
+      "rows_checked": 287040,
+      "source_files": 108,
+      "sha256": "34137f650daca7849833ec014e80137f6b9241693222fdd585a7ab07459c5999"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "archive": "archive/E5_round_only_v1_before_step_logs_20261117_104800",
+  "original_runs": 45,
+  "original_raw_files": 630,
+  "reason": "H>1 logs contained rounds only; new version records each real local optimizer update and repeats formal runs."
+}

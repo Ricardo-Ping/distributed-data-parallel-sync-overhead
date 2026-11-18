@@ -1,0 +1,18 @@
+{
+  "run_id": "e3_mnist_b16_k8_g256_seed1234",
+  "experiment": "E3",
+  "rank": 0,
+  "world_size": 2,
+  "device": "cuda:0",
+  "backend": "nccl",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "host_threads": 4,
+  "dtype": "float32",
+  "timing_mode": "cuda_synchronized_update_wall",
+  "bucket_cap_mb": 25,
+  "micro_batch": 16,
+  "accumulation": 8,
+  "global_batch": 256,
+  "seed": 1234,
+  "allow_tf32": false
+}

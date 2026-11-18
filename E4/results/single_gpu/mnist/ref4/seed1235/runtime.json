@@ -1,0 +1,18 @@
+{
+  "experiment": "E4",
+  "run_id": "e4_mnist_single_ref4_b256_k4_seed1235",
+  "device": "cuda:0",
+  "physical_gpus": 1,
+  "training_processes": 1,
+  "logical_replicas": 1,
+  "world_size": 1,
+  "backend": null,
+  "cross_gpu_communication": false,
+  "dtype": "float32",
+  "allow_tf32": false,
+  "host_threads": 4,
+  "micro_batch": 256,
+  "accumulation": 4,
+  "global_batch": 1024,
+  "timing_mode": "cuda_synchronized_global_window"
+}

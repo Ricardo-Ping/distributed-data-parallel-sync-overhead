@@ -1,0 +1,3 @@
+dataset: fashionmnist
+learning_rate: 0.1
+micro_batch: 128

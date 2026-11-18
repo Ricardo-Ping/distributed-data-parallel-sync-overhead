@@ -1,0 +1,30 @@
+{
+  "experiment": "E3",
+  "paired_rows_formula_checked": 36,
+  "summary_rows_recomputed": 228,
+  "report_scaling_rows_checked": 12,
+  "local_links_checked": 36,
+  "figures_source_and_sha256_checked": 3,
+  "report_sha256": "1ce2572d955b5e506df20231e1a371983144dc1b5d22fb238c9591eac8b74c7d",
+  "all_checks_passed": true,
+  "main_figures": {
+    "raw_final_runs_checked": 72,
+    "single_runs": 36,
+    "dual_runs": 36,
+    "figures_checked": 4,
+    "all_checks_passed": true
+  },
+  "report_structure": {
+    "paired_results_within_measured_results": true,
+    "continuous_figure_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "separate_P_sequence_present": false
+  }
+}

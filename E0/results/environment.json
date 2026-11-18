@@ -1,0 +1,110 @@
+{
+  "recorded_at": "2026-11-16T18:52:06.928064+08:00",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "pytorch": "2.15.0+cu132",
+  "torchvision": "0.29.2+cu132",
+  "cpu_count": 32,
+  "cuda_available": true,
+  "cuda_runtime": "13.2",
+  "nccl_version": [
+    2,
+    30,
+    7
+  ],
+  "training_device": "cuda",
+  "backend": "nccl (ws=2); none (ws=1)",
+  "driver": [
+    "595.91.07",
+    "595.91.07"
+  ],
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 25252724736
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory_bytes": 25252724736
+    }
+  ],
+  "topology": "\t\u001b[4mGPU0\tGPU1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPHB\t0-31\t0\t\tN/A\nGPU1\tPHB\t X \t0-31\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+  "p2p_access_0_to_1": false,
+  "threads": {
+    "ws1": 32,
+    "ws2": 16
+  },
+  "protocol": "gpu_nccl_fixed_epochs_20_last_model",
+  "timing_mode": "cuda_synchronized_wall",
+  "float32_matmul_precision": "highest",
+  "allow_tf32_matmul": false,
+  "previous_results": "results/archive/e0_cpu_fixed20_20261116_184911",
+  "source_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/bench/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/bench/allreduce_bench.py": "fbcd6563c943269c07b4d4dba7526869a52a70404ece62e3a4f161f67bf5830a",
+    "src/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/data/loader.py": "c968907a7a9894fafea033919a23c58f5bdf346812a91b6a41d25091d4863a91",
+    "src/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/models/mlp.py": "eaf819e63a9392acbd9c421acae0b348308471fad316b1ae5b5ae210a8e46a7c",
+    "src/train/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/train/comm_hook.py": "026e8e3de9d3808e2cb71b4587850e9fa0d6a095e583997e6ae3a8cc5638e6e8",
+    "src/train/launcher.py": "a3250b3bef50bbfcb11bf055fb6894fba268b4cf1ec27124a05dc640c5cf002c",
+    "src/train/train.py": "afe9b1d8a6d87277ecb6ab896e269b4390e0c58211d1dbe1aef168d57c01fc60",
+    "src/train/trainer.py": "b3967ba20eacc9542b11e97ed4aa35e006350eada4ed69ec123d4b9354de7c6b",
+    "src/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/utils/checkpoint.py": "8314423779271a699b267fee163d7a07ef61ba5762edfa450ef058112fa6556d",
+    "src/utils/dist.py": "46cda84132b4a38b196c8b6aef8c7b44a921950fd1af00c638d78cb6bbae70ac",
+    "src/utils/metrics.py": "efd26977bb33c1f4d1c6a59487edc988a98994d4237038771bccf999566c0dd8",
+    "src/utils/result_stats.py": "5c16feb490960656a745c27f0abb205cbd65c6153d4a898b6e84c4027b3079fc",
+    "configs/e0_baseline.yaml": "795dd1aba0e8bc3dc5828d9452a61adff33e570ba3a9abbc011009b22ad20bc7",
+    "configs/e0_baseline_cifar.yaml": "007bf2f47ed6136ce1e77ff528c92430d109624b51fbfbbf7bc67f7a06947bdc",
+    "configs/e0_baseline_fashion.yaml": "ec3996d30d105a58c857e5ea37c6de28e0def0db9f0dda9228d4abfd7bd63a18",
+    "scripts/run_experiment.py": "40582ff48d5a41c4277042a54d0e2a07e8138fc672b4b5a680b3d1964235b600"
+  },
+  "preflight": {
+    "command": ".venv/bin/python -m pytest tests/test_cuda_nccl.py tests/test_e0_full_batches.py tests/test_t6_metrics_self_consistency.py -q",
+    "passed": 11,
+    "seconds": 25.13
+  },
+  "datasets": [
+    {
+      "exp": "e0_baseline",
+      "data": "mnist",
+      "train": 54000,
+      "validation": 6000,
+      "test": 10000,
+      "epochs": 20,
+      "runs": 6
+    },
+    {
+      "exp": "e0_baseline_fashion",
+      "data": "fashionmnist",
+      "train": 54000,
+      "validation": 6000,
+      "test": 10000,
+      "epochs": 20,
+      "runs": 6
+    },
+    {
+      "exp": "e0_baseline_cifar",
+      "data": "cifar10",
+      "train": 45000,
+      "validation": 5000,
+      "test": 10000,
+      "epochs": 20,
+      "runs": 6
+    }
+  ],
+  "source_snapshot_dir": "archive/E0_before_seed_report_20261116_194619/provenance/e0_training_source",
+  "source_snapshot_note": "MNIST 配置在环境记录后增加了两行行尾注释；训练快照还原注释添加前文本并已精确匹配运行前SHA-256，工作区注释保留。",
+  "execution_policy": "CUDA-only model training, validation, testing, independent reevaluation and inference; multi-GPU NCCL; no CPU fallback",
+  "previous_results_available": false,
+  "previous_results_note": "归档曾在GPU重跑前创建；最终核对时该目录已不在当前工作区，文档仅链接现存的历史目录。",
+  "original_training_command": "NCCL_DEBUG=INFO PYTHONUNBUFFERED=1 .venv/bin/python scripts/run_experiment.py --baseline > results/e0_training.log 2>&1",
+  "current_run_command": "uv run python -m E0.run",
+  "data_root": "Data",
+  "prior_layout_archive": "archive/E0_before_seed_report_20261116_194619"
+}

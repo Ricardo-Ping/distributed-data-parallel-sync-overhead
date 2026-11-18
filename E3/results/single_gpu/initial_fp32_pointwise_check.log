@@ -1,0 +1,42 @@
+.............F.........                                                  [100%]
+=================================== FAILURES ===================================
+________ test_weighted_global_gradient_and_momentum_update_on_cuda[16] _________
+
+tmp_path = PosixPath('/tmp/pytest-of-ycping/pytest-25/test_weighted_global_gradient_8')
+point = 16
+
+    @pytest.mark.parametrize("point", POINTS)
+    def test_weighted_global_gradient_and_momentum_update_on_cuda(tmp_path, point):
+        config = reference_config("mnist")
+        case = make_case(config, point, 1234)
+        trainer = training.Trainer(case, tmp_path / str(point), split=synthetic())
+        reference = MLP(784).to("cuda:0")
+        reference.load_state_dict(trainer.model.state_dict())
+        optimizer = torch.optim.SGD(reference.parameters(), lr=config.learning_rate, momentum=config.momentum)
+        generator = torch.Generator().manual_seed(41)
+        for size in (case.global_batch, 8):
+            features = torch.randn(size, 784, generator=generator)
+            labels = torch.arange(size) % 10
+            trainer.optimizer.zero_grad(set_to_none=True)
+            optimizer.zero_grad(set_to_none=True)
+            _, _, losses = trainer.backward_window(features, labels)
+            torch.nn.functional.cross_entropy(reference(features.cuda()), labels.cuda()).backward()
+            difference = sum((a.grad.double() - b.grad.double()).square().sum() for a, b in zip(trainer.model.parameters(), reference.parameters()))
+            norm = sum(b.grad.double().square().sum() for b in reference.parameters())
+            assert (difference / norm).sqrt().item() < 2e-3
+            assert len(losses) == math.ceil(size / case.micro_batch)
+            assert sum(n for _, n in losses) == size
+            trainer.optimizer.step()
+            optimizer.step()
+            for actual, expected in zip(trainer.model.parameters(), reference.parameters()):
+>               torch.testing.assert_close(actual, expected, rtol=5e-4, atol=3e-6)
+E               AssertionError: Tensor-likes are not close!
+E               
+E               Mismatched elements: 9 / 802816 (0.0%)
+E               Greatest absolute difference: 5.7229772210121155e-06 at index (549, 681) (up to 3e-06 allowed)
+E               Greatest relative difference: 0.003468209644779563 at index (549, 439) (up to 0.0005 allowed)
+
+E3/single_gpu/tests/test_training.py:90: AssertionError
+=========================== short test summary info ============================
+FAILED E3/single_gpu/tests/test_training.py::test_weighted_global_gradient_and_momentum_update_on_cuda[16]
+1 failed, 22 passed in 36.25s

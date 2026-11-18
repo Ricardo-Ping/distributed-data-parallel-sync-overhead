@@ -1,0 +1,9 @@
+{
+  "command": "uv run --locked pytest E2/tests E3/tests -q",
+  "combined_passed": 14,
+  "experiment_passed": 8,
+  "seconds": 96.379,
+  "model_device": "CUDA",
+  "backend": "NCCL",
+  "equivalence_includes_unequal_tail": true
+}

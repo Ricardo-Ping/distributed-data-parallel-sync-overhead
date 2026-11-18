@@ -1,0 +1,44 @@
+{
+  "case": {
+    "dataset": "fashionmnist",
+    "reference_level": 2,
+    "seed": 1235,
+    "micro_batch": 128,
+    "accumulation": 1,
+    "global_batch": 256,
+    "warmup_updates": 16,
+    "warmup_micro_steps": 0,
+    "role": "serial_local_sgd",
+    "replicas": 2
+  },
+  "reference_config": {
+    "dataset": "fashionmnist",
+    "learning_rate": 0.1,
+    "target_accuracy": 0.85,
+    "micro_batch": 128,
+    "epochs": 20,
+    "world_size": 2,
+    "levels": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "variants": [
+      "local_sgd"
+    ],
+    "seeds": [
+      1234,
+      1235,
+      1236
+    ],
+    "momentum": 0.9,
+    "validation_fraction": 0.1,
+    "split_seed": 1234,
+    "eval_batch": 1024,
+    "warmup_updates": 16,
+    "host_threads": 4,
+    "device": "cuda"
+  }
+}

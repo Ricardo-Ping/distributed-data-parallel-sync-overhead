@@ -1,0 +1,21 @@
+{
+  "experiment": "E5",
+  "completed_at": "2026-11-17T14:31:26.124667+08:00",
+  "runs": 54,
+  "epochs_per_run": 20,
+  "physical_gpus_per_run": 1,
+  "cuda_independent_rechecks": 54,
+  "all_records_recomputed": true,
+  "source_snapshots": "provenance/",
+  "analysis_source_sha256": {
+    "E5/single_gpu/check_results.py": "4a0f025afd992f4de7676dac3b912b2e9031e2a226c6cf90d08b05836ac88c82",
+    "E5/single_gpu/compare.py": "57c65ddd225cbecf1c0f4e7e989be26686b13bf9328008e65c5b7f05c5821e2e",
+    "E5/single_gpu/plot_results.py": "6870abed60ab464680fb71d1df0ab28ca4d3f1731b2b82fb992b0f480933b51e",
+    "scripts/audit_e5_profiles.py": "0cae5900921419887d2cdfe4ec0bcd9b546c1b3209c94171302c7b893f7a9e6c",
+    "scripts/audit_step_exports.py": "5819e5d36041bb2bc377421eb6e7133db6dc24549eecb8e58a4f4393cebbd39d",
+    "scripts/audit_scaling_reports.py": "542acff84d526bcfd99bbec5a2ff3b5ed75b3a03c0bc253113686b1006b74b0e",
+    "scripts/check_raw_integrity.py": "e9f59188863c37314215a69c32abb070b0e19153a564423bc631028516cff011",
+    "scripts/check_gpu_controls.py": "86675fa0814de8ab5cf9f54befb77a777947298967129dba377dcc8193b7e380",
+    "scripts/export_step_metrics.py": "07d3983790bd2188d40844e7fa0984e0e72c4b48bb5e52439dd46f4a901323c5"
+  }
+}

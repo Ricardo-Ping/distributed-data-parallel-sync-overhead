@@ -1,0 +1,30 @@
+NCCL version 2.30.7+cuda13.3
+[numerics] mnist 128×1 full
+[numerics] mnist 128×1 tail
+[numerics] mnist 64×2 full
+[numerics] mnist 64×2 tail
+[numerics] mnist 32×4 full
+[numerics] mnist 32×4 tail
+[numerics] mnist 16×8 full
+[numerics] mnist 16×8 tail
+[numerics] fashionmnist 128×1 full
+[numerics] fashionmnist 128×1 tail
+[numerics] fashionmnist 64×2 full
+[numerics] fashionmnist 64×2 tail
+[numerics] fashionmnist 32×4 full
+[numerics] fashionmnist 32×4 tail
+[numerics] fashionmnist 16×8 full
+[numerics] fashionmnist 16×8 tail
+[numerics] cifar10 128×1 full
+[numerics] cifar10 128×1 tail
+[numerics] cifar10 64×2 full
+[numerics] cifar10 64×2 tail
+[numerics] cifar10 32×4 full
+[numerics] cifar10 32×4 tail
+[numerics] cifar10 16×8 full
+[numerics] cifar10 16×8 tail
+              max_absolute_gradient_difference  relative_gradient_l2  max_absolute_parameter_difference  fp64_relative_gradient_l2
+dataset                                                                                                                           
+cifar10                           5.704351e-09          4.052261e-07                       3.725290e-09               8.287565e-16
+fashionmnist                      7.062743e-05          1.306191e-03                       7.063150e-06               4.239476e-16
+mnist                             7.450581e-09          2.076367e-07                       3.725290e-09               4.302604e-16

@@ -1,0 +1,8 @@
+dataset: cifar10
+learning_rate: 0.05
+epochs: 20
+batch_sizes: [32, 64, 128, 256, 512]
+world_size: 2
+warmup_updates: 10
+bucket_cap_mb: 25
+host_threads: 4

@@ -1,0 +1,47 @@
+{
+  "experiment": "E4",
+  "status": "complete",
+  "completed_at": "2026-11-16T20:14:17.563150+00:00",
+  "formal_runs": 90,
+  "epochs_per_run": 20,
+  "world_size": 2,
+  "backend": "nccl",
+  "micro_batch_per_gpu": 128,
+  "levels": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "datasets": [
+    "mnist",
+    "fashionmnist",
+    "cifar10"
+  ],
+  "seeds": [
+    1234,
+    1235,
+    1236
+  ],
+  "checkpoints_independently_retested_on_gpu": 90,
+  "preflight_combined_passed": 22,
+  "preflight_experiment_passed": 13,
+  "raw_files_hashed": 1260,
+  "statistical_figures": 5,
+  "training_source_unchanged": true,
+  "report_tables_checked": true,
+  "figure_series_checked": true,
+  "k1_pairs_with_bitwise_identical_parameters": 9,
+  "supplement_completed_at": "2026-11-17T14:31:26.124667+08:00",
+  "single_gpu_reference_runs": 45,
+  "single_gpu_independent_rechecks": 45,
+  "all_current_runs": 135,
+  "all_current_gpu_independent_rechecks": 135,
+  "matched_pairs": 90,
+  "step_records": 348900,
+  "global_timing_units": 209340,
+  "step_csv_roundtrip_checked": true,
+  "comparison_figures": 3,
+  "scaling_report_validated": true
+}

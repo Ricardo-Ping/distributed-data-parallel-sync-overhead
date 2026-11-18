@@ -1,0 +1,32 @@
+[
+  {
+    "figure": "F5_single_dual_throughput.png",
+    "source": "scaling.csv",
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true,
+    "source_sha256": "ca7a722780aef02488cecfb98657c3f37f4df746843d9373589a629c948dc05c",
+    "sha256": "81392bea55122c45b9083b2d35314c0a82e693776bd6672e23b6e2e4ae29757a"
+  },
+  {
+    "figure": "F6_parallel_speedup.png",
+    "source": "scaling.csv",
+    "points": 180,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true,
+    "source_sha256": "ca7a722780aef02488cecfb98657c3f37f4df746843d9373589a629c948dc05c",
+    "sha256": "5608e95b98f6d1fe5a7aff8d8cf393df6eed99e0d6f2e10ace1b99baee075b69"
+  },
+  {
+    "figure": "F7_single_dual_quality_memory.png",
+    "source": "scaling.csv",
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true,
+    "source_sha256": "ca7a722780aef02488cecfb98657c3f37f4df746843d9373589a629c948dc05c",
+    "sha256": "b9deeaed270eff5eadd8b04af3d82606a59d2d318f3c2340490f916c326b70b8"
+  }
+]

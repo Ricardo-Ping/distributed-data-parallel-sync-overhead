@@ -1,0 +1,41 @@
+{
+  "reason": "NCCL TCPStore EADDRINUSE before any training",
+  "failed_folder": "E2/results/startup_failures/fashionmnist_b64_seed1236_20261117_004215",
+  "completed_before_recovery": {
+    "e2_mnist_b512_k1_g1024_seed1234": "504bfa18b76af7724d095e5590023ad69fe924149b617be061f2ef442da49a9c",
+    "e2_mnist_b512_k1_g1024_seed1235": "6136182e5ef88fbd639ffd40df780c33155ef666c2cea801a9d55413611f5746",
+    "e2_mnist_b512_k1_g1024_seed1236": "a940b4f11503026b1d49a8d02343eb1035093611d51aff986cee2abcf637f456",
+    "e2_mnist_b32_k1_g64_seed1234": "a7d304746e2060128132374de20ffde45f9816f529a1a2b75716933c49de5acf",
+    "e2_mnist_b32_k1_g64_seed1235": "81af1b933ecc2d505222f364d10ff5ab551f22980144ee752d0a5adf65497740",
+    "e2_mnist_b32_k1_g64_seed1236": "511b701c70935c1d9c4ccc3cccf03f0c4633b39f3ead56e2b4fb63d5e255209a",
+    "e2_mnist_b256_k1_g512_seed1234": "af3fd2f8af852566aedc03c7268ccad8d944499c37d90dc2d8acc1782e6ef7ab",
+    "e2_mnist_b256_k1_g512_seed1235": "3c55966e2ff80e5c70da6265866e44ff328baa16ee098c42310ee45be8cdf029",
+    "e2_mnist_b256_k1_g512_seed1236": "3a3e1b0e52b8a4fda93a3003e580fd6a1822e3287bcf049cf32754984fc690a6",
+    "e2_mnist_b128_k1_g256_seed1234": "04158875c95aa6c32dc57f7c4e0f54a0187f42a69b2b76493761b3bfd21e09b1",
+    "e2_mnist_b128_k1_g256_seed1235": "a731c3315805a0b872589324db002ae2740f39559c44688cc42ead6660c39127",
+    "e2_mnist_b128_k1_g256_seed1236": "d0400c2c2093be0808e7c968006b2c567854588f644932c71d3ec885dcc85e66",
+    "e2_mnist_b64_k1_g128_seed1234": "86af2ea5404fc62c4f49fc35367caf5260d0ee2b064247bb1f4dc593636289d4",
+    "e2_mnist_b64_k1_g128_seed1235": "d483ccf9cf92be10589d375b26c4059751354175189687730b2831dc76451ca9",
+    "e2_mnist_b64_k1_g128_seed1236": "2857882770f20d1c6e6e18ebab58c3156cbb3b0929b20c46eaec41caa68c174e",
+    "e2_fashionmnist_b512_k1_g1024_seed1234": "ba1521fbd3dac73a2ae3a6dabae1e25fe4844a9a2beeb178db9058a1f98ee162",
+    "e2_fashionmnist_b512_k1_g1024_seed1235": "5fc9656684e2c4e27c0f8f83e1c3c337d098081dc7bf5129d8ae3a64174dc2a6",
+    "e2_fashionmnist_b512_k1_g1024_seed1236": "09a7616f6fc326364dc5ae215a3e9d0fedd047b6edc8e6b83af5564232d49141",
+    "e2_fashionmnist_b32_k1_g64_seed1234": "7ee384b981c51d1b1a0ca3ab3d3300162d47e21d4a5e2c383d582744a70e382d",
+    "e2_fashionmnist_b32_k1_g64_seed1235": "d11be4fb7165af63185a4492025be06db65c39fa73c39c67720ff7cc5341ab78",
+    "e2_fashionmnist_b32_k1_g64_seed1236": "5e6ed99c192ebd70bdb08277775880122b34ac3fc45d3c2ca9c204ac0878f5e1",
+    "e2_fashionmnist_b256_k1_g512_seed1234": "0f334076f7203b27b8fef75f459920c30fef923a7e48836d769c518c02172e7e",
+    "e2_fashionmnist_b256_k1_g512_seed1235": "10050084e3451f15324492c57530f7c941c778526939cdf66ada06d919425659",
+    "e2_fashionmnist_b256_k1_g512_seed1236": "51432d44a273ddec2224f83ed673a0c6bdc4c3a9acbd6c2571f6d963586d2118",
+    "e2_fashionmnist_b128_k1_g256_seed1234": "da3f5b3258a7be3c549c6e7d3ecd9fb3e5d0065a9c3ba2f06a96d31cdd14d226",
+    "e2_fashionmnist_b128_k1_g256_seed1235": "a55a9c0821067528ed5289a964efd80c679f828fc75276fa1c5f982db183316b",
+    "e2_fashionmnist_b128_k1_g256_seed1236": "840b8fcc8a10a4725529406383a852249da4b62ad55aaf1a2700c5671dfbd02c",
+    "e2_fashionmnist_b64_k1_g128_seed1234": "cfd666d3f023d640ded040eb4cad066d4117387c365350aaca856094aadb9697",
+    "e2_fashionmnist_b64_k1_g128_seed1235": "e069bc7a87a981bdd7ecda0875c1fee1c1ea5f56810296c473f99fd2c5ce73a1"
+  },
+  "changed_source_files": [
+    "E2/run.py"
+  ],
+  "training_compute_timing_sync_unchanged": true,
+  "resume_command": "uv run --locked python -m E2.run --resume",
+  "launcher_and_protocol_tests_passed": 14
+}

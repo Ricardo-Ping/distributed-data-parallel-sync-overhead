@@ -1,0 +1,65 @@
+[
+  {
+    "dataset": "mnist",
+    "seed": 1234,
+    "device": "cuda:0",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "mnist",
+    "seed": 1235,
+    "device": "cuda:1",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "mnist",
+    "seed": 1236,
+    "device": "cuda:0",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1234,
+    "device": "cuda:1",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1235,
+    "device": "cuda:0",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1236,
+    "device": "cuda:1",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "cifar10",
+    "seed": 1234,
+    "device": "cuda:0",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "cifar10",
+    "seed": 1235,
+    "device": "cuda:1",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  },
+  {
+    "dataset": "cifar10",
+    "seed": 1236,
+    "device": "cuda:0",
+    "weights_bitwise_equal": true,
+    "relative_l2": 0.0
+  }
+]

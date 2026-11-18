@@ -1,0 +1,6 @@
+{
+  "installed_source": ".venv/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/functions/accumulate_grad.h",
+  "pytorch": "2.15.0+cu132",
+  "sha256": "ddaf7ca3b5d097fd0cb0a0de87c12ec3a707aac7b1a0bd67316eae86ea9d0a2b",
+  "purpose": "检查已有grad与新梯度的累积机制；不属于实验训练代码"
+}

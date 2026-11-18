@@ -1,0 +1,121 @@
+{
+  "recorded_at": "2026-11-16T23:18:53.741722+08:00",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "pytorch": "2.15.0+cu132",
+  "cuda": "13.2",
+  "nccl": [
+    2,
+    30,
+    7
+  ],
+  "gpu_details": "index, name, uuid, driver_version, memory.total [MiB], power.limit [W]\n0, NVIDIA GeForce RTX 4090, GPU-604bb71a-349f-68b2-3211-854041d2debd, 595.91.07, 24564 MiB, 450.00 W\n1, NVIDIA GeForce RTX 4090, GPU-bce277c4-ea22-7a98-0f42-902def4a392c, 595.91.07, 24564 MiB, 450.00 W\n",
+  "topology": "\t\u001b[4mGPU0\tGPU1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPHB\t0-31\t0\t\tN/A\nGPU1\tPHB\t X \t0-31\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+  "p2p_0_to_1": false,
+  "data_root": "/home/ycping/project/\u5927\u6570\u636e/\u9879\u76ee/d1-gradient-sync/Data",
+  "configs": [
+    {
+      "dataset": "mnist",
+      "learning_rate": 0.1,
+      "epochs": 20,
+      "local_batch": 128,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "models": [
+        "S",
+        "M",
+        "L"
+      ],
+      "world_sizes": [
+        1,
+        2
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_steps": 10,
+      "bucket_cap_mb": 128,
+      "host_threads": 4,
+      "device": "cuda"
+    },
+    {
+      "dataset": "fashionmnist",
+      "learning_rate": 0.1,
+      "epochs": 20,
+      "local_batch": 128,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "models": [
+        "S",
+        "M",
+        "L"
+      ],
+      "world_sizes": [
+        1,
+        2
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_steps": 10,
+      "bucket_cap_mb": 128,
+      "host_threads": 4,
+      "device": "cuda"
+    },
+    {
+      "dataset": "cifar10",
+      "learning_rate": 0.05,
+      "epochs": 20,
+      "local_batch": 128,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "models": [
+        "S",
+        "M",
+        "L"
+      ],
+      "world_sizes": [
+        1,
+        2
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_steps": 10,
+      "bucket_cap_mb": 128,
+      "host_threads": 4,
+      "device": "cuda"
+    }
+  ],
+  "protocol": "E1_local_batch128_fp32_blocking_one_bucket_20epochs_three_seeds",
+  "source_sha256": {
+    "Data/datasets.py": "daf360a5e0062a53deeb933170be09883f74a2d40a3acd117902a63df6d90f80",
+    "E1/__init__.py": "4f0b15abfd39c2921fdb1fcbd3af085646754769874b1a70caa0adbb8b88ff3f",
+    "E1/check_results.py": "7762f377b1cc486a612247383d28173e6ab4ba0f680cddf66c5fda8552cdc6b1",
+    "E1/config.py": "84c2652026152ba990dd80fa76926f0732071c20319070ae7b71e2c3675d97da",
+    "E1/configs/cifar10.yaml": "c18b33d6858029909101740fd188b54e71a2e0c446a3aafa64c18838569d0507",
+    "E1/configs/fashionmnist.yaml": "451d1ddf0c550ad70cc2cdd7cd439a0f7106a576373f7e95cc5f22f7ffc549ee",
+    "E1/configs/mnist.yaml": "8fc5ed47122f06f2fa9620c0fd516262eb11ce7cef6251e2a1bb8aa25a5c7b9b",
+    "E1/data.py": "da97a31d49083936e43aaaeb3f7d35980f4e8068fc6a037b898622900324f070",
+    "E1/distributed.py": "b70c6b6d3d5e7267f9070c28491133d4510e03aa908e88bfbbc0c7319eb608f8",
+    "E1/evaluate.py": "fc5ebbe19f904182516fe04d03ef5c522509617447ead31ca1826bc834fe9e8b",
+    "E1/metrics.py": "d6847badde0d17e48927d5c2306150e9c5e037776c51c51eebe256d8e2b99ea2",
+    "E1/model.py": "0eafad9190ff55b01edb35f43d064771cc34d7c6bcbaba41bfdff23bcb1f1f17",
+    "E1/plot_results.py": "f4f5b7a9659f3b1bc3dedb0c79ecb7836e8bc1be03e5be1857b16d95ee88fd20",
+    "E1/run.py": "249ae770a1080db25375fda3696ba173951f2abebf23a46b8580a21302e0acfa",
+    "E1/train.py": "dc4fc05b31f41b39f27471f507b6286b9f563308dec47807239a6ccd19d91948"
+  },
+  "cuda_visible_devices": "all"
+}

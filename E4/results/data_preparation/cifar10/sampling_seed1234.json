@@ -1,0 +1,119 @@
+{
+  "experiment": "E4",
+  "dataset": "cifar10",
+  "validation_fraction": 0.1,
+  "split_seed": 1234,
+  "sampling_seed": 1234,
+  "world_size": 2,
+  "train_samples": 45000,
+  "validation_samples": 5000,
+  "test_samples": 10000,
+  "train_indices_sha256": "7c7186503d32594fe0ee401f1c71d67b7b852a2fb227c005e4e54e572d7ce786",
+  "validation_indices_sha256": "5280449d1c3ace628036e18adde7e54a4c528a9d4d03166d5129b59adc768f8a",
+  "sampling_epochs": [
+    {
+      "epoch": 1,
+      "sampler_epoch": 0,
+      "assigned_global_samples": 45000,
+      "used_global_samples": 45000,
+      "ranks": [
+        {
+          "rank": 0,
+          "loader_batch_size": 128,
+          "drop_last": false,
+          "assigned_samples": 22500,
+          "used_samples": 22500,
+          "used_indices_sha256": "7b9b8ba5984e1cb0fffeb09df535dfbc2f545aaeb833a415fe9fe6cfe4e9828c",
+          "first_12_original_indices": [
+            16452,
+            630,
+            3838,
+            26934,
+            1372,
+            1742,
+            40759,
+            23974,
+            45448,
+            36096,
+            29822,
+            11291
+          ]
+        },
+        {
+          "rank": 1,
+          "loader_batch_size": 128,
+          "drop_last": false,
+          "assigned_samples": 22500,
+          "used_samples": 22500,
+          "used_indices_sha256": "5f6e3a91fe99665d87d474de3012ea870a665a2881d5c8ac2e69ac46f9b830aa",
+          "first_12_original_indices": [
+            46319,
+            37290,
+            36350,
+            45637,
+            47783,
+            43382,
+            42208,
+            6207,
+            32818,
+            15455,
+            25921,
+            47767
+          ]
+        }
+      ]
+    },
+    {
+      "epoch": 2,
+      "sampler_epoch": 1,
+      "assigned_global_samples": 45000,
+      "used_global_samples": 45000,
+      "ranks": [
+        {
+          "rank": 0,
+          "loader_batch_size": 128,
+          "drop_last": false,
+          "assigned_samples": 22500,
+          "used_samples": 22500,
+          "used_indices_sha256": "d105dae31fc9352f6bb86634e58c708aa875c4e84f052032c627bef99e8a6ad2",
+          "first_12_original_indices": [
+            32323,
+            22376,
+            7743,
+            13258,
+            29025,
+            31450,
+            21864,
+            14231,
+            8807,
+            40341,
+            23012,
+            21145
+          ]
+        },
+        {
+          "rank": 1,
+          "loader_batch_size": 128,
+          "drop_last": false,
+          "assigned_samples": 22500,
+          "used_samples": 22500,
+          "used_indices_sha256": "35425667d8cb1f2d61c195e21be9a5c351bc8d022b46bbd8d23cd8a7dccfe81e",
+          "first_12_original_indices": [
+            1381,
+            2781,
+            15176,
+            29394,
+            11490,
+            15413,
+            43975,
+            25812,
+            31090,
+            46729,
+            21512,
+            28585
+          ]
+        }
+      ]
+    }
+  ]
+}

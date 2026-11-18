@@ -1,0 +1,33 @@
+NCCL version 2.30.7+cuda13.3
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E3/verify_numerics.py", line 96, in <module>
+    measured=verify(args.results_dir,args.data_root)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E3/verify_numerics.py", line 81, in verify
+    mp.spawn(worker,args=(port,output.resolve(),data_root.resolve(),Path(folder)),nprocs=2,join=True)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 349, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 305, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 220, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 1 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/multiprocessing/spawn.py", line 89, in _wrap
+    fn(i, *args)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/E3/verify_numerics.py", line 48, in worker
+    torch.testing.assert_close(actual.grad,expected.grad,rtol=5e-4,atol=3e-6)
+  File "/home/ycping/project/大数据/项目/d1-gradient-sync/.venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1689, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 351 / 802816 (0.0%)
+Greatest absolute difference: 7.062737131491303e-05 at index (953, 40) (up to 3e-06 allowed)
+Greatest relative difference: 0.6457329392433167 at index (953, 273) (up to 0.0005 allowed)
+

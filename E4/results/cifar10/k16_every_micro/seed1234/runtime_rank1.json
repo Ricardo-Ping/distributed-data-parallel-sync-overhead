@@ -1,0 +1,17 @@
+{
+  "experiment": "E4",
+  "run_id": "e4_cifar10_k16_every_micro_seed1234",
+  "device": "cuda:1",
+  "backend": "nccl",
+  "rank": 1,
+  "world_size": 2,
+  "host_threads": 4,
+  "dtype": "float32",
+  "allow_tf32": false,
+  "level": 16,
+  "variant": "every_micro",
+  "micro_batch": 128,
+  "global_batch": 4096,
+  "timing_mode": "cuda_synchronized_accumulation_window",
+  "bucket_cap_mb": 25
+}

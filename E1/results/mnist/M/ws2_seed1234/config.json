@@ -1,0 +1,28 @@
+{
+  "dataset": "mnist",
+  "learning_rate": 0.1,
+  "epochs": 20,
+  "local_batch": 128,
+  "momentum": 0.9,
+  "seeds": [
+    1234,
+    1235,
+    1236
+  ],
+  "models": [
+    "S",
+    "M",
+    "L"
+  ],
+  "world_sizes": [
+    1,
+    2
+  ],
+  "validation_fraction": 0.1,
+  "split_seed": 1234,
+  "eval_batch": 1024,
+  "warmup_steps": 10,
+  "bucket_cap_mb": 128,
+  "host_threads": 4,
+  "device": "cuda"
+}

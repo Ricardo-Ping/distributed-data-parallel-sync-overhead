@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-11-17T00:19:38.976734+08:00",
+  "experiment": "E2",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "pytorch": "2.15.0+cu132",
+  "cuda": "13.2",
+  "nccl": [
+    2,
+    30,
+    7
+  ],
+  "gpu_details": "index, name, uuid, driver_version, memory.total [MiB], power.limit [W]\n0, NVIDIA GeForce RTX 4090, GPU-604bb71a-349f-68b2-3211-854041d2debd, 595.91.07, 24564 MiB, 450.00 W\n1, NVIDIA GeForce RTX 4090, GPU-bce277c4-ea22-7a98-0f42-902def4a392c, 595.91.07, 24564 MiB, 450.00 W\n",
+  "topology": "\t\u001b[4mGPU0\tGPU1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPHB\t0-31\t0\t\tN/A\nGPU1\tPHB\t X \t0-31\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+  "host_context": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           40 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  32\nOn-line CPU(s) list:                     0-31\nVendor ID:                               GenuineIntel\nModel name:                              QEMU Virtual CPU version 2.5+\nCPU family:                              15\nModel:                                   107\nThread(s) per core:                      1\nCore(s) per socket:                      32\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                3990.62\nFlags:                                   fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology cpuid tsc_known_freq pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm cpuid_fault pti\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               1 MiB (32 instances)\nL1i cache:                               1 MiB (32 instances)\nL2 cache:                                128 MiB (32 instances)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-31\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Mitigation; Aligned branch/return thunks\nVulnerability Itlb multihit:             KVM: Mitigation: VMX unsupported\nVulnerability L1tf:                      Mitigation; PTE Inversion\nVulnerability Mds:                       Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Unknown: No mitigations\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Vulnerable\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Retpoline\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+  "p2p_0_to_1": false,
+  "source_sha256": {
+    "Data/datasets.py": "daf360a5e0062a53deeb933170be09883f74a2d40a3acd117902a63df6d90f80",
+    "E2/__init__.py": "a7bacd5c5cf59f491939e8754c22962ce2762b904e596614c561a864e4b82cf8",
+    "E2/check_results.py": "36aea179ee93a4a89516c74c757880ca92b37cdf787623d084ce02097e11ea6e",
+    "E2/config.py": "477fac1cacd892645b12c99a51f256037f187272ebe7a6bc835d1f33ae0bf407",
+    "E2/configs/cifar10.yaml": "9ffb01340f7c8675cdf9814165e83a8d0622d7f3c622f57c0d1ec9dc6bd199cf",
+    "E2/configs/fashionmnist.yaml": "abfe7a60fa0260d98e9d9b701c0dcd33d81205f992b34160d488abe3a96dbfe8",
+    "E2/configs/mnist.yaml": "4ac0eae4c2ff40ee88945ea70522d333913848c5aea3d0bd30e1dec5a6ced6db",
+    "E2/data.py": "92fb367ac2d720e5d95e68edc02ff0b49df9c5cbb8d3dfcec3563eecc5db7f36",
+    "E2/distributed.py": "4612e4493ef325f31152aea24a5a568ced3abcacbc4013d4c502889c7dd5578a",
+    "E2/evaluate.py": "328579240ac5092136f459521af727fe9c5e538159dae403b0d3280d151e5e06",
+    "E2/metrics.py": "7210f656faa2a273cd95a34a36a1326f902a84138736a630c6fec3d5a691a7ea",
+    "E2/model.py": "79d5417a70bd20b5793c7acd566fda7087f25c02699eab9e8c3279f1f8c7d7aa",
+    "E2/plot_results.py": "329c339094d11d8fec1c3dda160e5910a60535e968184d3778001ee4d6bd5605",
+    "E2/run.py": "1978479d1f899402dcab3c093f98873b5d77f570825a16b37a3ab856e39aca54",
+    "E2/train.py": "a7ec8774a56bc4e6e90c49699dde30223d63b396647dcca9a0fdd177579a239c"
+  },
+  "data_root": "/home/ycping/project/大数据/项目/d1-gradient-sync/Data",
+  "configs": [
+    {
+      "dataset": "mnist",
+      "learning_rate": 0.1,
+      "epochs": 20,
+      "batch_sizes": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "world_size": 2,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_updates": 10,
+      "bucket_cap_mb": 25,
+      "host_threads": 4,
+      "device": "cuda"
+    },
+    {
+      "dataset": "fashionmnist",
+      "learning_rate": 0.1,
+      "epochs": 20,
+      "batch_sizes": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "world_size": 2,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_updates": 10,
+      "bucket_cap_mb": 25,
+      "host_threads": 4,
+      "device": "cuda"
+    },
+    {
+      "dataset": "cifar10",
+      "learning_rate": 0.05,
+      "epochs": 20,
+      "batch_sizes": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "world_size": 2,
+      "momentum": 0.9,
+      "seeds": [
+        1234,
+        1235,
+        1236
+      ],
+      "validation_fraction": 0.1,
+      "split_seed": 1234,
+      "eval_batch": 1024,
+      "warmup_updates": 10,
+      "bucket_cap_mb": 25,
+      "host_threads": 4,
+      "device": "cuda"
+    }
+  ],
+  "cuda_visible_devices": "all"
+}

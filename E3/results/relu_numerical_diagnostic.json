@@ -1,0 +1,18 @@
+{
+  "dataset": "fashionmnist",
+  "seed": 1234,
+  "device": "cuda:0",
+  "global_batch": 256,
+  "local_batch": 128,
+  "layer": "first Linear -> ReLU",
+  "different_activation_signs": [
+    {
+      "rank": 0,
+      "global_window_position": 46,
+      "hidden_unit": 953,
+      "local_batch128_preactivation": 2.9802322387695312e-08,
+      "global_batch256_preactivation": -7.450580596923828e-09,
+      "fp64_preactivation": -1.7270465918484135e-08
+    }
+  ]
+}

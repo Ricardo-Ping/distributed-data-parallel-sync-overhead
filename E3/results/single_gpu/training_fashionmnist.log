@@ -1,0 +1,286 @@
+e3_fashionmnist_single_ref128_b256_k1_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref128_b256_k1_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref128_b256_k1_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 1/20 val=0.39895 acc=85.3333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 2/20 val=0.38466 acc=85.4333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 3/20 val=0.34377 acc=86.5833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 4/20 val=0.35323 acc=86.4000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 5/20 val=0.32098 acc=87.8000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 6/20 val=0.30737 acc=88.8000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 7/20 val=0.32827 acc=87.8167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 8/20 val=0.29434 acc=89.0500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 9/20 val=0.30686 acc=89.3667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 10/20 val=0.28908 acc=89.3667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 11/20 val=0.30212 acc=88.9333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 12/20 val=0.30976 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 13/20 val=0.28496 acc=89.8167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 14/20 val=0.27271 acc=90.3167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 15/20 val=0.29223 acc=89.6167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 16/20 val=0.30516 acc=89.2833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 17/20 val=0.28528 acc=89.8500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 18/20 val=0.28358 acc=90.1667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 19/20 val=0.28855 acc=89.7000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1234 20/20 val=0.28414 acc=89.7333%
+[final] e3_fashionmnist_single_ref128_b256_k1_seed1234 Q=34086.0 GPU=1
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 1/20 val=0.39596 acc=85.3833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 2/20 val=0.38909 acc=85.2500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 3/20 val=0.33906 acc=86.7667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 4/20 val=0.34857 acc=86.8333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 5/20 val=0.31762 acc=88.0667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 6/20 val=0.31719 acc=88.2000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 7/20 val=0.32484 acc=87.9167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 8/20 val=0.29926 acc=88.7167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 9/20 val=0.31065 acc=89.2333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 10/20 val=0.29648 acc=89.1333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 11/20 val=0.29756 acc=89.0167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 12/20 val=0.30947 acc=88.4333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 13/20 val=0.29436 acc=89.2000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 14/20 val=0.28840 acc=89.8333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 15/20 val=0.29628 acc=89.3333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 16/20 val=0.29727 acc=89.5333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 17/20 val=0.29956 acc=89.2500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 18/20 val=0.27961 acc=90.2167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 19/20 val=0.28129 acc=90.2000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1234 20/20 val=0.28616 acc=89.8667%
+[final] e3_fashionmnist_single_ref64_b128_k2_seed1234 Q=23413.8 GPU=1
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 1/20 val=0.39554 acc=85.2833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 2/20 val=0.38178 acc=85.8000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 3/20 val=0.34276 acc=86.8333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 4/20 val=0.35263 acc=86.5833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 5/20 val=0.32405 acc=87.9167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 6/20 val=0.31047 acc=88.5000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 7/20 val=0.32264 acc=87.8333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 8/20 val=0.29441 acc=89.1833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 9/20 val=0.30299 acc=89.0667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 10/20 val=0.28978 acc=89.1167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 11/20 val=0.30300 acc=88.5000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 12/20 val=0.29918 acc=89.1333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 13/20 val=0.29436 acc=88.9000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 14/20 val=0.28332 acc=89.8833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 15/20 val=0.29456 acc=89.7167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 16/20 val=0.28922 acc=90.0833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 17/20 val=0.29054 acc=89.4500%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 18/20 val=0.27458 acc=90.5833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 19/20 val=0.28266 acc=89.9667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1234 20/20 val=0.26951 acc=90.7667%
+[final] e3_fashionmnist_single_ref32_b64_k4_seed1234 Q=15765.9 GPU=1
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 1/20 val=0.39332 acc=85.2333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 2/20 val=0.39022 acc=85.1667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 3/20 val=0.35383 acc=86.5500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 4/20 val=0.34684 acc=86.6000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 5/20 val=0.32252 acc=88.1333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 6/20 val=0.31084 acc=88.7500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 7/20 val=0.31342 acc=88.5667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 8/20 val=0.29575 acc=89.1000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 9/20 val=0.30766 acc=89.2000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 10/20 val=0.28536 acc=89.7333%
+e3_fashionmnist_single_ref128_b256_k1_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1234: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref128_b256_k1_seed1235: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref32_b64_k4_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=64, K=4, global=256, epochs=20
+e3_fashionmnist_single_ref16_b32_k8_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=32, K=8, global=256, epochs=20
+e3_fashionmnist_single_ref128_b256_k1_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=256, K=1, global=256, epochs=20
+e3_fashionmnist_single_ref64_b128_k2_seed1236: role=global_batch_matched, GPUs=1, replicas=1, micro=128, K=2, global=256, epochs=20
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 1/20 val=0.39332 acc=85.2333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 2/20 val=0.39022 acc=85.1667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 3/20 val=0.35383 acc=86.5500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 4/20 val=0.34684 acc=86.6000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 5/20 val=0.32252 acc=88.1333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 6/20 val=0.31084 acc=88.7500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 7/20 val=0.31342 acc=88.5667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 8/20 val=0.29575 acc=89.1000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 9/20 val=0.30766 acc=89.2000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 10/20 val=0.28536 acc=89.7333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 11/20 val=0.29123 acc=89.4500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 12/20 val=0.30451 acc=89.3500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 13/20 val=0.28810 acc=89.4167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 14/20 val=0.27926 acc=90.0000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 15/20 val=0.29147 acc=89.3333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 16/20 val=0.29251 acc=89.7500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 17/20 val=0.29190 acc=89.0833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 18/20 val=0.29001 acc=90.0500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 19/20 val=0.29840 acc=89.7833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1234 20/20 val=0.28753 acc=89.9667%
+[final] e3_fashionmnist_single_ref16_b32_k8_seed1234 Q=11677.2 GPU=1
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 1/20 val=0.44622 acc=83.4333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 2/20 val=0.39466 acc=84.1667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 3/20 val=0.37051 acc=86.1167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 4/20 val=0.33457 acc=87.6167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 5/20 val=0.29908 acc=88.8000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 6/20 val=0.31283 acc=88.1833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 7/20 val=0.30030 acc=88.8833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 8/20 val=0.29922 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 9/20 val=0.30519 acc=88.9333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 10/20 val=0.28937 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 11/20 val=0.29635 acc=89.1833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 12/20 val=0.28550 acc=89.4000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 13/20 val=0.27374 acc=90.1833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 14/20 val=0.28831 acc=89.4667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 15/20 val=0.28987 acc=89.5667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 16/20 val=0.29084 acc=89.5333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 17/20 val=0.28942 acc=89.8000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 18/20 val=0.29110 acc=89.8000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 19/20 val=0.29098 acc=89.9667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1235 20/20 val=0.31181 acc=88.7500%
+[final] e3_fashionmnist_single_ref64_b128_k2_seed1235 Q=64700.6 GPU=1
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 1/20 val=0.44135 acc=84.0500%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 2/20 val=0.39642 acc=84.3167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 3/20 val=0.37014 acc=85.8000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 4/20 val=0.32598 acc=87.8667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 5/20 val=0.30646 acc=88.6667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 6/20 val=0.31690 acc=88.0333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 7/20 val=0.29762 acc=89.0000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 8/20 val=0.30032 acc=89.0667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 9/20 val=0.30982 acc=88.4667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 10/20 val=0.29168 acc=89.1667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 11/20 val=0.30551 acc=88.9167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 12/20 val=0.29346 acc=89.0667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 13/20 val=0.27482 acc=90.2333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 14/20 val=0.28790 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 15/20 val=0.29879 acc=89.5333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 16/20 val=0.28578 acc=89.7833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 17/20 val=0.28751 acc=89.9000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 18/20 val=0.28076 acc=90.4167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 19/20 val=0.29468 acc=89.6000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1235 20/20 val=0.30438 acc=89.3333%
+[final] e3_fashionmnist_single_ref32_b64_k4_seed1235 Q=42663.4 GPU=1
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 1/20 val=0.43989 acc=84.0167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 2/20 val=0.40194 acc=83.4167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 3/20 val=0.35939 acc=86.1333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 4/20 val=0.33342 acc=87.3000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 5/20 val=0.30133 acc=89.0667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 6/20 val=0.32093 acc=88.1500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 7/20 val=0.30154 acc=88.8833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 8/20 val=0.30809 acc=88.7833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 9/20 val=0.31000 acc=88.4833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 10/20 val=0.29419 acc=88.8167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 11/20 val=0.30146 acc=89.1333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 12/20 val=0.28633 acc=89.8500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 13/20 val=0.28114 acc=89.7667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 14/20 val=0.29047 acc=89.4333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 15/20 val=0.29357 acc=89.5500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 16/20 val=0.28406 acc=90.0000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 17/20 val=0.28461 acc=90.0000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 18/20 val=0.28397 acc=89.9333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 19/20 val=0.28257 acc=90.2667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1235 20/20 val=0.31029 acc=89.0667%
+[final] e3_fashionmnist_single_ref16_b32_k8_seed1235 Q=26737.3 GPU=1
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 1/20 val=0.44609 acc=83.9000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 2/20 val=0.39950 acc=84.1500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 3/20 val=0.37954 acc=85.4167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 4/20 val=0.32566 acc=87.7500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 5/20 val=0.29793 acc=89.0167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 6/20 val=0.32236 acc=87.9333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 7/20 val=0.30349 acc=88.7667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 8/20 val=0.30754 acc=88.7833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 9/20 val=0.30934 acc=88.6333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 10/20 val=0.28741 acc=89.5667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 11/20 val=0.29516 acc=89.1833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 12/20 val=0.29601 acc=88.9333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 13/20 val=0.27241 acc=90.4167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 14/20 val=0.28123 acc=89.8167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 15/20 val=0.29943 acc=89.3167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 16/20 val=0.28299 acc=89.7500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 17/20 val=0.28372 acc=89.8833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 18/20 val=0.29237 acc=89.8667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 19/20 val=0.28605 acc=89.9167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1235 20/20 val=0.30950 acc=89.1000%
+[final] e3_fashionmnist_single_ref128_b256_k1_seed1235 Q=88180.7 GPU=1
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 1/20 val=0.43269 acc=83.8500%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 2/20 val=0.37623 acc=85.9667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 3/20 val=0.36493 acc=86.4667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 4/20 val=0.31508 acc=88.3000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 5/20 val=0.32514 acc=87.8167%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 6/20 val=0.29782 acc=88.9833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 7/20 val=0.32418 acc=88.2667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 8/20 val=0.31110 acc=89.1333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 9/20 val=0.30178 acc=89.0667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 10/20 val=0.29846 acc=88.8667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 11/20 val=0.29549 acc=89.3833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 12/20 val=0.27659 acc=90.0667%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 13/20 val=0.28581 acc=89.1500%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 14/20 val=0.28738 acc=89.8833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 15/20 val=0.28537 acc=89.9333%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 16/20 val=0.28269 acc=90.0000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 17/20 val=0.28318 acc=89.8833%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 18/20 val=0.27703 acc=90.4500%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 19/20 val=0.29310 acc=89.4000%
+[epoch] e3_fashionmnist_single_ref32_b64_k4_seed1236 20/20 val=0.31867 acc=89.1667%
+[final] e3_fashionmnist_single_ref32_b64_k4_seed1236 Q=43377.7 GPU=1
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 1/20 val=0.41575 acc=85.2667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 2/20 val=0.38377 acc=85.5000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 3/20 val=0.35849 acc=86.3333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 4/20 val=0.31012 acc=88.4667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 5/20 val=0.34206 acc=87.3833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 6/20 val=0.31263 acc=88.5833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 7/20 val=0.32020 acc=88.2500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 8/20 val=0.31608 acc=89.0333%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 9/20 val=0.28839 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 10/20 val=0.30143 acc=89.1833%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 11/20 val=0.28664 acc=89.6667%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 12/20 val=0.27654 acc=89.9167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 13/20 val=0.29020 acc=89.3167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 14/20 val=0.28933 acc=89.8500%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 15/20 val=0.28859 acc=89.2167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 16/20 val=0.27531 acc=90.0167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 17/20 val=0.27769 acc=90.0167%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 18/20 val=0.29133 acc=89.9000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 19/20 val=0.30650 acc=89.3000%
+[epoch] e3_fashionmnist_single_ref16_b32_k8_seed1236 20/20 val=0.31886 acc=89.1500%
+[final] e3_fashionmnist_single_ref16_b32_k8_seed1236 Q=26193.9 GPU=1
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 1/20 val=0.45426 acc=82.5833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 2/20 val=0.37727 acc=85.7167%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 3/20 val=0.36428 acc=86.0667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 4/20 val=0.31652 acc=88.2833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 5/20 val=0.32719 acc=88.1500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 6/20 val=0.30586 acc=88.5500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 7/20 val=0.31235 acc=88.1833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 8/20 val=0.31421 acc=88.9667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 9/20 val=0.29893 acc=88.5000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 10/20 val=0.31424 acc=88.4000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 11/20 val=0.29045 acc=89.4500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 12/20 val=0.27775 acc=89.9667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 13/20 val=0.29481 acc=89.3500%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 14/20 val=0.29711 acc=89.4000%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 15/20 val=0.28560 acc=89.7667%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 16/20 val=0.27958 acc=89.8333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 17/20 val=0.28457 acc=89.9833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 18/20 val=0.28155 acc=90.2333%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 19/20 val=0.30853 acc=88.6833%
+[epoch] e3_fashionmnist_single_ref128_b256_k1_seed1236 20/20 val=0.31443 acc=89.5833%
+[final] e3_fashionmnist_single_ref128_b256_k1_seed1236 Q=91408.5 GPU=1
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 1/20 val=0.46080 acc=82.3333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 2/20 val=0.38239 acc=85.5667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 3/20 val=0.35736 acc=86.6667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 4/20 val=0.31762 acc=88.1500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 5/20 val=0.33280 acc=87.5500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 6/20 val=0.29645 acc=88.6667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 7/20 val=0.31615 acc=88.6167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 8/20 val=0.32248 acc=88.4833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 9/20 val=0.29497 acc=89.1333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 10/20 val=0.29176 acc=88.8000%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 11/20 val=0.29438 acc=89.0833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 12/20 val=0.27159 acc=89.9500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 13/20 val=0.28488 acc=89.4667%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 14/20 val=0.29378 acc=89.3500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 15/20 val=0.28893 acc=89.8833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 16/20 val=0.28662 acc=89.6500%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 17/20 val=0.27422 acc=90.2333%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 18/20 val=0.29059 acc=90.0833%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 19/20 val=0.30380 acc=89.0167%
+[epoch] e3_fashionmnist_single_ref64_b128_k2_seed1236 20/20 val=0.28789 acc=90.0167%
+[final] e3_fashionmnist_single_ref64_b128_k2_seed1236 Q=66344.5 GPU=1

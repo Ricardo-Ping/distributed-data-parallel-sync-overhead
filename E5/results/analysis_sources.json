@@ -1,0 +1,12 @@
+{
+  "E5/profile_activity.py": "7de94866d1d137123bf16c792b2cb0510f940b34b5341a5d1b0e63f252158bb6",
+  "E5/plot_results.py": "1c4b8d6e6e5b63080a7352df9fc81ed5370efed07aeda268f4879e2154c0a6ae",
+  "E5/check_results.py": "12db3c8edaaff0f5fb7db43ad3f3e64fff3e9fd031c1f753e8ca66b971f8b0e8",
+  "scripts/audit_e5_profiles.py": "0cae5900921419887d2cdfe4ec0bcd9b546c1b3209c94171302c7b893f7a9e6c",
+  "scripts/audit_step_exports.py": "5819e5d36041bb2bc377421eb6e7133db6dc24549eecb8e58a4f4393cebbd39d",
+  "scripts/audit_scaling_reports.py": "542acff84d526bcfd99bbec5a2ff3b5ed75b3a03c0bc253113686b1006b74b0e",
+  "scripts/check_raw_integrity.py": "e9f59188863c37314215a69c32abb070b0e19153a564423bc631028516cff011",
+  "scripts/check_gpu_controls.py": "86675fa0814de8ab5cf9f54befb77a777947298967129dba377dcc8193b7e380",
+  "scripts/export_step_metrics.py": "07d3983790bd2188d40844e7fa0984e0e72c4b48bb5e52439dd46f4a901323c5",
+  "audit_main_figures.py": "25259336276200a85fd141818d3fa7b2b9f43250583bc3e6b18064c5e0e3f78c"
+}

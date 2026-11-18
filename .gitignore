@@ -1,0 +1,61 @@
+# 依赖环境和安装产物；保留 pyproject.toml、uv.lock 和 .python-version。
+.venv/
+venv/
+env/
+.conda/
+node_modules/
+__pypackages__/
+site-packages/
+*.egg-info/
+*.dist-info/
+
+# 本地维护工具和说明文档。
+/scripts/
+/docs/
+
+# Python 和工具缓存。
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.uv-cache/
+.tox/
+.nox/
+
+# 只忽略下载的数据集，不忽略 Data/ 中的源码。
+/Data/MNIST/
+/Data/FashionMNIST/
+/Data/cifar-10-batches-py/
+/Data/cifar-10-python.tar.gz
+
+# 各实验的检查点和权重；保留 models/ 等源码目录及实验指标、图表。
+checkpoints/
+checkpoint/
+ckpts/
+ckpt/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.ggml
+*.onnx
+*.tflite
+*.bin
+*.weights
+*.weights.h5
+
+# 本机环境变量配置；可提交不含凭据的示例模板。
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+
+# macOS 元数据。
+.DS_Store
+._*

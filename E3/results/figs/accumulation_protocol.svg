@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="610" viewBox="0 0 1320 610">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#526277"/></marker>
+    <style>
+      text{font-family:'Noto Sans CJK SC','Noto Sans CJK JP',sans-serif;fill:#172c44;font-size:21px}
+      .title{font-size:28px;font-weight:700}.small{font-size:18px}.bold{font-weight:700}
+      .panel{fill:#f7f9fc;stroke:#ccd8e6;stroke-width:1.8}
+      .batch{fill:#e8f0fb;stroke:#2765a8;stroke-width:2}
+      .sync{fill:#eaf6ef;stroke:#27896b;stroke-width:2}
+      .accum{fill:#fff4e7;stroke:#c77929;stroke-width:2}
+      .line{fill:none;stroke:#526277;stroke-width:2.2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1320" height="610" fill="white"/>
+  <text x="660" y="40" text-anchor="middle" class="title">E3：同一个全局 Batch，改变 Micro-Batch 与梯度累积方式</text>
+  <text x="660" y="74" text-anchor="middle">每次更新处理 256 个样本；两个 rank 各处理相同顺序的 128 个样本</text>
+
+  <rect x="25" y="98" width="1270" height="165" rx="14" class="panel"/>
+  <text x="48" y="132" class="bold">128 × 1</text>
+  <text x="48" y="162" class="small">不拆分窗口</text>
+  <rect x="250" y="120" width="300" height="115" rx="10" class="batch"/>
+  <text x="400" y="155" text-anchor="middle">每个 rank：128 个样本</text>
+  <text x="400" y="188" text-anchor="middle">一次 forward + backward</text>
+  <text x="400" y="218" text-anchor="middle" class="small">得到本窗口平均梯度</text>
+  <path d="M550,177 L620,177" class="line"/>
+  <rect x="630" y="135" width="300" height="85" rx="10" class="sync"/>
+  <text x="780" y="169" text-anchor="middle">一次 NCCL AllReduce</text>
+  <text x="780" y="202" text-anchor="middle">两 rank 梯度求和后除以 2</text>
+  <path d="M930,177 L998,177" class="line"/>
+  <rect x="1008" y="135" width="260" height="85" rx="10" class="batch"/>
+  <text x="1138" y="169" text-anchor="middle">一次 SGD 更新</text>
+  <text x="1138" y="202" text-anchor="middle" class="small">两个 rank 各更新本地模型</text>
+
+  <rect x="25" y="283" width="1270" height="200" rx="14" class="panel"/>
+  <text x="48" y="322" class="bold">16 × 8 示例</text>
+  <text x="48" y="352" class="small">64 × 2、32 × 4</text>
+  <text x="48" y="379" class="small">采用相同流程</text>
+  <rect x="250" y="304" width="300" height="155" rx="10" class="accum"/>
+  <text x="400" y="336" text-anchor="middle">每个 rank：8 个 micro</text>
+  <text x="400" y="368" text-anchor="middle">每个 micro 16 个样本</text>
+  <text x="400" y="399" text-anchor="middle" class="small">前 7 次 forward + backward</text>
+  <text x="400" y="428" text-anchor="middle" class="small">使用 no_sync，保留累积梯度</text>
+  <path d="M550,381 L620,381" class="line"/>
+  <rect x="630" y="319" width="300" height="125" rx="10" class="sync"/>
+  <text x="780" y="352" text-anchor="middle">第 8 次 backward</text>
+  <text x="780" y="385" text-anchor="middle">同步完整的累积梯度</text>
+  <text x="780" y="418" text-anchor="middle" class="small">仍只有一次 AllReduce</text>
+  <path d="M930,381 L998,381" class="line"/>
+  <rect x="1008" y="339" width="260" height="85" rx="10" class="batch"/>
+  <text x="1138" y="373" text-anchor="middle">一次 SGD 更新</text>
+  <text x="1138" y="406" text-anchor="middle" class="small">随后清空梯度，进入下一窗口</text>
+
+  <text x="660" y="522" text-anchor="middle">每个 micro 的平均 loss × 该 micro 实际样本数 / 本 rank 窗口实际样本数</text>
+  <text x="660" y="557" text-anchor="middle" class="small">尾批按真实样本数加权；四种实现的样本顺序、全局更新边界和归约次数保持相同。</text>
+  <text x="660" y="587" text-anchor="middle" class="small">这里比较小 micro 的计算与调度成本、显存收益；128 × 1 本身已经每次更新只同步一次。</text>
+</svg>

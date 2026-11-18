@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-11-16T23:47:04.643460+08:00",
+  "note": "Training modules match the launch snapshot. Plotting was adjusted to show all raw seed values and three readable log-axis payload ticks; the actual analysis source is snapshotted separately.",
+  "source_sha256": {
+    "E1/plot_results.py": "ef587c0d72bb197b278405e7602b8e992f77dcec1f94aedc1276a49c2683824a",
+    "E1/check_results.py": "7762f377b1cc486a612247383d28173e6ab4ba0f680cddf66c5fda8552cdc6b1",
+    "E1/metrics.py": "d6847badde0d17e48927d5c2306150e9c5e037776c51c51eebe256d8e2b99ea2"
+  },
+  "snapshot_dir": "analysis_source",
+  "updated_at": "2026-11-16T23:54:51.740295+08:00"
+}

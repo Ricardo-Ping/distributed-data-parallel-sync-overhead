@@ -1,0 +1,46 @@
+[
+  {
+    "figure": "F1_throughput.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "782505673b998b3101b3e32ccadf5420bff03d4cc0611e0ea38a904233de6122",
+    "sha256": "a071e3c76d8b72504ea8bb010f46947bf7f0e10cad24e93eac6db0df5b19c980",
+    "curves": 24,
+    "points": 120,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F2_update_compute.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "782505673b998b3101b3e32ccadf5420bff03d4cc0611e0ea38a904233de6122",
+    "sha256": "6f10a77d655de862ab51c80c400a2215e3386c4aaa1f7d85600e0229fa75af35",
+    "curves": 48,
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F3_sync_cost.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "782505673b998b3101b3e32ccadf5420bff03d4cc0611e0ea38a904233de6122",
+    "sha256": "b091c584db0c395ae1a6607f14ebe21e700911552e9d33d9d07e7402cfa801da",
+    "curves": 72,
+    "points": 360,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  },
+  {
+    "figure": "F4_memory_accuracy.png",
+    "source": "main_comparison.csv",
+    "source_sha256": "782505673b998b3101b3e32ccadf5420bff03d4cc0611e0ea38a904233de6122",
+    "sha256": "95aa862c92c161fc1e20978f07f34e749469aeb874bf541f29ee464e44289e7f",
+    "curves": 48,
+    "points": 240,
+    "all_points_inside_axes": true,
+    "all_three_seeds_and_means": true,
+    "source_values_checked": true
+  }
+]

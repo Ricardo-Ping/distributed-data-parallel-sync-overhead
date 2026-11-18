@@ -1,0 +1,18 @@
+{
+  "Data/datasets.py": "daf360a5e0062a53deeb933170be09883f74a2d40a3acd117902a63df6d90f80",
+  "E5/__init__.py": "5c3f0f0c40dfacfdc8be38d4da90e7f9e5f9bac12e2ee0ead160b940b18fcf7d",
+  "E5/check_results.py": "12db3c8edaaff0f5fb7db43ad3f3e64fff3e9fd031c1f753e8ca66b971f8b0e8",
+  "E5/config.py": "83feb71a93f5fdea119254b6ca01a396d319b68fba71bad93e765a820b88a7db",
+  "E5/configs/cifar10.yaml": "75b615de7d59bd6f09678bcb70b85912f2918a3a758ab2dbe1fc92d94418d8d3",
+  "E5/configs/fashionmnist.yaml": "0a9d4d15cde83cdd5046969418a25cb37f1ffc9c72dd0e3aee1a5b006e2ceee4",
+  "E5/configs/mnist.yaml": "e14d7018d1ed2956f6e371980324d05bb60cf8a39e39edec3e153ec109f41634",
+  "E5/data.py": "75af612c709ff2e0cbc498c4df3fc390f40cdd346d546e7be9787e59a18cfd1b",
+  "E5/distributed.py": "089da200db4ea927011c979276fb0735addfcfd1fbd38fb5d27d3c1c54d0e04f",
+  "E5/evaluate.py": "2c97cfb314b1123593edc8992587e224762ac4ed323e84cd25dae6f2b1ea29ae",
+  "E5/metrics.py": "4e37b6338203bc759f618720a79031cce9f4ef0e4a8d4e0a3b54b2519f38e775",
+  "E5/model.py": "65947aaa9ca1f0b7e5def53ffec1b7fe546a7fa8ec7b1342b8836d2b6280e286",
+  "E5/plot_results.py": "1c4b8d6e6e5b63080a7352df9fc81ed5370efed07aeda268f4879e2154c0a6ae",
+  "E5/profile_activity.py": "70fb2dfa9e8621686b08b63897a5f745253b97e47e6d31eaf01d664c58d264f0",
+  "E5/run.py": "5fdfd1b7259f7da0fe80a8f72fcc25e25abb3a69d1dfd88869c87e6913c0655a",
+  "E5/train.py": "98e45c937706749548ef898a16cc3cd7ace7f7800e55ed503a632c64631a1e41"
+}

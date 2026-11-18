@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-17T11:43:32.018608+08:00",
+  "experiment": "E3",
+  "case": "e3_fashionmnist_single_ref16_b32_k8_seed1234",
+  "reason": "An accidental recursive host directory search overlapped this in-progress performance measurement; search stopped and this entire unfinished run archived, without inspecting its performance outcome.",
+  "completed_runs_retained": 3,
+  "restart": "same source, configuration and seed; rerun all 20 epochs with --resume",
+  "archive": "archive/E3_single_gpu_search_overlap_20261117_114332",
+  "partial_files_sha256": {
+    "training_before_restart.log": "c4bc522a77cf60e486399f088c262a4825f8eedfd82edab8981db080827ed837",
+    "fashionmnist/ref16/seed1234/config.json": "e74ef39a9e9e7e3107aa8894d641c597fb56b07e5d02c02b8d1660ee88450e2c",
+    "fashionmnist/ref16/seed1234/sampling.json": "8af7f137d2762c8c524c291964d8f5c97f0c143c63095c5d8208366222ef671f",
+    "fashionmnist/ref16/seed1234/dataset.json": "f4810c71aaa5cf85b5692a4bddb3ce09c7b72b6b3fe21d93f2a868b51ddf2e52",
+    "fashionmnist/ref16/seed1234/runtime.json": "bf245b6aa4b9b8da163ba376ea81cbadf6bedf83e0a179973ac2a91816fe9190",
+    "fashionmnist/ref16/seed1234/split_indices.npz": "a8ed345287afd649f4bb68cc5a1128fc6f3532411ac546a6a49f246e81e28361",
+    "fashionmnist/ref16/seed1234/steps.csv": "639bccb8af14a91a2f6394c8d11f4107ba4408e0b29439a6cae5cce0c22e51f8",
+    "fashionmnist/ref16/seed1234/epochs.csv": "5fedb84198228b0f0656c55e50d17ebc4bdacc43d7d99fab5ad14e57bfdaa97e"
+  }
+}

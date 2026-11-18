@@ -1,0 +1,49 @@
+{
+  "data": "fashionmnist",
+  "in_dim": 784,
+  "n_classes": 10,
+  "original_train_samples": 60000,
+  "train_samples": 54000,
+  "val_samples": 6000,
+  "test_samples": 10000,
+  "validation_fraction": 0.1,
+  "split_seed": 1234,
+  "train_class_counts": [
+    5400,
+    5400,
+    5400,
+    5400,
+    5400,
+    5400,
+    5400,
+    5400,
+    5400,
+    5400
+  ],
+  "val_class_counts": [
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600
+  ],
+  "test_class_counts": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "train_indices_sha256": "099b970ca8f15a7e6c7cc9e4a280b48799d698b174d63e77905d957bfe19dbc8",
+  "val_indices_sha256": "8995812fd408aca137839ece450f3ef4af4c23ec84a976674f05353b2543271c"
+}

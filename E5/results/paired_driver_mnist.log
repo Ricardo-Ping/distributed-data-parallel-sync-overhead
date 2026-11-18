@@ -1,0 +1,66 @@
+[plan] mnist ordinary_sgd H=1 seed=1234
+[plan] mnist dual H=1 seed=1234
+[plan] mnist serial_local_sgd H=1 seed=1234
+[plan] mnist serial_local_sgd H=2 seed=1234
+[plan] mnist dual H=2 seed=1234
+[plan] mnist dual H=4 seed=1234
+[plan] mnist serial_local_sgd H=4 seed=1234
+[plan] mnist serial_local_sgd H=8 seed=1234
+[plan] mnist dual H=8 seed=1234
+[plan] mnist dual H=16 seed=1234
+[plan] mnist serial_local_sgd H=16 seed=1234
+[plan] mnist serial_local_sgd H=2 seed=1235
+[plan] mnist dual H=2 seed=1235
+[plan] mnist dual H=4 seed=1235
+[plan] mnist serial_local_sgd H=4 seed=1235
+[plan] mnist ordinary_sgd H=1 seed=1235
+[plan] mnist serial_local_sgd H=8 seed=1235
+[plan] mnist dual H=8 seed=1235
+[plan] mnist dual H=16 seed=1235
+[plan] mnist serial_local_sgd H=16 seed=1235
+[plan] mnist serial_local_sgd H=1 seed=1235
+[plan] mnist dual H=1 seed=1235
+[plan] mnist dual H=4 seed=1236
+[plan] mnist serial_local_sgd H=4 seed=1236
+[plan] mnist serial_local_sgd H=8 seed=1236
+[plan] mnist dual H=8 seed=1236
+[plan] mnist dual H=16 seed=1236
+[plan] mnist serial_local_sgd H=16 seed=1236
+[plan] mnist serial_local_sgd H=1 seed=1236
+[plan] mnist dual H=1 seed=1236
+[plan] mnist dual H=2 seed=1236
+[plan] mnist serial_local_sgd H=2 seed=1236
+[plan] mnist ordinary_sgd H=1 seed=1236
+[done] 1/33 mnist ordinary_sgd H=1 seed=1234
+[done] 2/33 mnist dual H=1 seed=1234
+[done] 3/33 mnist serial_local_sgd H=1 seed=1234
+[done] 4/33 mnist serial_local_sgd H=2 seed=1234
+[done] 5/33 mnist dual H=2 seed=1234
+[done] 6/33 mnist dual H=4 seed=1234
+[done] 7/33 mnist serial_local_sgd H=4 seed=1234
+[done] 8/33 mnist serial_local_sgd H=8 seed=1234
+[done] 9/33 mnist dual H=8 seed=1234
+[done] 10/33 mnist dual H=16 seed=1234
+[done] 11/33 mnist serial_local_sgd H=16 seed=1234
+[done] 12/33 mnist serial_local_sgd H=2 seed=1235
+[done] 13/33 mnist dual H=2 seed=1235
+[done] 14/33 mnist dual H=4 seed=1235
+[done] 15/33 mnist serial_local_sgd H=4 seed=1235
+[done] 16/33 mnist ordinary_sgd H=1 seed=1235
+[done] 17/33 mnist serial_local_sgd H=8 seed=1235
+[done] 18/33 mnist dual H=8 seed=1235
+[done] 19/33 mnist dual H=16 seed=1235
+[done] 20/33 mnist serial_local_sgd H=16 seed=1235
+[done] 21/33 mnist serial_local_sgd H=1 seed=1235
+[done] 22/33 mnist dual H=1 seed=1235
+[done] 23/33 mnist dual H=4 seed=1236
+[done] 24/33 mnist serial_local_sgd H=4 seed=1236
+[done] 25/33 mnist serial_local_sgd H=8 seed=1236
+[done] 26/33 mnist dual H=8 seed=1236
+[done] 27/33 mnist dual H=16 seed=1236
+[done] 28/33 mnist serial_local_sgd H=16 seed=1236
+[done] 29/33 mnist serial_local_sgd H=1 seed=1236
+[done] 30/33 mnist dual H=1 seed=1236
+[done] 31/33 mnist dual H=2 seed=1236
+[done] 32/33 mnist serial_local_sgd H=2 seed=1236
+[done] 33/33 mnist ordinary_sgd H=1 seed=1236

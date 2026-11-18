@@ -1,0 +1,283 @@
+{
+  "experiment": "E2",
+  "pairs": 45,
+  "source_single_runs": 45,
+  "all_measured_workloads_match": true,
+  "single_results_dir": "/home/ycping/project/\u5927\u6570\u636e/\u9879\u76ee/d1-gradient-sync/E2/results/single_gpu",
+  "dual_results_dir": "/home/ycping/project/\u5927\u6570\u636e/\u9879\u76ee/d1-gradient-sync/E2/results",
+  "speedup_definition": "Q2 / Q1 = measured_T1 / measured_T2 for identical measured samples",
+  "compute_speedup_definition": "single compute wall / critical-rank dual compute wall",
+  "parallel_efficiency_definition": "speedup / 2",
+  "checked": [
+    {
+      "single_run_id": "e2_mnist_single_ref32_b64_k1_seed1234",
+      "dual_run_id": "e2_mnist_b32_k1_g64_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref64_b128_k1_seed1234",
+      "dual_run_id": "e2_mnist_b64_k1_g128_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref128_b256_k1_seed1234",
+      "dual_run_id": "e2_mnist_b128_k1_g256_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref256_b512_k1_seed1234",
+      "dual_run_id": "e2_mnist_b256_k1_g512_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref512_b1024_k1_seed1234",
+      "dual_run_id": "e2_mnist_b512_k1_g1024_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref64_b128_k1_seed1235",
+      "dual_run_id": "e2_mnist_b64_k1_g128_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref128_b256_k1_seed1235",
+      "dual_run_id": "e2_mnist_b128_k1_g256_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref256_b512_k1_seed1235",
+      "dual_run_id": "e2_mnist_b256_k1_g512_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref512_b1024_k1_seed1235",
+      "dual_run_id": "e2_mnist_b512_k1_g1024_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref32_b64_k1_seed1235",
+      "dual_run_id": "e2_mnist_b32_k1_g64_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref128_b256_k1_seed1236",
+      "dual_run_id": "e2_mnist_b128_k1_g256_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref256_b512_k1_seed1236",
+      "dual_run_id": "e2_mnist_b256_k1_g512_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref512_b1024_k1_seed1236",
+      "dual_run_id": "e2_mnist_b512_k1_g1024_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref32_b64_k1_seed1236",
+      "dual_run_id": "e2_mnist_b32_k1_g64_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_mnist_single_ref64_b128_k1_seed1236",
+      "dual_run_id": "e2_mnist_b64_k1_g128_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref32_b64_k1_seed1234",
+      "dual_run_id": "e2_fashionmnist_b32_k1_g64_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref64_b128_k1_seed1234",
+      "dual_run_id": "e2_fashionmnist_b64_k1_g128_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref128_b256_k1_seed1234",
+      "dual_run_id": "e2_fashionmnist_b128_k1_g256_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref256_b512_k1_seed1234",
+      "dual_run_id": "e2_fashionmnist_b256_k1_g512_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref512_b1024_k1_seed1234",
+      "dual_run_id": "e2_fashionmnist_b512_k1_g1024_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref64_b128_k1_seed1235",
+      "dual_run_id": "e2_fashionmnist_b64_k1_g128_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref128_b256_k1_seed1235",
+      "dual_run_id": "e2_fashionmnist_b128_k1_g256_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref256_b512_k1_seed1235",
+      "dual_run_id": "e2_fashionmnist_b256_k1_g512_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref512_b1024_k1_seed1235",
+      "dual_run_id": "e2_fashionmnist_b512_k1_g1024_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref32_b64_k1_seed1235",
+      "dual_run_id": "e2_fashionmnist_b32_k1_g64_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref128_b256_k1_seed1236",
+      "dual_run_id": "e2_fashionmnist_b128_k1_g256_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref256_b512_k1_seed1236",
+      "dual_run_id": "e2_fashionmnist_b256_k1_g512_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref512_b1024_k1_seed1236",
+      "dual_run_id": "e2_fashionmnist_b512_k1_g1024_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref32_b64_k1_seed1236",
+      "dual_run_id": "e2_fashionmnist_b32_k1_g64_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_fashionmnist_single_ref64_b128_k1_seed1236",
+      "dual_run_id": "e2_fashionmnist_b64_k1_g128_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref32_b64_k1_seed1234",
+      "dual_run_id": "e2_cifar10_b32_k1_g64_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref64_b128_k1_seed1234",
+      "dual_run_id": "e2_cifar10_b64_k1_g128_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref128_b256_k1_seed1234",
+      "dual_run_id": "e2_cifar10_b128_k1_g256_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref256_b512_k1_seed1234",
+      "dual_run_id": "e2_cifar10_b256_k1_g512_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref512_b1024_k1_seed1234",
+      "dual_run_id": "e2_cifar10_b512_k1_g1024_seed1234",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref64_b128_k1_seed1235",
+      "dual_run_id": "e2_cifar10_b64_k1_g128_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref128_b256_k1_seed1235",
+      "dual_run_id": "e2_cifar10_b128_k1_g256_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref256_b512_k1_seed1235",
+      "dual_run_id": "e2_cifar10_b256_k1_g512_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref512_b1024_k1_seed1235",
+      "dual_run_id": "e2_cifar10_b512_k1_g1024_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref32_b64_k1_seed1235",
+      "dual_run_id": "e2_cifar10_b32_k1_g64_seed1235",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref128_b256_k1_seed1236",
+      "dual_run_id": "e2_cifar10_b128_k1_g256_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref256_b512_k1_seed1236",
+      "dual_run_id": "e2_cifar10_b256_k1_g512_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref512_b1024_k1_seed1236",
+      "dual_run_id": "e2_cifar10_b512_k1_g1024_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref32_b64_k1_seed1236",
+      "dual_run_id": "e2_cifar10_b32_k1_g64_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    },
+    {
+      "single_run_id": "e2_cifar10_single_ref64_b128_k1_seed1236",
+      "dual_run_id": "e2_cifar10_b64_k1_g128_seed1236",
+      "same_training_and_measured_units": true,
+      "dual_metrics_recomputed": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "checked_figures": [
+    "/home/ycping/project/大数据/项目/d1-gradient-sync/E1/results/figs/F1_step_breakdown.png",
+    "/home/ycping/project/大数据/项目/d1-gradient-sync/E1/results/figs/F2_compute_sync_ratio.png",
+    "/home/ycping/project/大数据/项目/d1-gradient-sync/E1/results/figs/F3_throughput_scaling.png",
+    "/home/ycping/project/大数据/项目/d1-gradient-sync/E1/results/figs/F4_payload_timing.png"
+  ],
+  "all_seed_observations_within_axes": true
+}

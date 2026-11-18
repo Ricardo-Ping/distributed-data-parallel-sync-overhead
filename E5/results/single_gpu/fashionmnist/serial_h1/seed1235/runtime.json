@@ -1,0 +1,21 @@
+{
+  "experiment": "E5",
+  "run_id": "e5_single_fashionmnist_serial_h1_seed1235",
+  "device": "cuda:0",
+  "physical_gpus": 1,
+  "training_processes": 1,
+  "logical_replicas": 2,
+  "world_size": 1,
+  "backend": null,
+  "cross_gpu_communication": false,
+  "dtype": "float32",
+  "allow_tf32": false,
+  "host_threads": 4,
+  "micro_batch_per_replica": 128,
+  "sync_interval": 1,
+  "global_batch_per_logical_step": 256,
+  "momentum_policy": "local_unsynchronized",
+  "epoch_end_policy": "flush_partial_round",
+  "timing_mode": "cuda_synchronized_serial_round",
+  "timing_schema_version": 2
+}

@@ -1,0 +1,549 @@
+{
+  "experiment": "E3",
+  "runs": 36,
+  "all_models_retested_on_cuda": true,
+  "all_records_recomputed": true,
+  "all_sample_orders_match": true,
+  "checked": [
+    {
+      "run_id": "e3_mnist_single_ref128_b256_k1_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06899463787078858,
+        "accuracy": 0.9833,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref64_b128_k2_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06943879051208496,
+        "accuracy": 0.9826,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref32_b64_k4_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.0686656343460083,
+        "accuracy": 0.9829,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref16_b32_k8_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07083052759170533,
+        "accuracy": 0.9825,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref64_b128_k2_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06842592287063598,
+        "accuracy": 0.9833,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref32_b64_k4_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06834400968551636,
+        "accuracy": 0.9834,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref16_b32_k8_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.0683004934310913,
+        "accuracy": 0.9835,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref128_b256_k1_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06805204968452454,
+        "accuracy": 0.9836,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref32_b64_k4_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06750608358383178,
+        "accuracy": 0.9828,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref16_b32_k8_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06818602261543275,
+        "accuracy": 0.9827,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref128_b256_k1_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06777287149429322,
+        "accuracy": 0.9823,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_mnist_single_ref64_b128_k2_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06749961733818054,
+        "accuracy": 0.9833,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref128_b256_k1_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.33154344482421877,
+        "accuracy": 0.8916,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref64_b128_k2_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3296947555541992,
+        "accuracy": 0.8907,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref32_b64_k4_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3201472915649414,
+        "accuracy": 0.8961,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref16_b32_k8_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.33264851837158205,
+        "accuracy": 0.8905,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref64_b128_k2_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3494247985839844,
+        "accuracy": 0.885,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref32_b64_k4_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34232042236328125,
+        "accuracy": 0.8865,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref16_b32_k8_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34845492248535154,
+        "accuracy": 0.8867,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref128_b256_k1_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.35538634338378905,
+        "accuracy": 0.881,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref32_b64_k4_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3531764190673828,
+        "accuracy": 0.8819,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref16_b32_k8_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.36639317016601564,
+        "accuracy": 0.8782,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref128_b256_k1_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3536213043212891,
+        "accuracy": 0.8816,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_fashionmnist_single_ref64_b128_k2_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3292476348876953,
+        "accuracy": 0.8899,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref128_b256_k1_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.413312451171875,
+        "accuracy": 0.5075,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref64_b128_k2_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.407245361328125,
+        "accuracy": 0.515,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref32_b64_k4_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3944933227539063,
+        "accuracy": 0.5208,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref16_b32_k8_seed1234",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4141857543945313,
+        "accuracy": 0.5024,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref64_b128_k2_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.391425537109375,
+        "accuracy": 0.5163,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref32_b64_k4_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4239761108398437,
+        "accuracy": 0.5074,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref16_b32_k8_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3938332275390626,
+        "accuracy": 0.5172,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref128_b256_k1_seed1235",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4155571655273438,
+        "accuracy": 0.5061,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref32_b64_k4_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3779962890625,
+        "accuracy": 0.5211,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref16_b32_k8_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4184539794921875,
+        "accuracy": 0.5074,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref128_b256_k1_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4163401245117186,
+        "accuracy": 0.5084,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e3_cifar10_single_ref64_b128_k2_seed1236",
+      "records_ok": true,
+      "sample_order_matches_dual": true,
+      "measured_workload_matches_dual": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4067429443359376,
+        "accuracy": 0.5114,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+dataset: cifar10
+learning_rate: 0.05
+micro_batch: 128

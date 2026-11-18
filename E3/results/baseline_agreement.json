@@ -1,0 +1,65 @@
+[
+  {
+    "dataset": "cifar10",
+    "seed": 1234,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "cifar10",
+    "seed": 1235,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "cifar10",
+    "seed": 1236,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1234,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1235,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "fashionmnist",
+    "seed": 1236,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "mnist",
+    "seed": 1234,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "mnist",
+    "seed": 1235,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  },
+  {
+    "dataset": "mnist",
+    "seed": 1236,
+    "device": "cuda:0",
+    "parameters_bitwise_equal": true,
+    "metrics_equal": true
+  }
+]

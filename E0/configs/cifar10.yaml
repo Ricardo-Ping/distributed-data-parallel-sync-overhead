@@ -1,0 +1,12 @@
+dataset: cifar10
+device: cuda
+epochs: 20
+global_batch: 256
+learning_rate: 0.05
+momentum: 0.9
+seeds: [1234, 1235, 1236]
+world_sizes: [1, 2]
+validation_fraction: 0.1
+split_seed: 1234
+eval_batch: 2048
+warmup_steps: 10

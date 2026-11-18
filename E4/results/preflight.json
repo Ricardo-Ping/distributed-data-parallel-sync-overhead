@@ -1,0 +1,13 @@
+{
+  "command": "uv run --locked pytest E4/tests E5/tests -q",
+  "combined_passed": 22,
+  "experiment_passed": 13,
+  "seconds": 201.48,
+  "model_device": "CUDA",
+  "backend": "NCCL",
+  "coverage": [
+    "full_and_short_tail",
+    "single_update_per_accumulation_window",
+    "twenty_epochs_validation_test_isolation"
+  ]
+}

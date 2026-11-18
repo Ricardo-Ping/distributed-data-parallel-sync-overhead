@@ -1,0 +1,23 @@
+{
+  "run_id": "e0_baseline_k1_ws2_mM_b128_r0",
+  "exp": "e0_baseline",
+  "model": "M",
+  "ws": 2,
+  "k": 1,
+  "local_batch": 128,
+  "compress": "none",
+  "lr": 0.1,
+  "scale_lr": false,
+  "data": "mnist",
+  "device": "cuda:1",
+  "backend": "nccl",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "cpu_threads": 16,
+  "timing_mode": "cuda_synchronized_wall",
+  "rank": 1,
+  "local_rank": 1,
+  "world_size": 2,
+  "seed": 1234,
+  "torch_version": "2.15.0+cu132",
+  "cuda_version": "13.2"
+}

@@ -1,0 +1,13 @@
+{
+  "completed_at": "2026-11-16T23:54:58.037732+08:00",
+  "experiment": "E1",
+  "formal_runs": 54,
+  "epochs_per_run": 20,
+  "gpu_independent_rechecks": 54,
+  "source_snapshot_training_unchanged": true,
+  "raw_files_hashed": 567,
+  "report_numeric_rows_cross_checked": 36,
+  "figures_with_all_three_seed_observations": 4,
+  "preflight_tests": 10,
+  "legacy_routing_tests": 6
+}

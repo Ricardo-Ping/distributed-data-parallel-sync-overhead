@@ -1,0 +1,1179 @@
+{
+  "experiment": "E4",
+  "runs": 90,
+  "records_only": false,
+  "checked": [
+    {
+      "run_id": "e4_mnist_k1_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06901921138763428,
+        "accuracy": 0.9832,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k1_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06888050007820129,
+        "accuracy": 0.9832,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k1_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06760192394256592,
+        "accuracy": 0.9829,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k1_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06901921138763428,
+        "accuracy": 0.9832,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k1_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06888050007820129,
+        "accuracy": 0.9832,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k1_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06760192394256592,
+        "accuracy": 0.9829,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06581930437088013,
+        "accuracy": 0.9811,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.0677918794631958,
+        "accuracy": 0.981,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06513850479125977,
+        "accuracy": 0.9808,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06591504878997803,
+        "accuracy": 0.9815,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.0680905764579773,
+        "accuracy": 0.9814,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k2_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06442660961151123,
+        "accuracy": 0.9812,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06368558082580567,
+        "accuracy": 0.9802,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06513945064544678,
+        "accuracy": 0.9798,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06602756299972534,
+        "accuracy": 0.9792,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06396354293823242,
+        "accuracy": 0.9798,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06526286373138428,
+        "accuracy": 0.9804,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k4_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.06598861427307129,
+        "accuracy": 0.9792,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07059919052124024,
+        "accuracy": 0.9782,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07291324501037598,
+        "accuracy": 0.9776,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07320991401672364,
+        "accuracy": 0.9772,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07076424674987793,
+        "accuracy": 0.9781,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07292491607666016,
+        "accuracy": 0.9772,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k8_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.07313749504089355,
+        "accuracy": 0.9773,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10701066970825196,
+        "accuracy": 0.9672,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10656565895080566,
+        "accuracy": 0.9677,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10489096946716309,
+        "accuracy": 0.9688,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10697297859191894,
+        "accuracy": 0.9674,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10652759742736817,
+        "accuracy": 0.9679,
+        "device": "cuda:0",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_mnist_k16_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.10483506774902343,
+        "accuracy": 0.9689,
+        "device": "cuda:1",
+        "dataset": "mnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3315876708984375,
+        "accuracy": 0.8914,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34102008361816405,
+        "accuracy": 0.8845,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34010164794921877,
+        "accuracy": 0.8868,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3315876708984375,
+        "accuracy": 0.8914,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34102008361816405,
+        "accuracy": 0.8845,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k1_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34010164794921877,
+        "accuracy": 0.8868,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.32675865783691405,
+        "accuracy": 0.887,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.33833303680419924,
+        "accuracy": 0.8838,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3127015899658203,
+        "accuracy": 0.8915,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34241671142578123,
+        "accuracy": 0.8777,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3309568542480469,
+        "accuracy": 0.8868,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k2_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.31487330627441407,
+        "accuracy": 0.8924,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.33153694763183594,
+        "accuracy": 0.884,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.32208564758300784,
+        "accuracy": 0.8837,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.336258528137207,
+        "accuracy": 0.8782,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3316570602416992,
+        "accuracy": 0.8832,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.31892427215576175,
+        "accuracy": 0.8872,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k4_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3250983947753906,
+        "accuracy": 0.8837,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.33522454528808593,
+        "accuracy": 0.8795,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3440508285522461,
+        "accuracy": 0.8779,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.34000279388427734,
+        "accuracy": 0.8787,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3327841583251953,
+        "accuracy": 0.8797,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.35129472045898436,
+        "accuracy": 0.8745,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k8_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3410258483886719,
+        "accuracy": 0.8778,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.366937939453125,
+        "accuracy": 0.8677,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.36742574462890626,
+        "accuracy": 0.8678,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3670201416015625,
+        "accuracy": 0.8691,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.36887143249511717,
+        "accuracy": 0.8665,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.37567626342773436,
+        "accuracy": 0.866,
+        "device": "cuda:0",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_fashionmnist_k16_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 0.3690660339355469,
+        "accuracy": 0.867,
+        "device": "cuda:1",
+        "dataset": "fashionmnist",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.432418359375,
+        "accuracy": 0.5034,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3894573364257812,
+        "accuracy": 0.5116,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3916704711914063,
+        "accuracy": 0.5145,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.432418359375,
+        "accuracy": 0.5034,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3894573364257812,
+        "accuracy": 0.5116,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k1_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3916704711914063,
+        "accuracy": 0.5145,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3522260375976562,
+        "accuracy": 0.5283,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3418670776367188,
+        "accuracy": 0.5339,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3725319213867186,
+        "accuracy": 0.5263,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3435068969726562,
+        "accuracy": 0.5291,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3557368896484374,
+        "accuracy": 0.5349,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k2_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3753523315429688,
+        "accuracy": 0.52,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4180867065429688,
+        "accuracy": 0.4954,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3792829956054689,
+        "accuracy": 0.5094,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4202454345703126,
+        "accuracy": 0.5059,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3912728881835938,
+        "accuracy": 0.5105,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.3767291870117186,
+        "accuracy": 0.5119,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k4_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4066627685546875,
+        "accuracy": 0.5031,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4429124389648438,
+        "accuracy": 0.485,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.405281591796875,
+        "accuracy": 0.4975,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4685656616210938,
+        "accuracy": 0.4726,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4375563354492187,
+        "accuracy": 0.4899,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.4175347045898437,
+        "accuracy": 0.4943,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k8_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.5253229248046876,
+        "accuracy": 0.4561,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_every_micro_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.542209326171875,
+        "accuracy": 0.4583,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_every_micro_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.5566505615234374,
+        "accuracy": 0.4526,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_every_micro_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.6174872680664063,
+        "accuracy": 0.4279,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_window_end_seed1234",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.59733994140625,
+        "accuracy": 0.4378,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_window_end_seed1235",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.52879814453125,
+        "accuracy": 0.4627,
+        "device": "cuda:0",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    },
+    {
+      "run_id": "e4_cifar10_k16_window_end_seed1236",
+      "records_ok": true,
+      "independent_test": {
+        "samples": 10000,
+        "loss": 1.5747407958984374,
+        "accuracy": 0.4351,
+        "device": "cuda:1",
+        "dataset": "cifar10",
+        "split": "test",
+        "checkpoint_epoch": 20
+      }
+    }
+  ],
+  "sample_order_consistent": true,
+  "tail_samples_preserved": true
+}

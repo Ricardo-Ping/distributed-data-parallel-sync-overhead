@@ -1,0 +1,17 @@
+{
+  "command": "uv run --locked pytest E1/tests -q",
+  "passed": 10,
+  "failed": 0,
+  "seconds": 35.06,
+  "output": "10 passed in 35.06s",
+  "model_device": "CUDA",
+  "distributed_backend": "NCCL",
+  "checks": [
+    "S单卡、S双卡、L双卡的完整批次梯度与参数更新等价性",
+    "20轮验证后仅测试一次并保存末轮模型",
+    "三档模型参数量、梯度载荷和输出形状",
+    "固定局部批量与丢弃尾批",
+    "配对扩展效率与预热排除后的逐rank分段复算",
+    "只读计划、旧输出保护和实验模块独立性"
+  ]
+}
