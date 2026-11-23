@@ -270,8 +270,6 @@ def compare(root=BASELINE_ROOT, output=RESULTS_ROOT, dual_root=RESULTS_ROOT):
     output.mkdir(parents=True, exist_ok=True)
     rows, verified = [], []
     for case in cases_for():
-        if case.role == "ordinary_sgd":
-            continue
         folder = case.folder(root)
         single = json.loads((folder / "final.json").read_text())
         units = pd.read_csv(folder / "steps.csv")

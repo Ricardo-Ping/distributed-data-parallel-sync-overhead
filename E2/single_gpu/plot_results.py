@@ -38,12 +38,7 @@ def render(results_dir=RESULTS_ROOT):
     frame = pd.read_csv(results_dir / "scaling.csv")
     variants = sorted(frame.variant.unique())
     colors = ("#2766A6", "#C97424")
-    labels = {
-        "ddp": "双GPU（DDP）",
-        "every_micro": "双GPU（每micro同步）",
-        "window_end": "双GPU（窗口末同步）",
-        "local_sgd": "双GPU（Local SGD）",
-    }
+    labels = {"ddp": "双GPU（DDP）"}
     groups = [("single", "#646C76", "单GPU（匹配全局Batch）")]
     groups += [
         (variant, color, labels[variant]) for variant, color in zip(variants, colors)
@@ -150,7 +145,7 @@ def render(results_dir=RESULTS_ROOT):
     figures = [
         (
             "F5_single_dual_throughput.png",
-            "图5 逐配置匹配全局Batch的单/双GPU吞吐与更新时间",
+            "逐配置匹配全局Batch的单/双GPU吞吐与更新时间",
             False,
             [
                 (
@@ -173,7 +168,7 @@ def render(results_dir=RESULTS_ROOT):
         ),
         (
             "F6_parallel_speedup.png",
-            "图6 同种子配对加速比与并行效率",
+            "同种子配对加速比与并行效率",
             True,
             [
                 ("speedup", None, "吞吐加速比 Q2/Q1", 1, False, (1, 2)),
@@ -183,7 +178,7 @@ def render(results_dir=RESULTS_ROOT):
         ),
         (
             "F7_single_dual_quality_memory.png",
-            "图7 单/双GPU末轮质量与每卡峰值显存",
+            "单/双GPU末轮质量与每卡峰值显存",
             False,
             [
                 (
@@ -265,7 +260,7 @@ def render(results_dir=RESULTS_ROOT):
                 ):
                     raise ValueError("图中存在无效或被截断的种子/均值点")
                 point_count += len(values)
-        fig.savefig(folder / filename, dpi=180, bbox_inches="tight")
+        fig.savefig(folder / filename, dpi=300, bbox_inches="tight")
         plt.close(fig)
         audit.append(
             {

@@ -60,6 +60,7 @@ def record_environment(
             *EXPERIMENT_ROOT.glob("*.py"),
             *EXPERIMENT_ROOT.glob("configs/*.yaml"),
             PROJECT_ROOT / "Data/datasets.py",
+            PROJECT_ROOT / "training_common/epoch_metrics.py",
         ]
     )
     hashes = {

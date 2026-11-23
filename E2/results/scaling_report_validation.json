@@ -3,9 +3,9 @@
   "paired_rows_formula_checked": 45,
   "summary_rows_recomputed": 285,
   "report_scaling_rows_checked": 15,
-  "local_links_checked": 27,
+  "local_links_checked": 30,
   "figures_source_and_sha256_checked": 3,
-  "report_sha256": "b78ab5c7e3079c105c50634f6bbb087e9a3e03ebb90149a1938606302ea90e27",
+  "report_sha256": "6d0d55282e92c42dcb8144729c60b0b94509714e13a665d3c209879210d5e3a5",
   "all_checks_passed": true,
   "main_figures": {
     "raw_final_runs_checked": 90,

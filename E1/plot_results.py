@@ -129,7 +129,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
 
     def save(figure, name):
         figure.canvas.draw()
-        figure.savefig(folder / name, dpi=180, bbox_inches="tight")
+        figure.savefig(folder / name, dpi=300, bbox_inches="tight")
         plt.close(figure)
         print(folder / name)
 
@@ -173,7 +173,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
         *seed_legends,
     ]
     figure.suptitle(
-        "图1 模型规模与更新时间分段（柱为三种子均值，点为逐种子总耗时）", fontsize=14
+        "模型规模与更新时间分段（柱为三种子均值，点为逐种子总耗时）", fontsize=14
     )
     figure.legend(handles=handles, loc="lower center", ncol=4, frameon=False)
     figure.tight_layout(rect=(0, 0.14, 1, 0.94))
@@ -191,7 +191,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
             grouped(axis, dataset, metric, scale)
             axis.set_title(NAMES[dataset])
             axis.set_ylabel(label)
-    figure.suptitle("图2 模型规模对计算与同步比例的影响", fontsize=15)
+    figure.suptitle("模型规模对计算与同步比例的影响", fontsize=15)
     figure.legend(
         handles=[*legends, *seed_legends], loc="lower center", ncol=5, frameon=False
     )
@@ -232,7 +232,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
         axis.set_ylabel("双卡弱扩展效率（%）")
         axis.grid(axis="y", alpha=0.18)
         axis.set_axisbelow(True)
-    figure.suptitle("图3 固定每卡 batch=128：吞吐与双卡弱扩展效率", fontsize=15)
+    figure.suptitle("固定每卡 batch=128：吞吐与双卡弱扩展效率", fontsize=15)
     figure.legend(
         handles=[*legends, *seed_legends], loc="lower center", ncol=5, frameon=False
     )
@@ -273,7 +273,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
         axis.set_ylim(bottom=0)
         axis.grid(alpha=0.18)
     figure.suptitle(
-        "图4 梯度载荷与双卡计算、同步耗时（线为均值，点为三个种子）", fontsize=14
+        "梯度载荷与双卡计算、同步耗时（线为均值，点为三个种子）", fontsize=14
     )
     figure.legend(
         handles=[*axes[0].get_legend_handles_labels()[0], *seed_legends],

@@ -17,7 +17,13 @@ from E0.config import EXPERIMENTS, PROJECT_ROOT, Config, run_id
 from E0.data import Split, load_split, train_loader
 from E0.distributed import SyncStatistics, cleanup, initialize, register_hook
 from E0.evaluate import evaluate_model
-from E0.metrics import CSVWriter, FINAL_FIELDS, RUN_FIELDS, VALIDATION_EPOCH_FIELDS
+from E0.metrics import (
+    CSVWriter,
+    FINAL_FIELDS,
+    RUN_FIELDS,
+    VALIDATION_EPOCH_FIELDS,
+    summarize_timing,
+)
 from E0.model import MLP, save_checkpoint
 
 
@@ -171,6 +177,7 @@ class Trainer:
         final = None
         try:
             for epoch in range(self.config.epochs):
+                previous_totals = self.totals.copy()
                 start = time.perf_counter()
                 train_loss = self.train_epoch(epoch, step_writer)
                 if self.rank == 0:
@@ -196,9 +203,19 @@ class Trainer:
                             "is_best": is_best,
                         }
                     )
+                    timing = summarize_timing(
+                        **{
+                            field: total - previous_totals[field]
+                            for field, total in self.totals.items()
+                        }
+                    )
                     print(
                         f"[epoch] {self.identifier} {epoch + 1}/20 loss={train_loss:.5f} "
-                        f"val_loss={measured['loss']:.5f} val_acc={measured['accuracy']:.4%}",
+                        f"val_loss={measured['loss']:.5f} val_acc={measured['accuracy']:.4%}\n"
+                        f"        throughput={timing['train_throughput']:.1f} samples/s  "
+                        f"avg_update={timing['avg_update_ms']:.3f} ms  "
+                        f"avg_sync={timing['avg_sync_ms']:.3f} ms  "
+                        f"sync_share={timing['sync_share']:.2%}",
                         flush=True,
                     )
                 if self.world_size > 1:
@@ -259,10 +276,7 @@ class Trainer:
                     "checkpoint_path": checkpoint_path,
                     "total_train_samples": total["samples"],
                     "total_updates": total["updates"],
-                    "train_throughput": total["samples"] * 1000 / total["train_ms"],
-                    "avg_update_ms": total["train_ms"] / total["updates"],
-                    "avg_sync_ms": total["sync_ms"] / total["updates"],
-                    "sync_share": total["sync_ms"] / total["train_ms"],
+                    **summarize_timing(**total),
                     "train_time_s": total["train_ms"] / 1000,
                     "wall_time_s": time.perf_counter() - started,
                 }

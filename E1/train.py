@@ -20,6 +20,7 @@ from E1.distributed import SyncStatistics, cleanup, initialize, register_hook
 from E1.evaluate import evaluate_model
 from E1.metrics import STEP_FIELDS, summarize_steps, write_rows
 from E1.model import MLP, save_checkpoint
+from training_common.epoch_metrics import EpochMetrics, format_epoch_metrics
 
 
 class Trainer:
@@ -172,6 +173,11 @@ class Trainer:
             num_workers=0,
         )
         history, best_loss, best_epoch = [], float("inf"), 0
+        epoch_metrics = EpochMetrics(
+            (self.folder / f"steps_rank{rank}.csv" for rank in range(self.ws)),
+            time_column="t_step_ms",
+            samples_column="samples",
+        )
         started = time.perf_counter()
         for epoch in range(1, self.config.epochs + 1):
             train_loss = self.train_epoch(epoch)
@@ -179,18 +185,21 @@ class Trainer:
                 measured = evaluate_model(self.model, validation)
                 if measured["loss"] < best_loss:
                     best_loss, best_epoch = measured["loss"], epoch
+                performance = epoch_metrics.read(epoch)
                 history.append(
                     {
                         "epoch": epoch,
                         "train_loss": train_loss,
                         "val_loss": measured["loss"],
                         "val_acc": measured["accuracy"],
+                        **performance,
                     }
                 )
                 pd.DataFrame(history).to_csv(self.folder / "epochs.csv", index=False)
                 print(
                     f"[epoch] {self.identifier} {epoch}/20 train={train_loss:.5f} "
-                    f"val={measured['loss']:.5f} acc={measured['accuracy']:.4%}",
+                    f"val={measured['loss']:.5f} acc={measured['accuracy']:.4%}\n"
+                    f"        {format_epoch_metrics(performance, scale_experiment=True)}",
                     flush=True,
                 )
             if self.ws > 1:

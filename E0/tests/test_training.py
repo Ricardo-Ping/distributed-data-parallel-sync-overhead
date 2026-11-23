@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import csv
+import re
 import socket
 from pathlib import Path
 
@@ -116,7 +117,9 @@ def test_tail_updates_match_global_batch_on_gpu(tmp_path, world_size):
 
 
 @pytest.mark.fast
-def test_twenty_epochs_validate_then_test_and_save_last_model(tmp_path, monkeypatch):
+def test_twenty_epochs_validate_then_test_and_save_last_model(
+    tmp_path, monkeypatch, capsys
+):
     import E0.train as training
 
     initialize(0, 1, 0)
@@ -153,5 +156,21 @@ def test_twenty_epochs_validate_then_test_and_save_last_model(tmp_path, monkeypa
             torch.testing.assert_close(value, states[-1][key], rtol=0, atol=0)
         with (tmp_path / "mnist/epochs.csv").open() as file:
             assert all(row["test_acc"] == "" for row in csv.DictReader(file))
+        with (tmp_path / "mnist/runs.csv").open() as file:
+            steps = list(csv.DictReader(file))
+        timing_lines = re.findall(
+            r"throughput=([\d.]+) samples/s +avg_update=([\d.]+) ms +"
+            r"avg_sync=([\d.]+) ms +sync_share=([\d.]+)%",
+            capsys.readouterr().out,
+        )
+        assert len(timing_lines) == 20
+        for epoch, line in enumerate(timing_lines):
+            epoch_steps = [row for row in steps if int(row["epoch"]) == epoch]
+            samples = sum(int(row["samples"]) for row in epoch_steps)
+            train_ms = sum(float(row["t_step_ms"]) for row in epoch_steps)
+            throughput, update, sync, share = map(float, line)
+            assert throughput == pytest.approx(samples * 1000 / train_ms, abs=0.051)
+            assert update == pytest.approx(train_ms / len(epoch_steps), abs=0.00051)
+            assert sync == share == 0
     finally:
         cleanup()

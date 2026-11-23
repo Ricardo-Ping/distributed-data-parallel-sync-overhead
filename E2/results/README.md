@@ -11,3 +11,5 @@ E2固定双GPU、累积1次，扫描每卡Batch Size，并为每档设置匹配�
 `step_metrics/rank_steps.csv.gz`、`global_units.csv.gz`覆盖全部90次运行，记录每步耗时、样本吞吐、同步事件和载荷；`run_index.csv`、`audit.json`保存来源与公式检查。原始记录由哈希清单保护，指标导出不覆盖测量文件。
 
 图1—4直接比较相同全局Batch的单、双GPU。`main_comparison.csv`含90次运行，`main_comparison_sources.json`记录配置、工作量与源文件哈希；`figure_validation.json`核对三个种子、均值、坐标范围和图片哈希。
+
+新实验默认写入 `reproduce/`，核验和绘图可选独立结果目录。具体命令见 [复现说明](../README.md#运行入口)。

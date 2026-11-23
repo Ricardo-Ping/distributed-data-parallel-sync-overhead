@@ -6,7 +6,6 @@
   "local_throughput_definition": "1000 * actual local samples / actual local optimizer-step ms",
   "global_throughput_definition": "1000 * actual global samples / recorded global timing-unit ms",
   "E0_scope": "original rank0 observations; original millisecond rounding preserved",
-  "E5_scope": "each local optimizer step measured independently; H-step global throughput remains round-based",
   "original_files_modified": false,
   "checked": [
     {

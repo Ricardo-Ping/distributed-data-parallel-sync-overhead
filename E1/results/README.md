@@ -4,7 +4,7 @@
 
 - `mnist/`、`fashionmnist/`、`cifar10/`：每个模型、卡数和种子各有独立目录，保存原始逐rank计时、训练验证记录、末轮模型与最终测试。
 - `environment.json`、`host_context.json`、`provenance/`：正式训练环境、虚拟化主机信息、运行源码及哈希。
-- `analysis_sources.json`、`analysis_source/`：实际绘图、核验源码哈希及快照；训练源码仍与运行开始时一致。
+- `analysis_sources.json`、`analysis_source/`：正式归档的分析源码快照与哈希。现行绘图入口见 [复现说明](../README.md#运行)。
 - `preflight.json`：正式运行前10项检查结果，涉及模型计算时使用GPU。
 - `run_plan.log`、`training.log`：运行计划和正式训练输出。
 - `final.csv`、`seed_summary.csv`：绘图时从54次原始结果汇总的指标、均值、样本标准差与原始范围。
@@ -16,3 +16,5 @@
 - `original_gpu_files_sha256.json`、`completion.json`：567份原始文件的哈希与54次运行、54次GPU独立复测的完成记录。
 
 单、双GPU的三个模型规模均独立训练，报告中的统计与图片可以从本目录的原始记录复算。
+
+新实验默认写入 `reproduce/`，核验和绘图可选独立结果目录。具体命令见 [复现说明](../README.md#运行)。

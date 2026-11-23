@@ -2,7 +2,7 @@
 
 E2对应实验A。固定两张RTX 4090、MLP-M和梯度累积次数1，扫描每卡batch=32、64、128、256、512，对应全局batch=64、128、256、512、1024。三个数据集、三个种子、每次20轮，双GPU与匹配单GPU各45次，共90次训练。
 
-代码、配置、测试与结果独立保存在本目录，只调用顶层[Data](../Data/README.md)读取原始数据。实验设计与结果见[报告](results/实验报告.md)。
+代码、配置、测试与结果独立保存在本目录，读取顶层 [Data](../Data/README.md) 的原始数据。实验设计与结果见[报告](results/实验报告.md)。
 
 ## 运行环境
 
@@ -18,47 +18,55 @@ E2对应实验A。固定两张RTX 4090、MLP-M和梯度累积次数1，扫描每
 
 ## 运行入口
 
-在项目根目录执行：
+命令在项目根目录执行。两种卡数各有 45 次完整训练。先用 `--list` 查看计划，训练命令依次执行。
 
 ```bash
-uv sync --locked
-uv run python -m E2.run --list
+bash "sh/5.1.E2单卡训练.sh" --list
+bash "sh/5.3.E2双卡训练.sh" --list
 
-# 正式45次训练，已有同名运行时会拒绝覆盖
-CUDA_VISIBLE_DEVICES=0,1 NCCL_DEBUG=WARN uv run python -m E2.run
-
-# 中断后跳过已完整保存的运行；未完成目录须先归档
-uv run python -m E2.run --resume
-
-# 重跑另选结果目录
-uv run python -m E2.run --output-dir E2/results/new_run
-
-# 单个组合的调试
-uv run python -m E2.run --dataset mnist --batch 128 --seed 1234 --output-dir E2/results/debug_run
-
-# 独立验证或测试，模型计算均使用CUDA
-uv run python -m E2.evaluate --checkpoint E2/results/mnist/b128_k1/seed1234/checkpoint.pt --split validation --device cuda:0
-uv run python -m E2.evaluate --checkpoint E2/results/mnist/b128_k1/seed1234/checkpoint.pt --split test --device cuda:1
-
-uv run pytest E2/tests -q
-uv run python -m E2.check_results
-uv run python -m E2.plot_results
+bash "sh/5.3.E2双卡训练.sh"
+bash "sh/5.1.E2单卡训练.sh"
 ```
 
-`check_results`和`plot_results`支持`--results-dir`。核验默认复算记录并独立GPU复测全部模型；`--records-only`只复算原始记录与检查模型元数据。所有模型计算必须使用GPU，缺少CUDA或NCCL时明确报错。
+双卡默认写入 `E2/results/reproduce/`，单卡默认写入该目录的 `single_gpu/`。自定义输出时也保持这一目录关系，便于核验和配对。增加 `--resume` 可跳过配置、身份和末轮协议一致的完整运行。未完成的运行可归档后重跑，或使用新的 `--output-dir`。双卡启动进程组时遇端口占用最多尝试三次，训练开始后遇异常即停止。
 
-启动进程组时若端口被占用，且目录仍只有配置文件，会重新选择端口，最多尝试三次。已开始训练的运行不会自动重试。`--resume`核对已有完整结果的配置、身份和末轮协议后跳过；训练、计时或同步源码变化时拒绝续跑。
+下面复现 MNIST、种子 1234 的代表配置，写入独立目录。双卡的 `--batch 128` 设置每卡 batch，单卡的 `--level 128` 选择匹配双卡档位。单卡实际 batch 为 256，两组全局 batch 都是 256。
+
+```bash
+R=E2/results/reproduce_mnist
+
+bash "sh/5.3.E2双卡训练.sh" --dataset mnist --batch 128 --seed 1234 --output-dir "$R"
+bash "sh/5.4.E2双卡测试.sh" "$R/mnist/b128_k1/seed1234/checkpoint.pt"
+
+bash "sh/5.1.E2单卡训练.sh" --dataset mnist --level 128 --seed 1234 --output-dir "$R/single_gpu"
+bash "sh/5.2.E2单卡测试.sh" "$R/single_gpu/mnist/ref128/seed1234/checkpoint.pt"
+```
+
+两个测试脚本均在单张 GPU 上复测所选的末轮检查点。用命令中的训练结果目录构造路径，可以复测不同配置和种子。
+
+完成 **45 对**完整训练后，按以下顺序复算、配对和绘图。位置参数选择包含单双卡数据的结果根目录。绘图读取配对 CSV，在 `figs/` 生成 7 张统计图。
+
+```bash
+R=E2/results/reproduce
+
+uv run --locked pytest E2/tests E2/single_gpu/tests -q
+bash "sh/5.5.E2结果核验.sh" "$R"
+bash "sh/5.6.E2配对统计.sh" "$R"
+bash "sh/5.7.E2绘图.sh" "$R"
+```
+
+核验脚本同时复算单双卡记录并在 CUDA 上复测全部末轮模型。只核对双卡原始记录时，可运行 `uv run --locked python -m E2.check_results --results-dir "$R" --records-only`。
 
 ## 文件与图表
 
-`config.py`与`configs/`定义协议，`data.py`负责划分和全局更新窗口采样，`model.py`定义MLP-M，`distributed.py`实现CUDA/NCCL及同步计时，`train.py`完成训练验证和末轮测试，`evaluate.py`支持独立评估，`metrics.py`从逐rank记录计算性能。训练流程只调用E2和Data内的模块。
+`config.py`与`configs/`定义协议，`data.py`负责划分和全局更新窗口采样，`model.py`定义MLP-M，`distributed.py`实现CUDA/NCCL及同步计时，`train.py`完成训练验证和末轮测试，`evaluate.py`支持独立评估，`metrics.py`从逐rank记录计算性能。逐轮性能从已保存的步记录计算。
 
 每个运行位于`results/{数据集}/b{每卡batch}_k1/seed{种子}/`，包含：
 
 - `config.json`、`dataset.json`、`split_indices.npz`：实际配置与数据划分。
 - `runtime_rank0/1.json`、`sampling_rank0/1.json`：设备、后端及各轮样本顺序哈希。
 - `steps_rank0/1.csv`：按参数更新记录的分段时间、样本数、同步调用与载荷。
-- `epochs.csv`：20轮训练和验证结果；不包含逐轮测试。
+- `epochs.csv`：20 轮训练损失和验证指标。新运行同时记录样本吞吐、更新/计算/同步耗时、同步占比及每样本同步耗时。
 - `memory_rank0/1.json`、`final.json`、`checkpoint.pt`：训练显存峰值、末轮测试及模型。
 
 顶层`results/`保存环境、源码快照、训练日志、核验记录和图表。`final.csv`为45次结果，`seed_summary.csv`保留三种子均值、样本标准差与观测范围，`paired_relative.csv`为相同种子相对每卡128基线的吞吐和更新时间比。
@@ -71,12 +79,6 @@ uv run python -m E2.plot_results
 
 单GPU设置45次独立训练：实际batch为64、128、256、512、1024，与双GPU对应配置保持相同全局batch、样本窗口、SGD次数及20轮。实现位于`single_gpu/`，结果位于`results/single_gpu/`。每次运行的`config.json`同时保存实际单卡配置与双卡参考配置。
 
-```bash
-CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 uv run python -m E2.single_gpu.run --list
-CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 uv run python -m E2.single_gpu.run --resume
-uv run python -m E2.single_gpu.check_results
-uv run python -m E2.single_gpu.compare
-uv run python -m E2.single_gpu.plot_results
-```
+单卡档位和检查点路径详见 [E2 单卡说明](single_gpu/README.md)。
 
 `scaling.csv`保留45对同种子结果，`scaling_summary.csv`汇总吞吐加速比、计算段加速比、并行效率和时间节省比例。图5—7依次展示吞吐/更新时间、并行收益、质量/显存，与图1—4共同编入报告“实测结果”。逐步吞吐和同步记录位于`results/step_metrics/`。

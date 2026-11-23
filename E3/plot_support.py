@@ -31,8 +31,6 @@ def comparison_frame(dual, results, single_results=None):
     single_results = Path(single_results) if single_results else results / "single_gpu"
     singles, doubles, seen, sources = [], [], set(), {}
     for case in cases_for():
-        if case.role == "ordinary_sgd":
-            continue
         folder = case.folder(single_results)
         actual = json.loads((folder / "config.json").read_text())
         if actual != json.loads(json.dumps(saved_config(case))):
@@ -207,24 +205,15 @@ def _line(axis, x, y, metadata, **style):
     return line
 
 
-def draw(axis, frame, dataset, metric, groups, scale=1, *, censored=False, dense=False):
+def draw(axis, frame, dataset, metric, groups, scale=1, *, dense=False):
     observed = []
-    missing = []
     for name, color, label in groups:
         current = frame[frame.dataset.eq(dataset) & frame.series.eq(name)]
         if current.empty:
             raise ValueError(f"缺少绘图组：{dataset}/{name}")
-        if current[metric].isna().all() and not censored:
-            if EXPERIMENT == "E5" and metric == "arrival_gap_ms" and name == "single":
-                missing.append(label)
-                continue
-            raise ValueError(f"缺少实测指标：{dataset}/{name}/{metric}")
-        if not censored and current[metric].isna().any():
+        if current[metric].isna().any():
             raise ValueError(f"指标不完整：{dataset}/{name}/{metric}")
         means = current.groupby("plot_x")[metric].mean().sort_index()
-        if censored:
-            reached = current.groupby("plot_x").target_reached.all()
-            means = means.where(reached)
         for seed, marker, size in zip(SEEDS, MARKERS, SIZES):
             values = current[current.seed.eq(seed)].sort_values("plot_x")
             meta = dict(
@@ -251,35 +240,12 @@ def draw(axis, frame, dataset, metric, groups, scale=1, *, censored=False, dense
                 clip_on=False,
             )
             observed.extend(values[metric].dropna() * scale)
-            if censored:
-                missed = values[~values.target_reached]
-                if not missed.empty:
-                    meta = dict(
-                        dataset=dataset,
-                        series=name,
-                        seed=seed,
-                        metric="training_stage_wall_s",
-                        scale=1,
-                        statistic="censored",
-                    )
-                    _line(
-                        axis,
-                        missed.plot_x,
-                        missed.training_stage_wall_s,
-                        meta,
-                        color=color,
-                        marker="x",
-                        linestyle="none",
-                        markersize=7,
-                        clip_on=False,
-                    )
-                    observed.extend(missed.training_stage_wall_s)
         meta = dict(
             dataset=dataset,
             series=name,
             metric=metric,
             scale=scale,
-            statistic="reached_mean" if censored else "mean",
+            statistic="mean",
         )
         _line(
             axis,
@@ -302,25 +268,13 @@ def draw(axis, frame, dataset, metric, groups, scale=1, *, censored=False, dense
         padding = max(0.3, (high - low) * 0.18)
         axis.set_ylim(max(0, low - padding), min(100, high + padding))
     else:
-        upper = max(high * (1.3 if censored else 1.15), 1e-9)
+        upper = max(high * 1.15, 1e-9)
         axis.set_ylim(
             0,
-            min(100, upper) if metric in ("sync_share", "gpu_gap_fraction") else upper,
+            min(100, upper) if metric == "sync_share" else upper,
         )
     axis.set_title(f"({'abc'[DATASETS.index(dataset)]}) {NAMES[dataset]}")
     axis.grid(alpha=0.17)
-    if missing:
-        axis.text(
-            0.02,
-            0.96,
-            "仅双GPU定义该指标",
-            transform=axis.transAxes,
-            ha="left",
-            va="top",
-            color="#646C76",
-            fontsize=9,
-        )
-    return missing
 
 
 def save_figure(figure, path, source):
@@ -338,21 +292,17 @@ def save_figure(figure, path, source):
             entry = coverage.setdefault(key, {"seeds": set(), "means": 0})
             if meta["statistic"] == "seed":
                 entry["seeds"].add(meta["seed"])
-            elif meta["statistic"] in ("mean", "reached_mean"):
+            elif meta["statistic"] == "mean":
                 entry["means"] += 1
             group = frame[
                 frame.dataset.eq(meta["dataset"]) & frame.series.eq(meta["series"])
             ]
             metric, scale = meta["metric"], meta["scale"]
-            if meta["statistic"] in ("seed", "censored"):
+            if meta["statistic"] == "seed":
                 group = group[group.seed.eq(meta["seed"])].sort_values("plot_x")
-                if meta["statistic"] == "censored":
-                    group = group[~group.target_reached]
                 x, y = group.plot_x.to_numpy(), group[metric].to_numpy() * scale
             else:
                 mean = group.groupby("plot_x")[metric].mean().sort_index()
-                if meta["statistic"] == "reached_mean":
-                    mean = mean.where(group.groupby("plot_x").target_reached.all())
                 x, y = mean.index.to_numpy(), mean.to_numpy() * scale
             np.testing.assert_array_equal(line.get_xdata(), x)
             np.testing.assert_allclose(
@@ -371,7 +321,7 @@ def save_figure(figure, path, source):
         if entry["means"] or entry["seeds"]:
             if entry["seeds"] != set(SEEDS) or entry["means"] != 1:
                 raise ValueError(f"图片缺少三个种子或唯一均值：{key}")
-    figure.savefig(path, dpi=180, bbox_inches="tight")
+    figure.savefig(path, dpi=300, bbox_inches="tight")
     return dict(
         figure=Path(path).name,
         source=source.name,

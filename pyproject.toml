@@ -1,7 +1,7 @@
 [project]
 name = "d1-gradient-sync"
 version = "0.1.0"
-description = "D1: 数据并行中的计算与通信开销——模型规模、批大小、梯度累积与Local SGD"
+description = "D1: 数据并行中的计算与通信开销——模型规模、批大小与梯度累积"
 requires-python = ">=3.11"
 dependencies = [
     "numpy>=1.26",
@@ -20,16 +20,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["Data", "E0", "E1", "E2", "E3", "E4", "E5"]
+packages = ["Data", "E0", "E1", "E2", "E3", "training_common"]
 
 [tool.uv]
 package = true
 
 [tool.pytest.ini_options]
-testpaths = ["E0/tests", "E1/tests", "E2/tests", "E3/tests", "E4/tests", "E5/tests", "E2/single_gpu/tests", "E3/single_gpu/tests", "E4/single_gpu/tests", "E5/single_gpu/tests"]
+testpaths = ["E0/tests", "E1/tests", "E2/tests", "E3/tests", "E2/single_gpu/tests", "E3/single_gpu/tests"]
 pythonpath = ["."]
 markers = [
-    "fast: 快速测试，答辩现场可整组运行（约 1-2 分钟）",
+    "fast: 快速测试（约 1-2 分钟）",
     "slow: 慢速测试，训练至收敛，报告数据用",
 ]
 

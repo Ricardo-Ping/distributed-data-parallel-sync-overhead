@@ -1,8 +1,8 @@
 # D1：数据并行中的计算与通信开销
 
-项目研究模型规模、Batch Size、梯度累积和 Local SGD 同步间隔对训练性能的影响。E0—E5各有独立的代码、配置、测试和结果，原始数据统一放在`Data/`。训练、验证、测试和模型数值检查均使用CUDA，多GPU通信使用NCCL。
+项目研究模型规模、Batch Size 和梯度累积对训练性能的影响。E0—E3各有独立的代码、配置、测试和结果，原始数据统一放在`Data/`。训练、验证、测试和模型数值检查均使用CUDA，多GPU通信使用NCCL。
 
-实验覆盖MNIST、FashionMNIST、CIFAR-10，训练种子为1234、1235、1236，每次训练20轮。共468次完整训练，包括匹配的单GPU对照；每轮验证，训练结束后测试并保存第20轮模型。
+实验覆盖MNIST、FashionMNIST、CIFAR-10，训练种子为1234、1235、1236，每次训练20轮。正式归档共234次完整训练，包括匹配的单GPU对照。每轮验证，训练结束后测试并保存第20轮模型。
 
 ## 实验内容
 
@@ -12,8 +12,6 @@
 | E1 | 三档MLP宽度对计算与通信比例的影响 | 54 | [运行](E1/README.md) · [报告](E1/results/实验报告.md) |
 | E2 | 固定双GPU，每卡Batch为32—512 | 90 | [运行](E2/README.md) · [报告](E2/results/实验报告.md) |
 | E3 | 固定全局Batch=256，改变Micro-Batch和累积次数 | 72 | [运行](E3/README.md) · [报告](E3/results/实验报告.md) |
-| E4 | 同一累积窗口内，每Micro同步与末次同步的比较 | 135 | [运行](E4/README.md) · [报告](E4/results/实验报告.md) |
-| E5 | Local SGD每1、2、4、8、16步平均参数 | 99 | [运行](E5/README.md) · [报告](E5/results/实验报告.md) |
 
 ## 目录与结果
 
@@ -43,29 +41,25 @@ d1-gradient-sync/
 ├── E3/                     实验B：固定双GPU和全局batch256，改变micro-batch与累积
 │   ├── single_gpu/         匹配全局batch及K的单卡实现
 │   └── results/            36双卡+36单卡，等价性记录、模型、图表和实验报告.md
-├── E4/                     同K配对：每micro同步与窗口末同步，验证no_sync通信优化
-│   ├── single_gpu/         45份基线分别匹配90种双卡运行
-│   └── results/            90双卡+45单卡，逐步记录、图表与实验报告.md
-└── E5/                     Local SGD：H=1/2/4/8/16，本地momentum、周期参数平均
-    ├── single_gpu/         串行双副本基线、普通SGD任务参考及配对启动器
-    └── results/            45双卡+54单卡，逐步/轮次、漂移/TTT/Profiler与报告
+├── sh/                     环境、数据、单卡与双卡训练和测试、核验与绘图
+└── training_common/        训练时共享的逐轮性能统计
 ```
 
-数据格式、缓存位置和下载方法见[Data](Data/README.md)。E2—E5共有180次单GPU训练：E4同K的两种双卡方式共用一份单卡基线；E5分别设置同算法串行双副本基线与普通SGD任务参考。
+数据格式、缓存位置和下载方法见[Data](Data/README.md)。E2、E3共有81次匹配的单GPU训练。
 
 `.venv/`是本机依赖环境，可通过`uv sync --locked`重建；本机运行实验时保留。`.pytest_cache/`、`.ruff_cache/`和`__pycache__/`由测试、检查工具或Python自动生成，可以清理，不属于实验数据或结果。
 
-每个实验的`results/step_metrics/`保存训练步耗时、实际样本数、样本吞吐、同步事件、逻辑载荷及原始文件位置，共2,868,120条rank或逻辑副本记录。E0记录rank 0；E1—E5记录各rank。E5分别记录本地SGD步和H步同步轮次。计时范围、预热和尾批处理见各实验报告。
+每个实验的`results/step_metrics/`保存训练步耗时、实际样本数、样本吞吐、同步事件、逻辑载荷及原始文件位置，共1,765,740条逐rank记录。E0记录rank 0，E1—E3记录各rank。计时边界、预热和尾批处理见各实验报告。
 
-报告保留三个种子的观测及均值，解释吞吐、更新耗时、同步占比、加速比和并行效率。负收益、异常高比值和运行波动按实测值呈现。E1固定每卡Batch，属于弱扩展；E2—E5按相同工作量匹配单GPU基线，不能直接混用两类扩展指标。
+报告保留三个种子的观测及均值，解释吞吐、更新耗时、同步占比、加速比和并行效率。负收益、异常高比值和运行波动按实测值呈现。E1固定每卡Batch，属于弱扩展。E2、E3按相同工作量匹配单GPU基线。
 
-E2—E4的图1—4直接包含单GPU对照，E5的图1—6采用同算法的单GPU串行双副本基线。颜色区分执行方式，形状区分三个种子，粗线表示均值；单GPU跨卡通信指标为0。E4的同步策略比值和E5的两rank到达差、双GPU Profiler保持各自的适用范围。主图的数据与来源索引保存在各实验的`main_comparison.csv`和`main_comparison_sources.json`。
+E2、E3的图1—4包含匹配的单GPU对照。颜色区分执行方式，形状区分三个种子，粗线表示均值。单GPU跨卡通信指标为0。主图的数据与来源索引保存在各自的`main_comparison.csv`和`main_comparison_sources.json`。
 
 ## 运行环境
 
 项目运行于Linux和NVIDIA CUDA环境。完整实验需要两张可见GPU，每个分布式进程使用一张卡，通信后端为NCCL；单GPU训练只使用一张卡。模型训练、验证、测试与数值检查均在CUDA上执行。
 
-实验环境如下，完整软件依赖由`uv.lock`锁定：
+实验环境如下，完整软件依赖由 `uv.lock` 锁定。
 
 | 项目 | 实验使用的版本或配置 |
 |---|---|
@@ -83,134 +77,70 @@ E2—E4的图1—4直接包含单GPU对照，E5的图1—6采用同算法的单G
 
 ## 依赖安装
 
-以下命令均在包含`pyproject.toml`的项目根目录执行。若尚未安装uv，可使用[官方安装器](https://docs.astral.sh/uv/getting-started/installation/)：
+以下命令在包含 `pyproject.toml` 的项目根目录执行。完整环境检查需要 NVIDIA 驱动、两张可见 CUDA GPU 和中文绘图字体。Ubuntu 可用 `sudo apt-get install -y fonts-noto-cjk` 安装字体。
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+bash "sh/1.环境与依赖准备.sh"
 ```
 
-安装后重新打开终端，确认`uv --version`可以运行，再创建项目环境并安装锁定依赖：
-
-```bash
-uv python install 3.12
-uv sync --locked
-
-# Ubuntu绘图字体
-sudo apt-get update
-sudo apt-get install -y fonts-noto-cjk
-```
-
-`pyproject.toml`声明PyTorch、torchvision、NumPy、pandas、Matplotlib和PyYAML，开发依赖包含pytest。`uv sync --locked`按锁文件安装到`.venv/`，后续命令通过`uv run`使用该环境。
-
-检查GPU、CUDA和NCCL：
-
-```bash
-nvidia-smi
-uv run python - <<'PY'
-import torch
-print('PyTorch:', torch.__version__, 'CUDA:', torch.version.cuda)
-print('GPU数量:', torch.cuda.device_count())
-assert torch.cuda.is_available(), '需要CUDA GPU'
-assert torch.cuda.device_count() >= 2, '完整对照实验需要两张GPU'
-assert torch.distributed.is_nccl_available(), '需要支持NCCL的PyTorch'
-PY
-```
+脚本检查 `nvidia-smi` 和 GPU 拓扑，按需安装 uv 与 Python 3.12，执行 `uv sync --locked`，再核对 CUDA、GPU 数量、NCCL、P2P 和中文字体。环境检查默认选用 GPU 0、1。命令行安装的 uv 位于 `~/.local/bin`，后续直接运行 `uv` 前可在当前终端设置 `export PATH="$PATH:$HOME/.local/bin"`。完整软件依赖以 `pyproject.toml` 和 `uv.lock` 为准。
 
 ## 数据准备
 
 ```bash
-# 首次运行允许下载三个数据集
-uv run python -m Data.datasets --download
-
-# 只检查已有缓存
-uv run python -m Data.datasets
+bash "sh/2.数据集准备与划分.sh"
 ```
 
-缓存统一保存在`Data/`。训练入口默认只读取已有数据，不在训练过程中下载。数据格式、预处理和各实验的尾批规则见[数据说明](Data/README.md)。
-
-训练时，各实验会自动按固定种子生成训练集和验证集的分层划分，并按训练种子和轮次安排采样。下载缓存后即可启动训练。
+脚本准备或核对 MNIST、FashionMNIST、CIFAR-10 的官方缓存。各实验从 `Data/` 读取缓存，并在训练时按配置生成划分及采样索引。数据格式和划分规则见 [数据说明](Data/README.md)。
 
 ## 训练
 
-先用`--list`查看计划，不启动训练：
+E0—E3 均有独立的单卡训练、单卡测试、双卡训练和双卡测试入口。单卡训练绑定 GPU 0，双卡训练绑定 GPU 0、1。训练脚本传入 `--list` 只列出该卡数的运行计划。
+
+| 实验 | 单卡训练 | 单卡测试 | 双卡训练 | 双卡测试 |
+|---|---|---|---|---|
+| E0 | [3.1](sh/3.1.E0单卡训练.sh) | [3.2](sh/3.2.E0单卡测试.sh) | [3.3](sh/3.3.E0双卡训练.sh) | [3.4](sh/3.4.E0双卡测试.sh) |
+| E1 | [4.2.1](sh/4.2.1.E1单卡训练.sh) | [4.3.1](sh/4.3.1.E1单卡测试.sh) | [4.2.2](sh/4.2.2.E1双卡训练.sh) | [4.3.2](sh/4.3.2.E1双卡测试.sh) |
+| E2 | [5.1](sh/5.1.E2单卡训练.sh) | [5.2](sh/5.2.E2单卡测试.sh) | [5.3](sh/5.3.E2双卡训练.sh) | [5.4](sh/5.4.E2双卡测试.sh) |
+| E3 | [6.1](sh/6.1.E3单卡训练.sh) | [6.2](sh/6.2.E3单卡测试.sh) | [6.3](sh/6.3.E3双卡训练.sh) | [6.4](sh/6.4.E3双卡测试.sh) |
+
+下面用 MNIST、种子 1234 验证 E0 的两种训练和测试入口。结果保存到独立的示例目录。每组训练 20 轮。
 
 ```bash
-uv run python -m E0.run --list
-uv run python -m E1.run --list
-uv run python -m E2.run --list
-uv run python -m E2.single_gpu.run --list
-uv run python -m E5.single_gpu.paired_run --list
+R0=E0/results/reproduce_mnist
+
+bash "sh/3.1.E0单卡训练.sh" --dataset mnist --seed 1234 --output-dir "$R0"
+bash "sh/3.3.E0双卡训练.sh" --dataset mnist --seed 1234 --output-dir "$R0"
+
+bash "sh/3.2.E0单卡测试.sh" "$R0/mnist/checkpoints/e0_baseline_k1_ws1_mM_b256_r0_epoch20.pt"
+bash "sh/3.4.E0双卡测试.sh" "$R0/mnist/checkpoints/e0_baseline_k1_ws2_mM_b128_r0_epoch20.pt"
 ```
 
-运行入口拒绝覆盖同名记录。下面使用独立的`results/reproduce/`保存一组完整复现结果，训练命令均包含每轮验证、20轮结束后的测试和模型保存。
-
-```bash
-export CUDA_VISIBLE_DEVICES=0,1
-
-# E0、E1：入口包含单、双GPU配置
-uv run python -m E0.run --output-dir E0/results/reproduce
-uv run python -m E1.run --output-dir E1/results/reproduce
-
-# E2—E4：分别执行双GPU配置与匹配的单GPU配置
-for experiment in E2 E3 E4; do
-    uv run python -m "${experiment}.run" --output-dir "${experiment}/results/reproduce"
-    CUDA_VISIBLE_DEVICES=0 uv run python -m "${experiment}.single_gpu.run" --output-dir "${experiment}/results/reproduce/single_gpu"
-done
-
-# E5：配对入口包含双GPU、串行单GPU及普通SGD参考
-uv run python -m E5.single_gpu.paired_run --dual-output-dir E5/results/reproduce --single-output-dir E5/results/reproduce/single_gpu
-```
-
-性能采集按任务顺序串行执行。E2—E5支持`--resume`跳过配置一致且完整的运行；未完成目录不会自动覆盖。`--dataset`、`--seed`等筛选参数用于单个组合调试，具体选项见各实验README或`--help`。
+训练脚本省略配置筛选时运行该卡数下的完整计划。E0、E1 默认将两种卡数的结果写到各自的 `results/reproduce/`。E2、E3 将双卡写到 `results/reproduce/`，单卡写到其 `single_gpu/` 子目录。复跑可传入新的 `--output-dir`。E2、E3 的 `--resume` 会跳过已完成且核对通过的运行。完整计划、筛选参数与检查点路径见 [E0](E0/README.md) · [E1](E1/README.md) · [E2](E2/README.md) · [E3](E3/README.md)。
 
 ## 验证与测试
 
-训练期间只使用验证集，最终测试使用第20轮模型。已有模型可以独立评估，例如：
+训练每轮评估固定验证集，完成 20 轮后评估官方测试集并保存末轮模型。单卡测试、双卡测试脚本分别加载对应训练所得的检查点，均用 `cuda:0` 评估完整测试集。修改过训练输出目录、数据集或种子时，向测试脚本传入实际检查点路径。
+
+E0—E3 的终端逐轮显示训练与验证损失、验证准确率、全局样本吞吐、平均更新与同步耗时及同步占比。E1—E3 同时显示计算耗时，E1 增加同步/计算耗时比，E2、E3 增加每样本同步耗时。E1—E3 的逐轮性能也写入 `epochs.csv`。扩展比、加速比和并行效率在单双卡配对后计算。
+
+回归测试含 CUDA 模型检查与双 GPU NCCL 检查。
 
 ```bash
-uv run python -m E2.evaluate --checkpoint E2/results/reproduce/mnist/b128_k1/seed1234/checkpoint.pt --split validation --device cuda:0
-uv run python -m E2.evaluate --checkpoint E2/results/reproduce/mnist/b128_k1/seed1234/checkpoint.pt --split test --device cuda:0
+uv run --locked pytest -q
 ```
 
-完整结果检查会复算记录并在GPU上独立复测模型。E2的示例为：
+## 结果核验与绘图
 
-```bash
-uv run python -m E2.check_results --results-dir E2/results/reproduce
-uv run python -m E2.single_gpu.check_results --results-dir E2/results/reproduce/single_gpu --dual-results-dir E2/results/reproduce
-```
+先完成对应的完整训练计划，再进行汇总。各入口默认读取对应的复现目录。
 
-E0—E5各自提供`evaluate`和`check_results`入口。主入口的`check_results --records-only`只检查记录和模型元数据。代码检查使用：
+| 实验 | 运行后使用的入口 |
+|---|---|
+| E0 | [绘图](sh/3.5.E0绘图.sh) |
+| E1 | [结果核验](sh/4.4.E1结果核验.sh) · [绘图](sh/4.5.E1绘图.sh) |
+| E2 | [结果核验](sh/5.5.E2结果核验.sh) · [配对统计](sh/5.6.E2配对统计.sh) · [绘图](sh/5.7.E2绘图.sh) |
+| E3 | [结果核验](sh/6.5.E3结果核验.sh) · [配对统计](sh/6.6.E3配对统计.sh) · [绘图](sh/6.7.E3绘图.sh) · [数值诊断](sh/6.8.E3数值诊断.sh) |
 
-```bash
-uv run pytest -q
-```
+使用自定义结果目录时，E0 绘图和 E1 核验/绘图接收 `--results-dir`，E2 与 E3 接收结果根目录作为位置参数。E2 与 E3 需要先配对统计，随后可在 `figs/` 生成图 1—7。E3 的数值诊断可独立运行，输出目录默认为 `E3/results/reproduce/numerics/`。E0 的全量核验、各脚本的完整用法见对应实验说明。
 
-模型计算检查使用CUDA，分布式检查需要双GPU和NCCL。
-
-## 统计与绘图
-
-E0、E1直接从各自完整结果生成图表：
-
-```bash
-uv run python -m E0.plot_results --results-dir E0/results/reproduce
-uv run python -m E1.plot_results --results-dir E1/results/reproduce
-```
-
-E2—E5先计算匹配的加速比和并行效率，再绘制全部统计图：
-
-```bash
-for experiment in E2 E3 E4 E5; do
-    uv run python -m "${experiment}.single_gpu.compare" --results-dir "${experiment}/results/reproduce/single_gpu" --dual-results-dir "${experiment}/results/reproduce" --output-dir "${experiment}/results/reproduce"
-    uv run python -m "${experiment}.plot_results" --results-dir "${experiment}/results/reproduce"
-    uv run python -m "${experiment}.single_gpu.plot_results" --results-dir "${experiment}/results/reproduce"
-done
-```
-
-E5的图7需要独立Profiler记录，完成正式性能采集后单独运行，再绘图：
-
-```bash
-uv run python -m E5.profile_activity --results-dir E5/results/reproduce
-uv run python -m E5.plot_results --results-dir E5/results/reproduce
-```
-
-图表保存在对应结果目录的`figs/`。E2、E3使用图1—7，E4使用图1—8，E5使用图1—11。
+绘图脚本输出 300 DPI PNG。正式归档保存在各实验 `results/` 的数据集目录，E2、E3 的匹配单卡归档位于各自的 `results/single_gpu/`。

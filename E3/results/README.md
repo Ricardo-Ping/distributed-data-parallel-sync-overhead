@@ -13,3 +13,5 @@ E3比较固定全局Batch=256的四种Micro-Batch/累积实现，每种均设置
 `scaling.csv/scaling_summary.csv`保存36对同种子加速比、计算段加速比、并行效率与质量差异，`scaling_validation.json`核对训练和测量窗口。图1—7及配对结果统一位于报告“实测结果”。`step_metrics/`提供430,560条rank观测和287,040次全局更新的耗时、吞吐、同步及来源。
 
 图1—4直接比较相同全局256、同K的单、双GPU，横轴标双卡每卡micro×K，单卡micro为其两倍。`main_comparison.csv`含72次运行，`main_comparison_sources.json`记录来源和配对，`figure_validation.json`核对种子、均值和图片数据。
+
+新实验默认写入 `reproduce/`，核验和绘图可选独立结果目录。具体命令见 [复现说明](../README.md#运行)。

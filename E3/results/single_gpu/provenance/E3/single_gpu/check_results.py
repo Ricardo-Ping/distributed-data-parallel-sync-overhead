@@ -86,9 +86,8 @@ def check(root=BASELINE_ROOT, data_root=DATA_ROOT):
                 reference_order = json.loads((reference / f"sampling_rank{rank}.json").read_text())
                 if any(sampling[str(epoch)][f"reference_rank{rank}_sha256"] != reference_order[str(epoch)] for epoch in range(1, 21)):
                     raise ValueError("单卡全局样本顺序不能还原双卡rank顺序")
-            if case.role != "ordinary_sgd":
-                dual_units, dual = dual_record(reference, case)
-                assert_matching_units(frame, dual_units)
+            dual_units, dual = dual_record(reference, case)
+            assert_matching_units(frame, dual_units)
         if final["total_train_samples"] != 20 * meta["train_samples"]:
             raise ValueError("未完整使用20轮全部训练样本")
         peak = json.loads((folder / "memory.json").read_text())["allocated_bytes"] / 1e6
@@ -109,7 +108,7 @@ def check(root=BASELINE_ROOT, data_root=DATA_ROOT):
         if tested["accuracy"] != final["test_acc"] or not math.isclose(tested["loss"], final["test_loss"], rel_tol=1e-5, abs_tol=1e-6):
             raise ValueError("末轮模型GPU独立复测不符")
         checked.append({"run_id": case.identifier, "records_ok": True, "sample_order_matches_dual": True,
-                        "measured_workload_matches_dual": case.role != "ordinary_sgd", "independent_test": tested})
+                        "measured_workload_matches_dual": True, "independent_test": tested})
         print(f"[checked] {case.identifier}", flush=True)
     record = {"experiment": EXPERIMENT, "runs": len(checked), "all_models_retested_on_cuda": True,
               "all_records_recomputed": True, "all_sample_orders_match": True, "checked": checked}

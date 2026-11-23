@@ -70,6 +70,7 @@ def record_environment(root, data_root):
         *EXPERIMENT_ROOT.glob("configs/*.yaml"),
         *Path(__file__).parent.glob("configs/*.yaml"),
         PROJECT_ROOT / "Data/datasets.py",
+        PROJECT_ROOT / "training_common/epoch_metrics.py",
     ]
     files += [
         EXPERIMENT_ROOT / name

@@ -1,5 +1,0 @@
-{
-  "archive": "archive/E5_profile_before_start_alignment_20261117_142047",
-  "reason": "Add rank alignment after Profiler initialization and before measured region; previous capture had only a barrier before Profiler initialization. Formal training and raw training files unchanged.",
-  "traces_archived": 90
-}

@@ -82,12 +82,12 @@ def render(results: Path = RESULTS_ROOT, single_results: Path | None = None) -> 
     figures = [
         (
             "F1_throughput.png",
-            "图1 固定全局批量的不同实现与训练吞吐",
+            "固定全局批量的不同实现与训练吞吐",
             (("train_throughput", "训练吞吐（样本/秒）", 1),),
         ),
         (
             "F2_update_compute.png",
-            "图2 更新时间与计算段效率",
+            "更新时间与计算段效率",
             (
                 ("avg_update_ms", "平均更新时间（毫秒/更新）", 1),
                 ("local_compute_throughput", "每卡计算段吞吐（样本/计算秒）", 1),
@@ -95,7 +95,7 @@ def render(results: Path = RESULTS_ROOT, single_results: Path | None = None) -> 
         ),
         (
             "F3_sync_cost.png",
-            "图3 梯度同步的成本与摊销",
+            "梯度同步的成本与摊销",
             (
                 ("avg_sync_ms", "平均同步耗时（毫秒/更新）", 1),
                 ("sync_share", "同步占更新时间（%）", 100),
@@ -104,7 +104,7 @@ def render(results: Path = RESULTS_ROOT, single_results: Path | None = None) -> 
         ),
         (
             "F4_memory_accuracy.png",
-            "图4 训练显存与末轮测试结果",
+            "训练显存与末轮测试结果",
             (
                 ("peak_allocated_mb", "每卡训练峰值显存（MB）", 1),
                 ("test_acc", "末轮测试准确率（%）", 100),

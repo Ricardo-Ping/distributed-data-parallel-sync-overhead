@@ -9,58 +9,64 @@ E3对应实验B。固定两张GPU和全局batch=256，比较下列四种实现�
 | 2 | 32 | 4 | 128 | 256 |
 | 2 | 16 | 8 | 128 | 256 |
 
-代码、配置、测试和结果均独立位于`E3/`，只共享顶层[Data](../Data/README.md)原始数据接口。实验设计与结果见[报告](results/实验报告.md)。
+代码、配置、测试和结果均独立位于`E3/`，通过顶层 [Data](../Data/README.md) 读取原始数据。实验设计与结果见[报告](results/实验报告.md)。
 
 匹配的单GPU实现位于[single_gpu](single_gpu/README.md)：micro256×1、128×2、64×4、32×8，保持同全局batch256、累积次数与样本窗口，共36次单卡训练，结果在`results/single_gpu/`。同种子加速比、计算段加速比和并行效率保存于`results/scaling.csv`；图1—7及配对统计统一位于报告“实测结果”。
 
-## 运行环境
-
-双GPU配置使用两张CUDA GPU和NCCL，匹配的单GPU基线使用一张卡。软硬件版本见项目的[运行环境](../README.md#运行环境)，依赖安装与GPU检查见[依赖安装](../README.md#依赖安装)。命令均在项目根目录执行，训练前按[数据说明](../Data/README.md)准备缓存。完整单、双GPU复现流程见[项目运行方法](../README.md#训练)。
-
-## 累积的正确实现
-
-采样器先为每个rank构造相同的128样本更新窗口，再在主机侧按micro-batch分片，逐片传输至GPU。这样四种实现的全局样本组与更新边界保持一致。
-
-每个窗口仅清空梯度一次、执行一次SGD更新；前K−1个micro-batch的forward和backward均放入`no_sync()`，最后一个micro-batch才同步累计梯度。每个micro loss乘以“该micro实际样本数/该rank窗口实际样本数”。完整窗口等价于除以K；尾批不直接除以固定K。
-
-每次参数更新都恰好发生一次完整梯度AllReduce。因此这组实验里，改变K不会减少每轮通信调用总数，也不会改变每次更新的梯度载荷，主要比较micro-batch计算效率、额外执行成本、显存与吞吐。
-
-所有模型计算使用CUDA，多卡通信统一NCCL。沿用E0的MLP-M、数据划分、三个种子、学习率、FP32和20轮末轮测试协议。保留尾批完成训练；性能统计排除前10次参数更新和各轮尾批。阻塞式同步计时不代表充分重叠计算通信的最优DDP吞吐。
-
 ## 运行
 
-在项目根目录执行：
+命令在项目根目录执行。两种卡数各有 36 次完整训练。先用 `--list` 查看计划，训练命令依次执行。
 
 ```bash
-uv sync --locked
-uv run python -m E3.run --list
-CUDA_VISIBLE_DEVICES=0,1 NCCL_DEBUG=WARN uv run python -m E3.run
-uv run python -m E3.run --resume
+bash "sh/6.1.E3单卡训练.sh" --list
+bash "sh/6.3.E3双卡训练.sh" --list
 
-# 重跑或调试使用独立输出目录
-uv run python -m E3.run --output-dir E3/results/new_run
-uv run python -m E3.run --dataset mnist --batch 16 --seed 1234 --output-dir E3/results/debug_run
-
-# 验证或测试已有模型
-uv run python -m E3.evaluate --checkpoint E3/results/mnist/b16_k8/seed1234/checkpoint.pt --split validation --device cuda:0
-uv run python -m E3.evaluate --checkpoint E3/results/mnist/b16_k8/seed1234/checkpoint.pt --split test --device cuda:1
-
-uv run pytest E3/tests -q
-uv run python -m E3.check_results
-uv run python -m E3.compare_implementations
-uv run python -m E3.verify_numerics
-uv run python -m E3.plot_results
+bash "sh/6.3.E3双卡训练.sh"
+bash "sh/6.1.E3单卡训练.sh"
 ```
 
-核验、参数差异比较和绘图支持`--results-dir`。完整核验会在GPU上独立复测36个模型；`check_results --records-only`只复算记录并检查模型元数据。`compare_implementations`输出20轮后各实现相对128×1的参数差异及测试指标差异；它记录浮点差异，不要求长程训练逐位相同。逐次梯度与含momentum的参数更新等价性由GPU前置测试检查。
+双卡默认写入 `E3/results/reproduce/`，单卡默认写入该目录的 `single_gpu/`。自定义输出时也保持这一目录关系，便于核验和配对。增加 `--resume` 可跳过配置、身份和末轮协议一致的完整运行。未完成的运行可归档后重跑，或使用新的 `--output-dir`。双卡启动进程组时遇端口占用最多尝试三次，训练开始后遇异常即停止。
 
-`--resume`跳过身份、配置及末轮协议一致的完整结果，拒绝覆盖未完成目录；未完成运行应先归档。初始化阶段的端口占用最多尝试三次，训练开始后不自动重试。源码快照检查禁止在训练、计时或同步逻辑变化后混合续跑。
+下面复现 MNIST、种子 1234 的代表配置，写入独立目录。双卡的 `--batch 32` 设置每卡 micro-batch，单卡的 `--level 32` 选择匹配双卡档位。单卡实际 micro-batch 为 64，两组全局 batch 都是 256，累积 K=4。
 
-`verify_numerics`用真实完整窗口和尾批，在相同参数、momentum状态下比较正式FP32路径与整批参考，并额外使用GPU FP64核对梯度归一化；输出`numerical_equivalence.csv`。该诊断不计入36次正式训练，也不参与性能统计。FP32逐元素差异、ReLU分支差异与末轮参数差异的说明见报告。
+```bash
+R=E3/results/reproduce_mnist
+
+bash "sh/6.3.E3双卡训练.sh" --dataset mnist --batch 32 --seed 1234 --output-dir "$R"
+bash "sh/6.4.E3双卡测试.sh" "$R/mnist/b32_k4/seed1234/checkpoint.pt"
+
+bash "sh/6.1.E3单卡训练.sh" --dataset mnist --level 32 --seed 1234 --output-dir "$R/single_gpu"
+bash "sh/6.2.E3单卡测试.sh" "$R/single_gpu/mnist/ref32/seed1234/checkpoint.pt"
+```
+
+两个测试脚本均在单张 GPU 上复测所选的末轮检查点。用命令中的训练结果目录构造路径，可以复测不同配置和种子。
+
+完成 **36 对**完整训练后，按以下顺序复算、配对和绘图。位置参数选择包含单双卡数据的结果根目录。绘图读取配对 CSV，在 `figs/` 生成 7 张统计图。
+
+```bash
+R=E3/results/reproduce
+
+uv run --locked pytest E3/tests E3/single_gpu/tests -q
+bash "sh/6.5.E3结果核验.sh" "$R"
+bash "sh/6.6.E3配对统计.sh" "$R"
+bash "sh/6.7.E3绘图.sh" "$R"
+```
+
+核验脚本同时复算单双卡记录并在 CUDA 上复测全部末轮模型。只核对双卡原始记录时，可运行 `uv run --locked python -m E3.check_results --results-dir "$R" --records-only`。
+
+E3 还生成 `implementation_differences.csv`，记录各双卡配置相对 128×1 的末轮参数和测试差异。
+
+数值诊断独立于正式训练，可以单独执行。默认输出到 `E3/results/reproduce/numerics/`，也可传入其他目录作为位置参数。
+
+```bash
+bash "sh/6.8.E3数值诊断.sh"
+```
+
+诊断比较相同初值和 momentum 下的 FP32 梯度及参数更新，并以 CUDA FP64 的整批参考检查梯度归一化。终端汇总 24 条完整窗口和 24 条尾窗口的逐 rank 结果，详细记录写入 `numerical_equivalence.csv`。FP32 的舍入和 ReLU 分支差异详见实验报告。
 
 ## 结果位置
 
-每次运行位于`results/{数据集}/b{micro}_k{累积}/seed{种子}/`，单独保存配置、数据划分、两个rank的运行元数据、样本顺序哈希、逐更新CSV、20轮训练验证结果、显存、最终测试和末轮检查点。
+每次运行位于`results/{数据集}/b{micro}_k{累积}/seed{种子}/`，单独保存配置、数据划分、两个rank的运行元数据、样本顺序哈希、逐更新CSV、20 轮训练验证结果、显存、最终测试和末轮检查点。新运行的 `epochs.csv` 同时保存样本吞吐、更新/计算/同步耗时、同步占比和每样本同步耗时。
 
 `final.csv`包含36次完整结果；`seed_summary.csv`包含三种子均值、样本标准差与原始范围；`paired_relative.csv`逐种子比较相对128×1的吞吐及更新时间；`implementation_differences.csv`记录模型参数和测试指标差异。源码快照与环境位于`provenance/`和`environment.json`。
 

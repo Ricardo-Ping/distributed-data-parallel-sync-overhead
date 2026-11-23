@@ -1,27 +1,27 @@
 # E1：模型规模对计算与通信比例的影响
 
-E1在独立目录中实现数据划分、训练、验证、末轮测试、计时、模型保存和结果核验，只通过顶层[Data](../Data/README.md)读取原始数据。
+E1在独立目录中实现数据划分、训练、验证、末轮测试、计时、模型保存和结果核验，通过顶层 [Data](../Data/README.md) 读取原始数据。
 
-本实验沿用 E0 的两层隐藏层 MLP，固定每张 GPU 的 batch=128，比较 S、M、L 三种宽度。每个数据集内只改变模型宽度；每种模型都运行单卡、双卡和三个种子，共54次正式运行，每次20轮。实验设计与结果解读见 [实验报告](results/实验报告.md)。
+本实验沿用 E0 的两层隐藏层 MLP，固定每张 GPU 的 batch=128，比较 S、M、L 三种宽度。同一数据集和卡数下比较模型宽度，每档均运行单卡、双卡和三个种子，共 54 次正式运行，每次 20 轮。实验设计与结果解读见 [实验报告](results/实验报告.md)。
 
 ## 运行环境
 
-完整对照使用两张CUDA GPU，通信后端为NCCL；单GPU配置使用一张卡。软硬件版本见项目的[运行环境](../README.md#运行环境)，依赖安装与GPU检查见[依赖安装](../README.md#依赖安装)。以下命令均在项目根目录执行，训练前按[数据说明](../Data/README.md)准备三个数据集的缓存。
+完整对照需要两张 CUDA GPU，双卡通信使用 NCCL。以下命令均在项目根目录执行，训练前准备三个数据集的缓存。参见 [运行环境](../README.md#运行环境) · [依赖安装](../README.md#依赖安装) · [数据说明](../Data/README.md)。
 
 ## 固定项与变化项
 
 | 项目 | 设置 |
 |---|---|
-| 模型族 | Flatten → Linear → ReLU → Linear → ReLU → Linear；输出10类 Logits |
-| 规模 | S：256→128；M：1024→512；L：4096→2048；宽度每档乘4，隐藏层数和宽度比例不变 |
-| 数据集 | MNIST、FashionMNIST、CIFAR-10；分别分析，输入维数在各数据集内固定 |
-| 数据划分 | 官方训练集分层留10%验证，划分种子1234；官方测试集独立保留 |
-| 每卡 batch | 128；单卡全局128、双卡全局256；丢弃每轮不完整批次，确保计时批量完全一致 |
-| 训练 | 固定20轮，SGD momentum=0.9；MNIST/FashionMNIST lr=0.1，CIFAR-10 lr=0.05 |
+| 模型族 | Flatten → Linear → ReLU → Linear → ReLU → Linear，输出 10 类 logits |
+| 规模 | S 为 256→128，M 为 1024→512，L 为 4096→2048。每升一档，两层的宽度各乘 4 |
+| 数据集 | 分别分析 MNIST、FashionMNIST、CIFAR-10，各数据集的输入维数固定 |
+| 数据划分 | 官方训练集分层留 10% 验证，划分种子 1234，独立保留官方测试集 |
+| 每卡 batch | 128，单卡全局 128，双卡全局 256。各轮丢弃不完整批次 |
+| 训练 | 固定 20 轮，SGD momentum=0.9。MNIST/FashionMNIST lr=0.1，CIFAR-10 lr=0.05 |
 | 精度 | FP32，禁用 TF32、AMP 和梯度压缩，不使用梯度累积或编译 |
-| 通信 | 一进程一张卡，NCCL；DDP 梯度桶容量固定128 MiB，所有模型均只需一个完整梯度桶 |
-| 计时 | 阻塞同步 hook，CUDA 显式等待；每次运行前10次更新参与训练，但排除性能统计 |
-| 其他 | 每进程4个主机计算线程，数据加载 worker=0；评估 batch=1024，种子1234/1235/1236 |
+| 通信 | 一进程一张卡，使用 NCCL。DDP 梯度桶容量为 128 MiB，每档模型各使用一个梯度桶 |
+| 计时 | 阻塞同步 hook，CUDA 显式等待。性能统计从每次运行的第 11 次更新开始 |
+| 其他 | 每进程 4 个主机计算线程，数据加载 worker=0，评估 batch=1024，种子为 1234、1235、1236 |
 
 MLP 没有序列长度设置。固定的是图像输入维数、局部批量、层数、激活函数和训练协议。双卡只分担样本，每张卡仍保存完整模型。
 
@@ -44,52 +44,39 @@ E0固定全局batch=256，单卡每批256、双卡每卡128；E1固定每卡128�
 | 双卡弱扩展效率 | `(Q双/Q单)/2` | 先逐种子配对计算，再取三个种子的均值 |
 | 参数量、FP32梯度载荷 | `P`、`4P`字节 | 解释计算规模与每次梯度归约的逻辑数据量 |
 | 每卡训练显存峰值 | 各卡 `max_memory_allocated` 的最大值，MB | 检查宽度增大带来的资源成本，不等同于全部显存占用 |
-| 验证/最终测试损失、准确率 | 固定验证集/官方测试集 | 确认模型正常学习，辅助观察；不同全局batch的准确率不作优化等价比较 |
+| 验证/最终测试损失、准确率 | 固定验证集/官方测试集 | 检查模型在各配置下的学习情况 |
 
-三个种子先各自计算完整运行指标，再等权取均值和样本标准差。逐步计时样本不是独立的训练重复；图中展示三种子原值与均值，不绘制置信区间。
+三个种子先各自计算完整运行指标，再等权取均值和样本标准差。图中展示三种子原值与均值。
 
 ## 运行
 
-在项目根目录执行：
+在项目根目录执行。计划与模型检查默认使用 CIFAR-10、种子 1234，在 CUDA 上列出三档模型的隐藏层宽度、参数量以及 FP32 梯度载荷。
 
 ```bash
-uv sync --locked
-nvidia-smi
+bash "sh/4.1.E1计划与模型检查.sh"
+bash "sh/4.2.1.E1单卡训练.sh" --list
+bash "sh/4.2.2.E1双卡训练.sh" --list
 
-# 只列计划，不读入数据或启动训练
-uv run python -m E1.run --list
-
-# 正式54次运行；目录中已有对应记录时会拒绝覆盖
-CUDA_VISIBLE_DEVICES=0,1 NCCL_DEBUG=WARN uv run python -m E1.run
-
-# 重跑使用新目录
-CUDA_VISIBLE_DEVICES=0,1 uv run python -m E1.run --output-dir E1/results/new_run
-
-# 仅选择某个数据集、规模、种子或卡数
-uv run python -m E1.run --dataset mnist --model S --seed 1234 --world-size 2 --output-dir E1/results/debug_run
+# 依次运行，单卡和双卡各 27 次
+bash "sh/4.2.1.E1单卡训练.sh"
+bash "sh/4.2.2.E1双卡训练.sh"
 ```
 
-完整计划按种子轮换模型次序，同时交替单卡、双卡先后，所有运行串行执行。上述单组合筛选只用于调试，不代替完整54次结果。
+两种卡数共用默认结果目录 `E1/results/reproduce/`。追加 `--dataset mnist --model M --seed 1234` 可选择 M 档的示例配置。另选输出目录时使用 `--output-dir`。正式归档按种子轮换模型和单双卡顺序，复现该顺序可使用 `bash "sh/4.2.E1训练.sh" --output-dir E1/results/reproduce_ordered`。
 
 ```bash
-# 模型计算检查使用 CUDA，双卡检查使用 NCCL
-uv run pytest E1/tests -q
+# 默认读取 MNIST M 档、种子 1234 的相应末轮检查点
+bash "sh/4.3.1.E1单卡测试.sh"
+bash "sh/4.3.2.E1双卡测试.sh"
 
-# 重算全部记录并在GPU上独立测试54个模型
-uv run python -m E1.check_results
-
-# 只复算记录、核验GPU运行元数据与模型元数据
-uv run python -m E1.check_results --records-only
-
-# 用现有末轮模型独立评估验证集或测试集
-uv run python -m E1.evaluate --checkpoint E1/results/mnist/M/ws2_seed1234/checkpoint.pt --split validation --device cuda:0
-uv run python -m E1.evaluate --checkpoint E1/results/mnist/M/ws2_seed1234/checkpoint.pt --split test --device cuda:1
-
-# 生成图表与三种子统计表
-uv run python -m E1.plot_results
+uv run --locked pytest E1/tests -q
+bash "sh/4.4.E1结果核验.sh"
+bash "sh/4.5.E1绘图.sh"
 ```
 
-核验和绘图均支持 `--results-dir E1/results/new_run`。绘图要求有三个数据集、三个模型、单/双卡、三个种子的完整结果，需要可用中文字体，例如 Noto Sans CJK。
+测试脚本支持传入实际检查点路径。核验和绘图读取完整的 54 次单、双卡训练结果，默认使用 `E1/results/reproduce/`，支持通过 `--results-dir` 指定其他目录。核验会复算逐步指标并复测模型，添加 `--records-only` 可仅核对记录和模型元数据。图表与统计表写入所选结果目录。
+
+训练每轮输出损失、验证准确率及各项性能，附加同步/计算耗时比（`S/C`）。新运行的 `epochs.csv` 保存同一组性能字段。单双卡吞吐扩展比和弱扩展效率由同种子结果配对后计算。
 
 ## 文件
 
@@ -110,7 +97,7 @@ E1/
     │   ├── runtime_rank0.json        双卡另有rank1
     │   ├── steps_rank0.csv           每张卡的逐步时间、实际批量、梯度载荷
     │   ├── memory_rank0.json         训练分段内显存峰值
-    │   ├── epochs.csv               每轮训练/验证，不能包含逐轮测试
+    │   ├── epochs.csv               训练损失、验证指标与逐轮性能（新运行）
     │   ├── final.json               最终测试与预热后性能
     │   └── checkpoint.pt            第20轮模型
     ├── provenance/                  实际运行源码快照与SHA-256

@@ -7,7 +7,7 @@
     "all_three_seeds_and_means": true,
     "source_values_checked": true,
     "source_sha256": "874d88c52ae074d28104fd75a44e841b543dbf524aabe98fb7a55065d5cb6537",
-    "sha256": "be2287e86bf703e2cb4bb61407567d5bbdc0c386a41defd14054c70bf175b431"
+    "sha256": "f574d841a0196fa90fc097405fcca2c661591e7b68e049cf5dbbffface092bed"
   },
   {
     "figure": "F6_parallel_speedup.png",
@@ -17,7 +17,7 @@
     "all_three_seeds_and_means": true,
     "source_values_checked": true,
     "source_sha256": "874d88c52ae074d28104fd75a44e841b543dbf524aabe98fb7a55065d5cb6537",
-    "sha256": "a485a5056ca60710fe506aa99f72a6106ab66a7d7c0a7d23afd15435cceb8a00"
+    "sha256": "346d0da9d13978bb1f8f0532fa37c32f3a4941986c02e617ce0cf83ace87b596"
   },
   {
     "figure": "F7_single_dual_quality_memory.png",
@@ -27,6 +27,6 @@
     "all_three_seeds_and_means": true,
     "source_values_checked": true,
     "source_sha256": "874d88c52ae074d28104fd75a44e841b543dbf524aabe98fb7a55065d5cb6537",
-    "sha256": "2a08b6d76059544ea779ca54ceed9ad2cd729217c2f7e210094b2eb4ad2527b8"
+    "sha256": "75ba7add9d589fae9f1777268c59023d24133f811308de9fdcf9479131d1ad38"
   }
 ]

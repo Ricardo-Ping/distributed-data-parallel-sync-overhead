@@ -33,8 +33,7 @@ def render(results_dir=RESULTS_ROOT):
     frame = pd.read_csv(results_dir / "scaling.csv")
     variants = sorted(frame.variant.unique())
     colors = ("#2766A6", "#C97424")
-    labels = {"ddp": "双GPU（DDP）", "every_micro": "双GPU（每micro同步）",
-              "window_end": "双GPU（窗口末同步）", "local_sgd": "双GPU（Local SGD）"}
+    labels = {"ddp": "双GPU（DDP）"}
     groups = [("single", "#646C76", "单GPU（匹配全局Batch）")]
     groups += [(variant, color, labels[variant]) for variant, color in zip(variants, colors)]
     markers, sizes = ("o", "s", "^"), (8, 6, 4)

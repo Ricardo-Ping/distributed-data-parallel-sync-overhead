@@ -25,6 +25,18 @@ SUMMARY_METRICS = (
 T95_DF2 = 4.302652729911275
 
 
+def summarize_timing(
+    samples: int, updates: int, train_ms: float, sync_ms: float
+) -> dict[str, float]:
+    """由同一批训练更新的全局样本数和 rank 0 计时汇总性能。"""
+    return {
+        "train_throughput": samples * 1000 / train_ms,
+        "avg_update_ms": train_ms / updates,
+        "avg_sync_ms": sync_ms / updates,
+        "sync_share": sync_ms / train_ms,
+    }
+
+
 def three_seed_statistics(values: list[float]) -> dict:
     """三种子样本统计和均值95% t区间；区间假设重复近似独立且正态。"""
     if len(values) != 3 or not all(math.isfinite(value) for value in values):

@@ -23,6 +23,7 @@ from E3.distributed import SyncStatistics, cleanup, initialize, register_hook
 from E3.evaluate import evaluate_model
 from E3.metrics import summarize_steps, write_rows
 from E3.model import MLP, save_checkpoint
+from training_common.epoch_metrics import EpochMetrics, format_epoch_metrics
 
 
 class Trainer:
@@ -205,6 +206,11 @@ class Trainer:
             num_workers=0,
         )
         history, best_loss, best_epoch = [], float("inf"), 0
+        epoch_metrics = EpochMetrics(
+            (self.folder / f"steps_rank{rank}.csv" for rank in range(self.ws)),
+            time_column="t_update_ms",
+            samples_column="local_samples",
+        )
         started = time.perf_counter()
         for epoch in range(1, self.config.epochs + 1):
             train_loss = self.train_epoch(epoch)
@@ -214,17 +220,21 @@ class Trainer:
                     raise RuntimeError("训练或验证损失不是有限值")
                 if measured["loss"] < best_loss:
                     best_loss, best_epoch = measured["loss"], epoch
+                performance = epoch_metrics.read(epoch)
                 history.append(
                     dict(
                         epoch=epoch,
                         train_loss=train_loss,
                         val_loss=measured["loss"],
                         val_acc=measured["accuracy"],
+                        **performance,
                     )
                 )
                 pd.DataFrame(history).to_csv(self.folder / "epochs.csv", index=False)
                 print(
-                    f"[epoch] {self.identifier} {epoch}/20 train={train_loss:.5f} val={measured['loss']:.5f} acc={measured['accuracy']:.4%}",
+                    f"[epoch] {self.identifier} {epoch}/20 train={train_loss:.5f} "
+                    f"val={measured['loss']:.5f} acc={measured['accuracy']:.4%}\n"
+                    f"        {format_epoch_metrics(performance)}",
                     flush=True,
                 )
             dist.barrier()

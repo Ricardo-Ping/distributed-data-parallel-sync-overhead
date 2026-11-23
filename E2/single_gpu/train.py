@@ -22,6 +22,7 @@ from E2.model import MLP
 from E2.single_gpu.config import reference_config, saved_config
 from E2.single_gpu.data import global_loader, sampling_record
 from E2.single_gpu.metrics import summarize, write_rows
+from training_common.epoch_metrics import EpochMetrics, format_epoch_metrics
 
 
 class Trainer:
@@ -174,6 +175,11 @@ class Trainer:
             batch_size=self.config.eval_batch,
             shuffle=False,
         )
+        epoch_metrics = EpochMetrics(
+            (self.folder / "steps.csv",),
+            time_column="t_unit_ms",
+            samples_column="global_samples",
+        )
         history, started = [], time.perf_counter()
         target_time = target_epoch = None
         for epoch in range(1, 21):
@@ -185,6 +191,7 @@ class Trainer:
             target = getattr(self.config, "target_accuracy", None)
             if target is not None and target_time is None and val["accuracy"] >= target:
                 target_time, target_epoch = elapsed, epoch
+            performance = epoch_metrics.read(epoch)
             history.append(
                 {
                     "epoch": epoch,
@@ -192,11 +199,14 @@ class Trainer:
                     "val_loss": val["loss"],
                     "val_acc": val["accuracy"],
                     "elapsed_wall_s": elapsed,
+                    **performance,
                 }
             )
             pd.DataFrame(history).to_csv(self.folder / "epochs.csv", index=False)
             print(
-                f"[epoch] {self.case.identifier} {epoch}/20 val={val['loss']:.5f} acc={val['accuracy']:.4%}",
+                f"[epoch] {self.case.identifier} {epoch}/20 train={train_loss:.5f} "
+                f"val={val['loss']:.5f} acc={val['accuracy']:.4%}\n"
+                f"        {format_epoch_metrics(performance)}",
                 flush=True,
             )
         (self.folder / "memory.json").write_text(

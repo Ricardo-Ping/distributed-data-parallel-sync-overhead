@@ -207,7 +207,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
     def save(figure, name: str) -> None:
         # 先确定中文和对数刻度的文字位置，再计算导出边界。
         figure.canvas.draw()
-        figure.savefig(figures / name, dpi=180, bbox_inches="tight")
+        figure.savefig(figures / name, dpi=300, bbox_inches="tight")
         plt.close(figure)
         print(f"[figure] {figures / name}")
 
@@ -216,7 +216,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
         seed_bars(axis, dataset, "train_throughput", fmt=",.0f")
         axis.set_title(DISPLAY_NAMES[dataset])
         axis.set_ylabel("训练吞吐（样本/秒）")
-    figure.suptitle("图1 训练吞吐：三个随机种子与均值", fontsize=15)
+    figure.suptitle("训练吞吐：三个随机种子与均值", fontsize=15)
     figure.legend(
         handles=seed_legend, loc="lower center", ncol=2, frameon=False, fontsize=10
     )
@@ -235,7 +235,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
             seed_bars(axis, dataset, metric, scale, fmt)
             axis.set_title(DISPLAY_NAMES[dataset])
             axis.set_ylabel(label)
-    figure.suptitle("图2 更新耗时、同步耗时与同步占比：单卡与双卡对照", fontsize=15)
+    figure.suptitle("更新耗时、同步耗时与同步占比：单卡与双卡对照", fontsize=15)
     figure.legend(handles=seed_legend, loc="lower center", ncol=2, frameon=False)
     figure.tight_layout(rect=(0, 0.045, 1, 0.96))
     save(figure, "F2_timing_seeds.png")
@@ -324,7 +324,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
                 axis.set_xticks([1, 5, 10, 15, 20])
                 axis.grid(alpha=0.2)
         figure.suptitle(
-            f"图3({panel}) {DISPLAY_NAMES[dataset]}：20轮训练与验证", fontsize=15
+            f"{DISPLAY_NAMES[dataset]}：20轮训练与验证", fontsize=15
         )
         figure.legend(handles=curve_legend, loc="lower center", ncol=3, frameon=False)
         figure.tight_layout(rect=(0, 0.07, 1, 0.96))
@@ -335,7 +335,7 @@ def render(results: Path = RESULTS_ROOT) -> None:
         seed_bars(axis, dataset, "test_acc", scale=100, fmt=".2f")
         axis.set_title(DISPLAY_NAMES[dataset])
         axis.set_ylabel("第20轮模型的测试准确率（%）")
-    figure.suptitle("图4 最终测试准确率：三个随机种子与均值", fontsize=15)
+    figure.suptitle("最终测试准确率：三个随机种子与均值", fontsize=15)
     figure.legend(
         handles=seed_legend, loc="lower center", ncol=2, frameon=False, fontsize=10
     )

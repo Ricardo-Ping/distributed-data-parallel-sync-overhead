@@ -13,6 +13,13 @@ site-packages/
 /scripts/
 /docs/
 
+# 课程提交材料和本地复现实跑。
+作业提交*/
+*.pdf
+*.doc
+*.docx
+/E[0-3]/results/reproduce*/
+
 # Python 和工具缓存。
 __pycache__/
 *.pyc

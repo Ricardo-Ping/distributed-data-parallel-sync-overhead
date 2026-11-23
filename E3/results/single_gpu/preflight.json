@@ -1,13 +1,12 @@
 {
-  "unique_tests_passed": 33,
+  "unique_tests_passed": 15,
   "experiment_tests_passed": 7,
-  "gpu_model_test_cases": 25,
-  "host_protocol_test_cases": 8,
-  "metadata_regression_passed": 5,
-  "model_arithmetic_devices": "CUDA; E5 integration uses two CUDA GPUs and NCCL",
+  "gpu_model_test_cases": 11,
+  "host_protocol_test_cases": 4,
+  "metadata_regression_passed": 2,
+  "model_arithmetic_devices": "CUDA",
   "gradient_checks": "FP32 relative L2 + independent FP64 CUDA reference",
   "test_commands": [
-    "pytest E2/single_gpu/tests E3/single_gpu/tests E4/single_gpu/tests -q",
-    "pytest E5/single_gpu/tests -q"
+    "pytest E2/single_gpu/tests E3/single_gpu/tests -q"
   ]
 }

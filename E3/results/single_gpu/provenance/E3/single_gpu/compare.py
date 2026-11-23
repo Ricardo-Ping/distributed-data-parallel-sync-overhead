@@ -127,8 +127,6 @@ def compare(root=BASELINE_ROOT, output=RESULTS_ROOT):
     root, output = Path(root), Path(output)
     rows, verified = [], []
     for case in cases_for():
-        if case.role == "ordinary_sgd":
-            continue
         folder = case.folder(root)
         single = json.loads((folder / "final.json").read_text())
         units = pd.read_csv(folder / "steps.csv")

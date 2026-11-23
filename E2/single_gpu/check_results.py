@@ -142,9 +142,8 @@ def check(root=BASELINE_ROOT, data_root=DATA_ROOT, dual_root=RESULTS_ROOT):
                     for epoch in range(1, 21)
                 ):
                     raise ValueError("单卡全局样本顺序不能还原双卡rank顺序")
-            if case.role != "ordinary_sgd":
-                dual_units, dual = dual_record(reference, case)
-                assert_matching_units(frame, dual_units)
+            dual_units, _ = dual_record(reference, case)
+            assert_matching_units(frame, dual_units)
         if final["total_train_samples"] != 20 * meta["train_samples"]:
             raise ValueError("未完整使用20轮全部训练样本")
         peak = json.loads((folder / "memory.json").read_text())["allocated_bytes"] / 1e6
@@ -177,7 +176,7 @@ def check(root=BASELINE_ROOT, data_root=DATA_ROOT, dual_root=RESULTS_ROOT):
                 "run_id": case.identifier,
                 "records_ok": True,
                 "sample_order_matches_dual": True,
-                "measured_workload_matches_dual": case.role != "ordinary_sgd",
+                "measured_workload_matches_dual": True,
                 "independent_test": tested,
             }
         )
